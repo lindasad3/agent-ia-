@@ -16,7 +16,9 @@ class Settings(BaseSettings):
     mt5_password: SecretStr | None = None
     mt5_server: str | None = None
     mt5_path: str | None = None
-    mt5_symbol_suffix: str = ""
+    mt5_symbol_suffix: str = "auto"  # "auto" = détection (EURUSDm, EURUSD.a...), "" = aucun suffixe
+    mt5_symbol_map: dict[str, str] = Field(default_factory=dict)  # exceptions, ex. {"XAUUSD": "GOLD"}
+    mt5_server_utc_offset: float | None = None  # heures ; None = détection automatique sur les ticks
     allow_live_account: bool = False  # garde-fou : refuse un compte réel par défaut
     magic: int = 770077
 

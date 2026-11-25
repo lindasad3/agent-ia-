@@ -17,11 +17,14 @@ class FakeMT5:
     DEAL_REASON_SL, DEAL_REASON_TP = 4, 5
     TIMEFRAME_H1 = 16385
 
-    def __init__(self, trade_mode=0, retcodes=(10009,)):
+    def __init__(self, trade_mode=0, retcodes=(10009,), names=None, filling_mode=2, tick_time=1_700_000_000):
         self.trade_mode = trade_mode
         self.retcodes = list(retcodes)
         self.positions = {}
         self.sent = []
+        self.names = names
+        self.filling_mode = filling_mode
+        self.tick_time = tick_time
 
     def initialize(self, **kw): return True
     def shutdown(self): pass
@@ -29,11 +32,21 @@ class FakeMT5:
     def account_info(self): return NS(trade_mode=self.trade_mode, balance=1000.0, equity=1000.0, margin_free=900.0,
                                       currency="USD", leverage=100, login=123, server="Demo", name="test")
     def terminal_info(self): return NS(connected=True)
-    def symbol_info(self, s): return NS(visible=True, digits=5, point=0.00001, volume_min=0.01, volume_max=50, volume_step=0.01,
-                                        trade_contract_size=100000, trade_tick_value=1.0, trade_tick_size=0.00001, filling_mode=2)
+    def symbols_get(self): return [NS(name=n) for n in (self.names or ["EURUSD", "GBPUSD", "XAUUSD"])]
+
+    def symbol_info(self, s):
+        if self.names is not None and s not in self.names:
+            return None
+        return NS(visible=True, digits=5, point=0.00001, volume_min=0.01, volume_max=50, volume_step=0.01,
+                  trade_contract_size=100000, trade_tick_value=1.0, trade_tick_size=0.00001, filling_mode=self.filling_mode)
     def symbol_select(self, s, v): return True
-    def symbol_info_tick(self, s): return NS(bid=1.1000, ask=1.1001, time=1_700_000_000)
-    def order_check(self, r): return NS(retcode=0, comment="")
+    def symbol_info_tick(self, s): return NS(bid=1.1000, ask=1.1001, time=self.tick_time)
+
+    def order_check(self, r):
+        # Simule un broker qui n'accepte que FOK
+        if self.filling_mode == 0 and r.get("type_filling") != self.ORDER_FILLING_FOK and "position" not in r:
+            return NS(retcode=10030, comment="Unsupported filling mode")
+        return NS(retcode=0, comment="")
 
     def order_send(self, r):
         self.sent.append(r)
@@ -62,8 +75,8 @@ class FakeMT5:
     def orders_get(self): return []
 
 
-def broker(**kw):
-    b = MT5Broker(123, "x", "Demo", mt5_module=FakeMT5(**kw))
+def broker(symbols=None, offset=None, **kw):
+    b = MT5Broker(123, "x", "Demo", mt5_module=FakeMT5(**kw), symbols=symbols, server_utc_offset=offset)
     assert b.connect()
     return b
 
@@ -109,3 +122,32 @@ def test_modify_and_close():
     assert m.ok and m.verified and m.sl == 1.1001
     c = b.close(r.ticket)
     assert c.ok and c.verified and r.ticket not in b.mt5.positions
+
+
+def test_symbol_suffix_and_alias_detection():
+    b = broker(symbols=["EURUSD", "XAUUSD", "USDJPY"], names=["EURUSDm", "GBPUSDm", "GOLDm", "EURUSD.pro.long"])
+    assert b.symbol_map["EURUSD"] == "EURUSDm" and b.symbol_map["XAUUSD"] == "GOLDm"
+    assert b.missing_symbols == ["USDJPY"]
+    r = b.place_market(req())
+    assert r.ok and b.mt5.sent[-1]["symbol"] == "EURUSDm"
+    assert b.positions()[0].symbol == "EURUSD"  # renvoyé sous le nom de l'agent
+
+
+def test_filling_mode_fallback():
+    b = broker(filling_mode=0)  # le symbole n'annonce rien, le broker n'accepte que FOK
+    r = b.place_market(req())
+    assert r.ok and b.mt5.sent[-1]["type_filling"] == FakeMT5.ORDER_FILLING_FOK
+
+
+def test_server_offset_configured_and_detected():
+    import time as _t
+    assert broker(offset=3).server_offset.total_seconds() == 3 * 3600
+    fresh = broker(tick_time=int(_t.time()) + 2 * 3600 + 5)
+    assert fresh.server_offset.total_seconds() == 2 * 3600 and fresh.offset_source == "détecté"
+    stale = broker(tick_time=int(_t.time()) - 40 * 3600 - 1234)  # week-end : dernier tick vendredi
+    assert stale.server_offset.total_seconds() == 0 and "non détecté" in stale.offset_source
+
+
+def test_diagnostics():
+    d = broker().diagnostics()
+    assert d["account"]["demo"] is True and d["connected"] is True

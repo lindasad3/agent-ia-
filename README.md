@@ -58,9 +58,12 @@ accéléré : tout est étiqueté **SIMULATION** et aucun ordre réel n'est pass
 ## Production (compte démo MT5)
 
 1. VPS **Windows** (MT5 et Quantower sont des applications Windows) : 4 vCPU, 8 Go RAM.
-2. Installer MetaTrader 5, se connecter au compte démo, activer « Algo Trading ».
-3. `.\deploy\windows\install.ps1` : Python, dépendances, `.env`, test MT5, démarrage automatique.
-4. Telegram : créer un bot avec @BotFather → `FXA_TELEGRAM_TOKEN` ; votre chat_id (@userinfobot) → `FXA_TELEGRAM_CHAT_IDS`.
+   Pas à pas pour Contabo : [`deploy/windows/GUIDE_CONTABO_MT5.md`](deploy/windows/GUIDE_CONTABO_MT5.md).
+2. `deploy\windows\bootstrap.ps1` : Git, Python 3.12, MetaTrader 5, dépendances, assistant `.env`
+   (`scripts/setup.py`), diagnostic + ordre de test (`scripts/mt5_check.py --test-order`), démarrage automatique.
+3. Telegram : [`deploy/windows/GUIDE_TELEGRAM.md`](deploy/windows/GUIDE_TELEGRAM.md) — `scripts/setup.py telegram`
+   détecte automatiquement votre chat_id.
+4. (rappel) Activer « Algo Trading » dans MT5 et utiliser un compte démo.
 5. HTTPS : Caddy + domaine (`deploy/windows/Caddyfile`) — nécessaire pour installer la PWA sur téléphone.
 6. Quantower : voir `quantower_bridge/README.md`.
 7. Vérifier : `python scripts/mt5_check.py --test-order` (ordre 0.01 lot ouvert puis fermé, compte démo uniquement).

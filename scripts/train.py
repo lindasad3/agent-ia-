@@ -5,6 +5,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+# Console / journaux Windows : forcer l'UTF-8 (émojis, accents) même si la sortie est redirigée
+for _s in (sys.stdout, sys.stderr):
+    try:
+        _s.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:  # noqa: BLE001
+        pass
+
 from forex_agent.learning.trainer import run  # noqa: E402
 
 if __name__ == "__main__":

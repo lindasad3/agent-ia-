@@ -31,7 +31,9 @@ def build_broker(st: Settings):
     if st.broker == "mt5":
         from .execution.mt5_broker import MT5Broker
         return MT5Broker(st.mt5_login, _secret(st.mt5_password), st.mt5_server, st.mt5_path,
-                         allow_live=st.allow_live_account, symbol_suffix=st.mt5_symbol_suffix, magic=st.magic)
+                         allow_live=st.allow_live_account, symbol_suffix=st.mt5_symbol_suffix, magic=st.magic,
+                         symbol_map=st.mt5_symbol_map, server_utc_offset=st.mt5_server_utc_offset,
+                         symbols=st.symbols)
     from .data.hf_dataset import load_m1
     from .execution.paper import PaperBroker, ReplayMarket
     start = pd.Timestamp(st.paper_start)
