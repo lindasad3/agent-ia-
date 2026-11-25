@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Agent FX">
+  <title>Agent IA Forex</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/static/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icons/icon-192.png">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div id="login" class="login hidden">
+    <form id="loginForm" class="card login-card">
+      <div class="brand big"><span class="logo">◆</span> Agent IA Forex</div>
+      <p class="muted">Centre de contrôle de l'agent</p>
+      <label>Utilisateur<input name="username" autocomplete="username" required value="admin"></label>
+      <label>Mot de passe<input name="password" type="password" autocomplete="current-password" required></label>
+      <button class="btn primary" type="submit">Se connecter</button>
+      <p id="loginErr" class="err"></p>
+    </form>
+  </div>
+
+  <div id="app" class="hidden">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">◆</span> Agent IA Forex</div>
+      <nav id="nav"></nav>
+      <div class="side-foot muted" id="sideFoot"></div>
+    </aside>
+    <main>
+      <header class="topbar">
+        <div class="pills" id="pills"></div>
+        <div class="top-actions">
+          <button class="btn danger sm" id="killBtn" title="Arrêt d'urgence" aria-label="Arrêt d'urgence">⏻ Stop</button>
+        </div>
+      </header>
+      <div id="banner"></div>
+      <section id="view" class="view"></section>
+    </main>
+    <nav class="bottomnav" id="bottomnav"></nav>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

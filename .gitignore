@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+data/raw/
+data/fx/
+data/*.db
+data/*.db-*
+*.log
+logs/
+research_lab/cache/

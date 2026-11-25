@@ -1,0 +1,7890 @@
+[
+ {
+  "full_name": "HKUDS/Vibe-Trading",
+  "url": "https://github.com/HKUDS/Vibe-Trading",
+  "description": "\"Vibe-Trading: Your Personal Trading Agent\"",
+  "stars": 38910,
+  "forks": 6334,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-25T07:59:39Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 3480,
+  "python_files": 2492,
+  "top_dirs": [
+   "\"agent",
+   ".devcontainer",
+   ".github",
+   "agent",
+   "assets",
+   "desktop",
+   "frontend",
+   "guides",
+   "pixel-office",
+   "schema",
+   "scripts",
+   "tools",
+   "wiki",
+   "zimaos"
+  ],
+  "languages": {
+   ".py": 2492,
+   ".md\"": 268,
+   ".md": 168,
+   ".tsx": 168,
+   ".ts": 88
+  },
+  "technologies": [
+   "Anthropic API",
+   "CCXT",
+   "Docker",
+   "FastAPI",
+   "LangChain",
+   "LangGraph",
+   "MetaTrader5",
+   "React",
+   "Telegram bot",
+   "WebSockets",
+   "arch (GARCH)",
+   "backtesting.py",
+   "scikit-learn",
+   "smartmoneyconcepts",
+   "statsmodels",
+   "yfinance"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "LLM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Momentum",
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Kill switch",
+   "Trailing stop",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (38,910 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Kill switch, Trailing stop, VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 100,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 100,
+   "reusability": 100,
+   "overall": 100.0
+  },
+  "readme_chars": 60000,
+  "error": null,
+  "rank": 1
+ },
+ {
+  "full_name": "stefan-jansen/machine-learning-for-trading",
+  "url": "https://github.com/stefan-jansen/machine-learning-for-trading",
+  "description": "Code for Machine Learning for Trading, 3rd edition — from data sourcing to live execution.",
+  "stars": 22052,
+  "forks": 5818,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2026-11-25T18:05:23Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 2065,
+  "python_files": 1218,
+  "top_dirs": [
+   ".github",
+   ".jupyter",
+   "01_process_is_edge",
+   "02_financial_data_universe",
+   "03_market_microstructure",
+   "04_fundamental_alternative_data",
+   "05_synthetic_data",
+   "06_strategy_definition",
+   "07_defining_the_learning_task",
+   "08_financial_features",
+   "09_model_based_features",
+   "10_text_feature_engineering",
+   "11_ml_pipeline",
+   "12_gradient_boosting",
+   "13_dl_time_series"
+  ],
+  "languages": {
+   ".py": 1218,
+   ".ipynb": 483,
+   ".yaml": 154,
+   ".md": 72,
+   ".json": 54
+  },
+  "technologies": [
+   "Alpaca",
+   "Anthropic API",
+   "CatBoost",
+   "Docker",
+   "Gymnasium",
+   "HF Transformers",
+   "IB (ib_insync)",
+   "LangGraph",
+   "LightGBM",
+   "OANDA v20",
+   "Optuna",
+   "PyPortfolioOpt",
+   "PyTorch",
+   "Riskfolio",
+   "Stable-Baselines3",
+   "TA-Lib",
+   "VectorBT",
+   "XGBoost",
+   "arch (GARCH)",
+   "hmmlearn",
+   "scikit-learn",
+   "statsmodels",
+   "ta",
+   "yfinance"
+  ],
+  "ai_models": [
+   "DQN",
+   "GARCH",
+   "HMM/Regime",
+   "LLM",
+   "LSTM",
+   "PPO",
+   "SAC",
+   "Sentiment/NLP",
+   "Transformer",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Market making",
+   "Mean reversion",
+   "Momentum",
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Optimisation bayésienne",
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Kill switch",
+   "Position sizing",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (22,052 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Kill switch, Position sizing, VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 97,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 100,
+   "reusability": 100,
+   "overall": 99.1
+  },
+  "readme_chars": 31064,
+  "error": null,
+  "rank": 2
+ },
+ {
+  "full_name": "alsk1992/CloddsBot",
+  "url": "https://github.com/alsk1992/CloddsBot",
+  "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans    for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
+  "stars": 3130,
+  "forks": 398,
+  "language": "TypeScript",
+  "license": "MIT",
+  "pushed_at": "2026-11-13T19:38:48Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 837,
+  "python_files": 1,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "docs",
+   "public",
+   "rust",
+   "scripts",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".ts": 630,
+   ".md": 155,
+   ".js": 12,
+   ".json": 7,
+   ".png": 6
+  },
+  "technologies": [
+   "Docker"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "LLM"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Market making",
+   "Mean reversion",
+   "Momentum",
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Kill switch",
+   "Limite journalière",
+   "Position sizing",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.4,
+  "strengths": [
+   "Forte adoption (3,130 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Kill switch, Limite journalière, Position sizing, VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 78,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 100,
+   "reusability": 100,
+   "overall": 94.4
+  },
+  "readme_chars": 28407,
+  "error": null,
+  "rank": 3
+ },
+ {
+  "full_name": "OpenByteInc/QuantDinger",
+  "url": "https://github.com/OpenByteInc/QuantDinger",
+  "description": "The most complete open-source, self-hosted Agentic Trading OS—AI research, Python strategies, factor discovery, backtesting, optimization, paper/live multi-asset execution, risk controls, monitoring, MCP, and multi-tenant SaaS in one auditable stack.",
+  "stars": 13987,
+  "forks": 2837,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T18:35:37Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents",
+   "backtesting_optimization"
+  ],
+  "files_count": 1978,
+  "python_files": 1686,
+  "top_dirs": [
+   ".github",
+   "LICENSES",
+   "backend_api_python",
+   "deploy",
+   "docs",
+   "library",
+   "mcp_server",
+   "ops",
+   "scripts"
+  ],
+  "languages": {
+   ".py": 1686,
+   ".md": 154,
+   ".sql": 41,
+   ".yml": 24,
+   ".json": 15
+  },
+  "technologies": [
+   "Alpaca",
+   "Celery",
+   "Docker",
+   "Flask",
+   "IB (ib_insync)",
+   "Redis",
+   "TA-Lib",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM",
+   "Walk-forward",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (13,987 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Stop loss, Take profit",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 92,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 58,
+   "reusability": 100,
+   "overall": 89.7
+  },
+  "readme_chars": 49019,
+  "error": null,
+  "rank": 4
+ },
+ {
+  "full_name": "zero-was-here/tradingbot",
+  "url": "https://github.com/zero-was-here/tradingbot",
+  "description": "DRL Trading - AI Gold Trading Bot    Deep reinforcement learning system for autonomous XAUUSD trading using:   - PPO & Dreamer algorithms (PyTorch)   - 140+ features: multi-timeframe, macro data, economic events   - MetaTrader 5 live trading   - 2M steps trained, targeting 80-120% annual returns   - Multiple strategies (aggressive/swing/standard)",
+  "stars": 229,
+  "forks": 87,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-09T18:12:14Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 563,
+  "python_files": 257,
+  "top_dirs": [
+   ".github",
+   "aurum",
+   "configs",
+   "data_store",
+   "docs",
+   "legacy",
+   "mt5_ea",
+   "tests",
+   "tools"
+  ],
+  "languages": {
+   ".py": 257,
+   ".png": 254,
+   ".md": 30,
+   ".yaml": 7,
+   ".yml": 2
+  },
+  "technologies": [
+   "Anthropic API",
+   "Gymnasium",
+   "MQL4/MQL5",
+   "MetaTrader5",
+   "PyTorch",
+   "Stable-Baselines3",
+   "scikit-learn",
+   "yfinance"
+  ],
+  "ai_models": [
+   "GARCH",
+   "HMM/Regime",
+   "LLM",
+   "PPO",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "Breakout",
+   "Mean reversion",
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Kill switch",
+   "Stop loss",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.5,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Kill switch, Stop loss, VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 52,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 100,
+   "reusability": 100,
+   "overall": 88.1
+  },
+  "readme_chars": 25167,
+  "error": null,
+  "rank": 5
+ },
+ {
+  "full_name": "skfolio/skfolio",
+  "url": "https://github.com/skfolio/skfolio",
+  "description": "Python library for portfolio optimization, factor model construction, and risk management built on scikit-learn",
+  "stars": 2675,
+  "forks": 320,
+  "language": "Python",
+  "license": "BSD-3-Clause",
+  "pushed_at": "2026-11-25T11:23:56Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 748,
+  "python_files": 584,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "examples",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 584,
+   ".rst": 70,
+   ".webp": 32,
+   ".txt": 16,
+   ".md": 8
+  },
+  "technologies": [
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "LLM",
+   "Transformer"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (2,675 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, VaR/CVaR",
+   "Licence permissive (BSD-3-Clause)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 76,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 67,
+   "reusability": 100,
+   "overall": 87.4
+  },
+  "readme_chars": 28400,
+  "error": null,
+  "rank": 6
+ },
+ {
+  "full_name": "mnemox-ai/tradememory-protocol",
+  "url": "https://github.com/mnemox-ai/tradememory-protocol",
+  "description": "Decision audit trail + persistent memory for AI trading agents. Outcome-weighted recall, tamper-evident SHA-256 chain with RFC 3161 anchoring, 20 MCP tools.",
+  "stars": 1453,
+  "forks": 171,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-24T14:46:36Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 614,
+  "python_files": 286,
+  "top_dirs": [
+   ".devcontainer",
+   ".github",
+   ".skills",
+   "alembic",
+   "assets",
+   "dashboard",
+   "data",
+   "deploy",
+   "docs",
+   "examples",
+   "hosted",
+   "research",
+   "scripts",
+   "skills",
+   "src"
+  ],
+  "languages": {
+   ".py": 286,
+   ".md": 88,
+   ".json": 57,
+   ".tsx": 35,
+   ".png": 29
+  },
+  "technologies": [
+   "Anthropic API",
+   "Docker",
+   "FastAPI",
+   "MetaTrader5",
+   "OpenAI API",
+   "React",
+   "SQLAlchemy"
+  ],
+  "ai_models": [
+   "LLM",
+   "Transformer"
+  ],
+  "strategies": [
+   "Breakout"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Reinforcement Learning",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (1,453 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Trailing stop",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 70,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 67,
+   "reusability": 100,
+   "overall": 85.9
+  },
+  "readme_chars": 16327,
+  "error": null,
+  "rank": 7
+ },
+ {
+  "full_name": "coding-kitties/investing-algorithm-framework",
+  "url": "https://github.com/coding-kitties/investing-algorithm-framework",
+  "description": "Framework for quantitative trading. Complete framework for development, backtesting, and deploying automated trading algorithms and trading bots.",
+  "stars": 2258,
+  "forks": 321,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-24T22:20:00Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 1535,
+  "python_files": 828,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "docusaurus",
+   "examples",
+   "investing_algorithm_framework",
+   "native",
+   "scripts",
+   "static",
+   "tests"
+  ],
+  "languages": {
+   ".py": 828,
+   ".json": 258,
+   ".md": 127,
+   ".csv": 116,
+   ".js": 69
+  },
+  "technologies": [
+   "CCXT",
+   "FastAPI",
+   "React",
+   "SQLAlchemy",
+   "yfinance"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing",
+   "Stop loss",
+   "Take profit",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (2,258 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Position sizing, Stop loss, Take profit",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 75,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 58,
+   "reusability": 100,
+   "overall": 85.3
+  },
+  "readme_chars": 34029,
+  "error": null,
+  "rank": 8
+ },
+ {
+  "full_name": "PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+  "url": "https://github.com/PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+  "description": "Machine Learning for Algorithmic Trading, Second Edition - published by Packt",
+  "stars": 1651,
+  "forks": 592,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2026-04-22T08:56:29Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 360,
+  "python_files": 29,
+  "top_dirs": [
+   "01_machine_learning_for_trading",
+   "02_market_and_fundamental_data",
+   "03_alternative_data",
+   "04_alpha_factor_research",
+   "05_strategy_evaluation",
+   "06_machine_learning_process",
+   "07_linear_models",
+   "08_ml4t_workflow",
+   "09_time_series_models",
+   "10_bayesian_machine_learning",
+   "11_decision_trees_random_forests",
+   "12_gradient_boosting_machines",
+   "13_unsupervised_learning",
+   "14_working_with_text_data",
+   "15_topic_modeling"
+  ],
+  "languages": {
+   ".ipynb": 158,
+   ".npy": 94,
+   ".md": 37,
+   ".py": 29,
+   ".png": 11
+  },
+  "technologies": [],
+  "ai_models": [
+   "CNN",
+   "DQN",
+   "GRU",
+   "LSTM",
+   "Random Forest",
+   "Sentiment/NLP",
+   "Transformer",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Order flow",
+   "Pairs/StatArb"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Position sizing"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 7.1,
+  "strengths": [
+   "Forte adoption (1,651 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Gestion du risque : Position sizing",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 72,
+   "freshness": 75,
+   "quality": 80,
+   "relevance": 100,
+   "reusability": 100,
+   "overall": 85.1
+  },
+  "readme_chars": 43987,
+  "error": null,
+  "rank": 9
+ },
+ {
+  "full_name": "fasiondog/hikyuu",
+  "url": "https://github.com/fasiondog/hikyuu",
+  "description": "An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and backtesting Trading model R&D · Ultra-fast engine · Efficient backtesting",
+  "stars": 3740,
+  "forks": 875,
+  "language": "C++",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-22T09:01:00Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 2323,
+  "python_files": 191,
+  "top_dirs": [
+   ".github",
+   "docker",
+   "docs",
+   "hikyuu",
+   "hikyuu_cpp",
+   "hikyuu_pywrap",
+   "i18n",
+   "test_data"
+  ],
+  "languages": {
+   ".cpp": 886,
+   ".h": 764,
+   ".py": 191,
+   ".png": 138,
+   ".rst": 104
+  },
+  "technologies": [
+   "SQLAlchemy",
+   "arch (GARCH)"
+  ],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Walk-forward",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Position sizing",
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Forte adoption (3,740 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Position sizing, Stop loss, Take profit",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 79,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 50,
+   "reusability": 100,
+   "overall": 84.8
+  },
+  "readme_chars": 37692,
+  "error": null,
+  "rank": 10
+ },
+ {
+  "full_name": "TorchTrade/torchtrade",
+  "url": "https://github.com/TorchTrade/torchtrade",
+  "description": "Modular reinforcement learning framework for algorithmic trading",
+  "stars": 429,
+  "forks": 56,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-10-08T08:11:22Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 360,
+  "python_files": 287,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "examples",
+   "tests",
+   "torchtrade"
+  ],
+  "languages": {
+   ".py": 287,
+   ".md": 31,
+   ".yaml": 20,
+   ".png": 10,
+   ".yml": 6
+  },
+  "technologies": [
+   "Alpaca",
+   "CCXT",
+   "HF Transformers",
+   "OpenAI API",
+   "PyTorch",
+   "scikit-learn",
+   "ta"
+  ],
+  "ai_models": [
+   "DQN",
+   "LLM",
+   "PPO",
+   "Sentiment/NLP",
+   "Transformer"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 1.6,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 59,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 75,
+   "reusability": 100,
+   "overall": 84.6
+  },
+  "readme_chars": 24039,
+  "error": null,
+  "rank": 11
+ },
+ {
+  "full_name": "javifalces/HFTFramework",
+  "url": "https://github.com/javifalces/HFTFramework",
+  "description": "HFTFramework utilized  for research on \" A reinforcement learning approach to improve the performance of the Avellaneda-Stoikov market-making algorithm \" ",
+  "stars": 313,
+  "forks": 64,
+  "language": "Jupyter Notebook",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-17T07:01:16Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 1873,
+  "python_files": 189,
+  "top_dirs": [
+   ".github",
+   "data",
+   "docs",
+   "fig",
+   "java",
+   "monitoring",
+   "python"
+  ],
+  "languages": {
+   ".java": 973,
+   ".mqh": 252,
+   ".py": 189,
+   ".xml": 54,
+   ".parquet": 47
+  },
+  "technologies": [
+   "Docker",
+   "Gymnasium",
+   "HF Transformers",
+   "MQL4/MQL5",
+   "Optuna",
+   "Stable-Baselines3",
+   "empyrical",
+   "scikit-learn",
+   "statsmodels",
+   "yfinance"
+  ],
+  "ai_models": [
+   "Genetic",
+   "LLM",
+   "Random Forest"
+  ],
+  "strategies": [
+   "Market making",
+   "Order flow",
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Drawdown"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.3,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 55,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 75,
+   "reusability": 100,
+   "overall": 83.9
+  },
+  "readme_chars": 23711,
+  "error": null,
+  "rank": 12
+ },
+ {
+  "full_name": "Barca0412/Introduction-to-Quantitative-Finance",
+  "url": "https://github.com/Barca0412/Introduction-to-Quantitative-Finance",
+  "description": "AI+金融（量化）：1.多因子股票量化框架开源教程 2.学界和业界的经典资料收录 3.AI + 金融的相关工作，包括LLM, Agent, benchmark(evaluation), etc.",
+  "stars": 1900,
+  "forks": 195,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-25T17:07:39Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 631,
+  "python_files": 56,
+  "top_dirs": [
+   "\"\\350\\256\\272\\346\\226\\207",
+   "\"\\350\\265\\204\\346\\226\\231",
+   ".github",
+   "Old",
+   "data",
+   "docs",
+   "pic",
+   "scripts",
+   "templates"
+  ],
+  "languages": {
+   ".pdf\"": 313,
+   ".md": 56,
+   ".webp": 56,
+   ".py": 56,
+   ".md\"": 34
+  },
+  "technologies": [
+   "OpenAI API",
+   "Vue"
+  ],
+  "ai_models": [
+   "LLM",
+   "LSTM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Market making"
+  ],
+  "learning_methods": [
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (1,900 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 73,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 50,
+   "reusability": 100,
+   "overall": 83.2
+  },
+  "readme_chars": 9628,
+  "error": null,
+  "rank": 13
+ },
+ {
+  "full_name": "tensortrade-org/tensortrade",
+  "url": "https://github.com/tensortrade-org/tensortrade",
+  "description": "An open source reinforcement learning framework for training, evaluating, and deploying robust trading agents.",
+  "stars": 7276,
+  "forks": 1341,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-02-19T16:21:00Z",
+  "archived": false,
+  "categories": [
+   "autonomous_agents",
+   "reinforcement_learning"
+  ],
+  "files_count": 456,
+  "python_files": 209,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "examples",
+   "tensortrade",
+   "tests"
+  ],
+  "languages": {
+   ".py": 209,
+   ".rst": 111,
+   ".md": 52,
+   ".png": 22,
+   ".jpeg": 16
+  },
+  "technologies": [
+   "CCXT",
+   "Docker",
+   "Gymnasium",
+   "Optuna",
+   "PyTorch",
+   "QuantStats",
+   "Ray/RLlib",
+   "TensorFlow",
+   "pandas-ta",
+   "scikit-learn",
+   "ta"
+  ],
+  "ai_models": [
+   "PPO"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Optimisation bayésienne",
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Position sizing"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 9.2,
+  "strengths": [
+   "Forte adoption (7,276 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Gestion du risque : Position sizing",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 86,
+   "freshness": 75,
+   "quality": 100,
+   "relevance": 50,
+   "reusability": 100,
+   "overall": 82.7
+  },
+  "readme_chars": 7489,
+  "error": null,
+  "rank": 14
+ },
+ {
+  "full_name": "TreborNamor/TradingView-Machine-Learning-GUI",
+  "url": "https://github.com/TreborNamor/TradingView-Machine-Learning-GUI",
+  "description": "HyperView is a terminal-first TradingView strategy lab for downloading market data, backtesting Python strategies with Pine-like behavior, and optimizing SL/TP parameters.",
+  "stars": 1031,
+  "forks": 272,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-08-18T13:50:11Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization",
+   "ml_finance"
+  ],
+  "files_count": 54,
+  "python_files": 42,
+  "top_dirs": [
+   "hyperview",
+   "scripts",
+   "strategy",
+   "tests"
+  ],
+  "languages": {
+   ".py": 42,
+   ".md": 2,
+   ".json": 2,
+   ".toml": 1,
+   ".txt": 1
+  },
+  "technologies": [
+   "Optuna",
+   "TA-Lib"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Momentum",
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Optimisation bayésienne",
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing",
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 3.3,
+  "strengths": [
+   "Forte adoption (1,031 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Position sizing, Stop loss, Take profit",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 67,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 75,
+   "reusability": 100,
+   "overall": 82.7
+  },
+  "readme_chars": 22039,
+  "error": null,
+  "rank": 15
+ },
+ {
+  "full_name": "QuantConnect/Lean",
+  "url": "https://github.com/QuantConnect/Lean",
+  "description": "Lean Algorithmic Trading Engine by QuantConnect (Python, C#)",
+  "stars": 22710,
+  "forks": 5458,
+  "language": "C#",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T17:33:12Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 6550,
+  "python_files": 540,
+  "top_dirs": [
+   ".devcontainer",
+   ".github",
+   ".nuget",
+   ".vs",
+   ".vscode",
+   "Algorithm",
+   "Algorithm.CSharp",
+   "Algorithm.Framework",
+   "Algorithm.Python",
+   "AlgorithmFactory",
+   "Api",
+   "Brokerages",
+   "Common",
+   "Compression",
+   "Configuration"
+  ],
+  "languages": {
+   ".cs": 4574,
+   ".zip": 697,
+   ".py": 540,
+   ".csv": 524,
+   ".txt": 67
+  },
+  "technologies": [
+   "C#/.NET",
+   "Docker"
+  ],
+  "ai_models": [
+   "DQN"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (22,710 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 97,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 82.5
+  },
+  "readme_chars": 11001,
+  "error": null,
+  "rank": 16
+ },
+ {
+  "full_name": "ginlix-ai/LangAlpha",
+  "url": "https://github.com/ginlix-ai/LangAlpha",
+  "description": "Claude Code for Financial Market",
+  "stars": 2347,
+  "forks": 393,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T18:16:37Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents"
+  ],
+  "files_count": 7589,
+  "python_files": 3462,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "cli",
+   "deploy",
+   "desktop",
+   "helper",
+   "libs",
+   "mcp_servers",
+   "migrations",
+   "plugins",
+   "scripts",
+   "src",
+   "tests",
+   "web",
+   "workflows"
+  ],
+  "languages": {
+   ".py": 3462,
+   ".ts": 1818,
+   ".tsx": 1523,
+   ".js": 142,
+   ".md": 136
+  },
+  "technologies": [
+   "Docker",
+   "FastAPI",
+   "LangChain",
+   "LangGraph",
+   "OpenAI API",
+   "React",
+   "Redis",
+   "SQLAlchemy",
+   "WebSockets",
+   "scikit-learn",
+   "statsmodels",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Price action"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Kill switch"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (2,347 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Kill switch",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 75,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 42,
+   "reusability": 100,
+   "overall": 82.1
+  },
+  "readme_chars": 44040,
+  "error": null,
+  "rank": 17
+ },
+ {
+  "full_name": "shashankvemuri/Finance",
+  "url": "https://github.com/shashankvemuri/Finance",
+  "description": "Python toolkit for quantitative finance: stock analysis, technical indicators, strategy backtesting, portfolio optimization, and financial modeling.",
+  "stars": 4406,
+  "forks": 391,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-09-12T01:00:07Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 97,
+  "python_files": 85,
+  "top_dirs": [
+   ".github",
+   "apps",
+   "docs",
+   "examples",
+   "scripts",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 85,
+   ".md": 6,
+   ".yml": 3,
+   ".toml": 1
+  },
+  "technologies": [
+   "Prophet",
+   "PyTorch",
+   "Streamlit",
+   "scikit-learn",
+   "statsmodels",
+   "ta",
+   "yfinance"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 2.4,
+  "strengths": [
+   "Forte adoption (4,406 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 81,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 33,
+   "reusability": 100,
+   "overall": 81.9
+  },
+  "readme_chars": 4592,
+  "error": null,
+  "rank": 18
+ },
+ {
+  "full_name": "asavinov/intelligent-trading-bot",
+  "url": "https://github.com/asavinov/intelligent-trading-bot",
+  "description": "Intelligent Trading Bot: Automatically generating signals and trading based on machine learning and feature engineering",
+  "stars": 1907,
+  "forks": 414,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-18T10:24:56Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 71,
+  "python_files": 45,
+  "top_dirs": [
+   ".github",
+   "configs",
+   "docs",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 45,
+   ".md": 12,
+   ".yml": 3,
+   ".jsonc": 3,
+   ".txt": 2
+  },
+  "technologies": [
+   "Keras",
+   "LightGBM",
+   "TA-Lib",
+   "TensorFlow",
+   "scikit-learn"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Online learning",
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.2,
+  "strengths": [
+   "Forte adoption (1,907 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 73,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 42,
+   "reusability": 100,
+   "overall": 81.6
+  },
+  "readme_chars": 16877,
+  "error": null,
+  "rank": 19
+ },
+ {
+  "full_name": "JordiCorbilla/stock-prediction-deep-neural-learning",
+  "url": "https://github.com/JordiCorbilla/stock-prediction-deep-neural-learning",
+  "description": "Predicting stock prices using a TensorFlow LSTM (long short-term memory) neural network for times series forecasting",
+  "stars": 690,
+  "forks": 125,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-01T19:34:58Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 96,
+  "python_files": 37,
+  "top_dirs": [
+   ".github",
+   "benchmarks",
+   "docs",
+   "examples",
+   "quant_forecast_lab",
+   "tests",
+   "tests_runtime"
+  ],
+  "languages": {
+   ".py": 37,
+   ".png": 18,
+   ".md": 13,
+   ".yml": 8,
+   ".json": 4
+  },
+  "technologies": [
+   "TensorFlow",
+   "scikit-learn",
+   "yfinance"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "LSTM"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Supervisé",
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Drawdown"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.8,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 63,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 50,
+   "reusability": 100,
+   "overall": 80.8
+  },
+  "readme_chars": 12756,
+  "error": null,
+  "rank": 20
+ },
+ {
+  "full_name": "quantskills/quantskills",
+  "url": "https://github.com/quantskills/quantskills",
+  "description": "QuantSkills组织的全景导航 ：面向 AI Agent 的开源量化 Skill & Agent 生态，从数据、因子研究、回测验证到风险监控与交易自动化。｜Open-source Quant Skills & Agents for AI-driven research, backtesting, risk and trading automation.——Panoramic navigator for the QuantSkills organization",
+  "stars": 2933,
+  "forks": 290,
+  "language": "JavaScript",
+  "license": null,
+  "pushed_at": "2026-11-19T06:06:15Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 76,
+  "python_files": 0,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "data",
+   "docs",
+   "scripts",
+   "site",
+   "tests"
+  ],
+  "languages": {
+   ".png": 32,
+   ".mjs": 26,
+   ".md": 7,
+   ".json": 4,
+   ".yml": 2
+  },
+  "technologies": [],
+  "ai_models": [
+   "CNN",
+   "HMM/Regime",
+   "LLM",
+   "LSTM",
+   "Sentiment/NLP",
+   "Transformer"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Mean reversion",
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Stop loss",
+   "Take profit",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.2,
+  "strengths": [
+   "Forte adoption (2,933 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Stop loss, Take profit, VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (JavaScript)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 77,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 100,
+   "reusability": 30,
+   "overall": 80.3
+  },
+  "readme_chars": 58147,
+  "error": null,
+  "rank": 21
+ },
+ {
+  "full_name": "zvtvz/zvt",
+  "url": "https://github.com/zvtvz/zvt",
+  "description": "modular quant framework.",
+  "stars": 4340,
+  "forks": 1014,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-07-01T09:42:05Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 580,
+  "python_files": 416,
+  "top_dirs": [
+   ".github",
+   "api-tests",
+   "docs",
+   "examples",
+   "requirements",
+   "sql",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 416,
+   ".http": 49,
+   ".png": 26,
+   ".rst": 23,
+   ".template": 16
+  },
+  "technologies": [
+   "Dash",
+   "FastAPI",
+   "SQLAlchemy",
+   "scikit-learn",
+   "ta"
+  ],
+  "ai_models": [
+   "Transformer"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Online learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 4.8,
+  "strengths": [
+   "Forte adoption (4,340 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 81,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 80.2
+  },
+  "readme_chars": 38049,
+  "error": null,
+  "rank": 22
+ },
+ {
+  "full_name": "TradeMaster-NTU/TradeMaster",
+  "url": "https://github.com/TradeMaster-NTU/TradeMaster",
+  "description": "TradeMaster is an open-source platform for quantitative trading empowered by reinforcement learning :fire: :zap: :rainbow:",
+  "stars": 3141,
+  "forks": 571,
+  "language": "Jupyter Notebook",
+  "license": "Apache-2.0",
+  "pushed_at": "2025-06-04T03:57:56Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 776,
+  "python_files": 451,
+  "top_dirs": [
+   "configs",
+   "data",
+   "deploy",
+   "docs",
+   "figure",
+   "finagent",
+   "installation",
+   "pm",
+   "tools",
+   "trademaster",
+   "tutorial",
+   "unit_testing"
+  ],
+  "languages": {
+   ".py": 451,
+   ".csv": 177,
+   ".png": 39,
+   ".md": 25,
+   ".svg": 20
+  },
+  "technologies": [
+   "Celery",
+   "Docker",
+   "Flask",
+   "Gym",
+   "Gymnasium",
+   "Ray/RLlib",
+   "SQLAlchemy",
+   "TensorFlow",
+   "scikit-learn",
+   "statsmodels",
+   "yfinance"
+  ],
+  "ai_models": [
+   "A2C/A3C",
+   "DQN",
+   "PPO",
+   "SAC"
+  ],
+  "strategies": [
+   "Order flow",
+   "Scalping"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 17.7,
+  "strengths": [
+   "Forte adoption (3,141 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 78,
+   "freshness": 75,
+   "quality": 80,
+   "relevance": 58,
+   "reusability": 100,
+   "overall": 78.3
+  },
+  "readme_chars": 21975,
+  "error": null,
+  "rank": 23
+ },
+ {
+  "full_name": "chrisleekr/binance-trading-bot",
+  "url": "https://github.com/chrisleekr/binance-trading-bot",
+  "description": "Automated Binance trading bot with pluggable strategies, historical backtesting, a live dashboard, and connect an AI agent over MCP",
+  "stars": 5624,
+  "forks": 1167,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-22T14:34:20Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 3145,
+  "python_files": 0,
+  "top_dirs": [
+   ".claude",
+   ".github",
+   ".husky",
+   ".vscode",
+   "apps",
+   "deploy",
+   "docs",
+   "e2e",
+   "packages",
+   "scripts"
+  ],
+  "languages": {
+   ".ts": 1906,
+   ".tsx": 433,
+   ".sh": 183,
+   ".md": 129,
+   ".json": 113
+  },
+  "technologies": [
+   "Docker",
+   "Redis"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Kill switch",
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Forte adoption (5,624 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Kill switch, Trailing stop",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Pas en Python (TypeScript)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 83,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 33,
+   "reusability": 75,
+   "overall": 77.5
+  },
+  "readme_chars": 8586,
+  "error": null,
+  "rank": 24
+ },
+ {
+  "full_name": "simonlin1212/a-stock-data",
+  "url": "https://github.com/simonlin1212/a-stock-data",
+  "description": "A股全栈数据工具包：行情K线·当日逐笔·研报·信号·资金面·新闻·财务·公告·打板·ETF期权·舆情·宏观利率·期货大宗(含大商所日K)·事件驱动·可转债 | 15层·87端点·34数据源·除iwencai外免Key | A-share data for AI agents: K-lines, ticks, reports, fund flow, news, financials, filings, options, macro, futures, events, convertibles | 15 layers·87 endpoints·34 sources",
+  "stars": 12020,
+  "forks": 2175,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-03T23:52:13Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 28,
+  "python_files": 5,
+  "top_dirs": [
+   "assets",
+   "docs",
+   "tests"
+  ],
+  "languages": {
+   ".js": 10,
+   ".md": 6,
+   ".py": 5,
+   ".png": 2,
+   ".json": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.7,
+  "strengths": [
+   "Forte adoption (12,020 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 91,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 77.0
+  },
+  "readme_chars": 27825,
+  "error": null,
+  "rank": 25
+ },
+ {
+  "full_name": "AmpyFin/ampyfin",
+  "url": "https://github.com/AmpyFin/ampyfin",
+  "description": "End-to-end ensemble trading framework that trains, backtests, and promotes validated strategies to live execution.",
+  "stars": 427,
+  "forks": 135,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-08-06T04:29:38Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 62,
+  "python_files": 39,
+  "top_dirs": [
+   ".devcontainer",
+   ".github",
+   "TradeSim",
+   "dbs",
+   "docs",
+   "strategies",
+   "tests",
+   "utilities"
+  ],
+  "languages": {
+   ".py": 39,
+   ".md": 9,
+   ".txt": 3,
+   ".yml": 2,
+   ".json": 1
+  },
+  "technologies": [
+   "Alpaca",
+   "Docker",
+   "FastAPI",
+   "TA-Lib",
+   "pandas-ta",
+   "yfinance"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Arbitrage",
+   "Mean reversion",
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 3.7,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 58,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 33,
+   "reusability": 100,
+   "overall": 76.3
+  },
+  "readme_chars": 11213,
+  "error": null,
+  "rank": 26
+ },
+ {
+  "full_name": "leoncuhk/awesome-quant-ai",
+  "url": "https://github.com/leoncuhk/awesome-quant-ai",
+  "description": "A curated list of awesome resources for quantitative investment and trading strategies focusing on artificial intelligence and machine learning applications in finance.",
+  "stars": 676,
+  "forks": 158,
+  "language": "Jupyter Notebook",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-15T15:37:51Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 36,
+  "python_files": 0,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "book",
+   "docs",
+   "paper",
+   "think",
+   "tools"
+  ],
+  "languages": {
+   ".md": 25,
+   ".png": 3,
+   ".pdf": 2,
+   ".yml": 1,
+   ".gif": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "A2C/A3C",
+   "GARCH",
+   "Genetic",
+   "HMM/Regime",
+   "LLM",
+   "LSTM",
+   "PPO",
+   "Random Forest",
+   "SAC",
+   "Sentiment/NLP",
+   "Transformer",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Breakout",
+   "Market making",
+   "Mean reversion",
+   "Momentum",
+   "Order flow",
+   "Pairs/StatArb",
+   "Price action",
+   "SMC/ICT",
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Optimisation bayésienne",
+   "Reinforcement Learning",
+   "Supervisé",
+   "Walk-forward",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing",
+   "Stop loss",
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.3,
+  "strengths": [
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Position sizing, Stop loss, VaR/CVaR",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Pas en Python (Jupyter Notebook)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 63,
+   "freshness": 100,
+   "quality": 65,
+   "relevance": 100,
+   "reusability": 60,
+   "overall": 75.7
+  },
+  "readme_chars": 58978,
+  "error": null,
+  "rank": 27
+ },
+ {
+  "full_name": "Opselon/NexusTradingForexBot",
+  "url": "https://github.com/Opselon/NexusTradingForexBot",
+  "description": "👑 Enterprise-grade, high-frequency quantitative scalp trading engine for XAUUSD (Gold). Driven by PyTorch (TCN + Self-Attention), Smart Money Concepts (SMC/ICT) , Win32 C++ MT5 IPC bindings, and a real-time FastAPI Canvas Web Dashboard.",
+  "stars": 139,
+  "forks": 24,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-25T13:15:17Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "ml_finance"
+  ],
+  "files_count": 3788,
+  "python_files": 1814,
+  "top_dirs": [
+   ".github",
+   "Web",
+   "agents",
+   "api",
+   "artifacts",
+   "configs",
+   "docker",
+   "docs",
+   "frontend",
+   "go-api",
+   "installer",
+   "pics",
+   "scratch",
+   "scripts",
+   "site"
+  ],
+  "languages": {
+   ".py": 1814,
+   ".md": 1122,
+   ".ts": 230,
+   ".tsx": 208,
+   ".css": 86
+  },
+  "technologies": [
+   "Docker",
+   "FastAPI",
+   "MetaTrader5",
+   "PyTorch",
+   "React"
+  ],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [
+   "SMC/ICT",
+   "Scalping"
+  ],
+  "learning_methods": [
+   "Walk-forward"
+  ],
+  "risk_management": [
+   "Position sizing"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Position sizing",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 48,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 42,
+   "reusability": 100,
+   "overall": 75.3
+  },
+  "readme_chars": 24766,
+  "error": null,
+  "rank": 28
+ },
+ {
+  "full_name": "kyky2347/ALTA",
+  "url": "https://github.com/kyky2347/ALTA",
+  "description": "Autonomous LLM Trading Asterism — a research-only multi-agent trading platform with evidence-first research, an auditable console, Shadow simulation and explicitly authorized broker execution.",
+  "stars": 1077,
+  "forks": 128,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-05T09:51:49Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 6338,
+  "python_files": 221,
+  "top_dirs": [
+   ".github",
+   "alta-dashboard",
+   "alta-runtime",
+   "alta-src",
+   "docs",
+   "vendor"
+  ],
+  "languages": {
+   ".rs": 3088,
+   ".snap": 713,
+   ".ts": 673,
+   ".txt": 448,
+   ".json": 339
+  },
+  "technologies": [
+   "React"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.7,
+  "strengths": [
+   "Forte adoption (1,077 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 67,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 75.2
+  },
+  "readme_chars": 23922,
+  "error": null,
+  "rank": 29
+ },
+ {
+  "full_name": "TauricResearch/TradingAgents",
+  "url": "https://github.com/TauricResearch/TradingAgents",
+  "description": "TradingAgents: Towards Agentic Finance Research",
+  "stars": 123754,
+  "forks": 23704,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T07:27:54Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 234,
+  "python_files": 1,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "docs",
+   "licenses",
+   "scripts",
+   "specs",
+   "src"
+  ],
+  "languages": {
+   ".ts": 161,
+   ".md": 28,
+   ".tsx": 12,
+   ".json": 11,
+   ".yml": 10
+  },
+  "technologies": [
+   "React"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [
+   "Drawdown"
+  ],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (123,754 ★)",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 100,
+   "freshness": 100,
+   "quality": 65,
+   "relevance": 25,
+   "reusability": 85,
+   "overall": 75.0
+  },
+  "readme_chars": 7098,
+  "error": null,
+  "rank": 30
+ },
+ {
+  "full_name": "simonlin1212/TradingAgents-astock",
+  "url": "https://github.com/simonlin1212/TradingAgents-astock",
+  "description": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research framework — 7 AI analysts, bull/bear debate, risk assessment。",
+  "stars": 4006,
+  "forks": 998,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-10-30T23:03:45Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 168,
+  "python_files": 133,
+  "top_dirs": [
+   ".streamlit",
+   "assets",
+   "cli",
+   "examples",
+   "issues",
+   "scripts",
+   "tests",
+   "tradingagents",
+   "web"
+  ],
+  "languages": {
+   ".py": 133,
+   ".md": 12,
+   ".png": 11,
+   ".example": 2,
+   ".toml": 2
+  },
+  "technologies": [
+   "Anthropic API",
+   "Backtrader",
+   "Docker",
+   "LangGraph",
+   "Redis",
+   "Streamlit",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.8,
+  "strengths": [
+   "Forte adoption (4,006 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 80,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 74.3
+  },
+  "readme_chars": 24107,
+  "error": null,
+  "rank": 31
+ },
+ {
+  "full_name": "evelyyyyynnnnn/3.0-Financial-Ai-Systems",
+  "url": "https://github.com/evelyyyyynnnnn/3.0-Financial-Ai-Systems",
+  "description": "Machine learning and optimization models designed to enhance financial system stability through portfolio optimization, risk forecasting, and network-based financial risk analysis.",
+  "stars": 284,
+  "forks": 48,
+  "language": "HTML",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-21T16:23:57Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 670,
+  "python_files": 197,
+  "top_dirs": [
+   ".github",
+   "1-contagion-observatory",
+   "2-filing-intelligence",
+   "3-private-credit-data-provenance",
+   "4-tokenized-fixed-income-analytics",
+   "5-volatility-forecasting",
+   "6-portfolio-optimization-engine",
+   "7-portfolio-results-rollup",
+   "8-asset-monitor-dashboard",
+   "9-giant-portfolio-tracker",
+   "historical-archive"
+  ],
+  "languages": {
+   ".py": 197,
+   ".tsx": 144,
+   ".md": 76,
+   ".json": 61,
+   ".js": 27
+  },
+  "technologies": [
+   "Dash",
+   "Docker",
+   "Gymnasium",
+   "Optuna",
+   "PyTorch",
+   "React",
+   "Stable-Baselines3",
+   "TensorFlow",
+   "scikit-learn",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LSTM"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 55,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 73.6
+  },
+  "readme_chars": 7368,
+  "error": null,
+  "rank": 32
+ },
+ {
+  "full_name": "WenjieDu/TSDB",
+  "url": "https://github.com/WenjieDu/TSDB",
+  "description": "a Python toolbox loads 173 public time series datasets for machine/deep learning with a single line of code. Datasets from multiple domains including healthcare, financial, power, traffic, weather, and etc.",
+  "stars": 244,
+  "forks": 22,
+  "language": "Python",
+  "license": "BSD-3-Clause",
+  "pushed_at": "2026-10-26T14:04:40Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 67,
+  "python_files": 24,
+  "top_dirs": [
+   ".github",
+   "dataset_profiles",
+   "docs",
+   "requirements",
+   "tests",
+   "tsdb"
+  ],
+  "languages": {
+   ".py": 24,
+   ".md": 14,
+   ".yml": 13,
+   ".rst": 3,
+   ".yaml": 2
+  },
+  "technologies": [
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "LLM",
+   "Transformer"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 1.0,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (BSD-3-Clause)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 53,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 73.3
+  },
+  "readme_chars": 10098,
+  "error": null,
+  "rank": 33
+ },
+ {
+  "full_name": "joshyattridge/smart-money-concepts",
+  "url": "https://github.com/joshyattridge/smart-money-concepts",
+  "description": "Discover our Python package designed for algorithmic trading. It brings ICT's smart money concepts to Python, offering a range of indicators for your algorithmic trading strategies.",
+  "stars": 2273,
+  "forks": 918,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-04-03T14:16:51Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "ml_finance"
+  ],
+  "files_count": 25,
+  "python_files": 5,
+  "top_dirs": [
+   ".github",
+   "smartmoneyconcepts",
+   "tests"
+  ],
+  "languages": {
+   ".csv": 12,
+   ".py": 5,
+   ".md": 3,
+   ".yml": 1,
+   ".yaml": 1
+  },
+  "technologies": [
+   "smartmoneyconcepts"
+  ],
+  "ai_models": [
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "SMC/ICT"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 7.8,
+  "strengths": [
+   "Forte adoption (2,273 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 75,
+   "freshness": 75,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 73.2
+  },
+  "readme_chars": 7930,
+  "error": null,
+  "rank": 34
+ },
+ {
+  "full_name": "kernc/backtesting.py",
+  "url": "https://github.com/kernc/backtesting.py",
+  "description": "🔎 📈 🐍 💰  Backtest trading strategies in Python.",
+  "stars": 9298,
+  "forks": 1591,
+  "language": "Python",
+  "license": "AGPL-3.0",
+  "pushed_at": "2026-08-05T12:39:16Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 53,
+  "python_files": 17,
+  "top_dirs": [
+   ".github",
+   "backtesting",
+   "doc"
+  ],
+  "languages": {
+   ".py": 17,
+   ".yml": 7,
+   ".md": 7,
+   ".ipynb": 5,
+   ".mako": 4
+  },
+  "technologies": [
+   "backtesting.py",
+   "scikit-learn"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 3.7,
+  "strengths": [
+   "Forte adoption (9,298 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Position sizing"
+  ],
+  "weaknesses": [
+   "Licence AGPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 88,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 25,
+   "reusability": 55,
+   "overall": 73.0
+  },
+  "readme_chars": 5689,
+  "error": null,
+  "rank": 35
+ },
+ {
+  "full_name": "StockSharp/StockSharp",
+  "url": "https://github.com/StockSharp/StockSharp",
+  "description": "Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, forex, crypto, bitcoins, and options).",
+  "stars": 11156,
+  "forks": 2324,
+  "language": "C#",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-22T17:59:45Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 3317,
+  "python_files": 29,
+  "top_dirs": [
+   ".github",
+   "Alerts.Interfaces",
+   "Algo",
+   "Algo.Analytics",
+   "Algo.Analytics.CSharp",
+   "Algo.Analytics.FSharp",
+   "Algo.Analytics.Python",
+   "Algo.Compilation",
+   "Algo.Export",
+   "Algo.Gpu",
+   "Algo.Import",
+   "Algo.Indicators",
+   "Algo.Strategies",
+   "Algo.Testing",
+   "BusinessEntities"
+  ],
+  "languages": {
+   ".cs": 1911,
+   ".svg": 424,
+   ".bin": 256,
+   ".csproj": 191,
+   ".txt": 174
+  },
+  "technologies": [
+   "C#/.NET"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Forte adoption (11,156 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 90,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 71.8
+  },
+  "readme_chars": 60000,
+  "error": null,
+  "rank": 36
+ },
+ {
+  "full_name": "wingfoil-io/wingfoil",
+  "url": "https://github.com/wingfoil-io/wingfoil",
+  "description": "ultra low latency graph based stream processing framework",
+  "stars": 234,
+  "forks": 36,
+  "language": "Rust",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T08:55:06Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 714,
+  "python_files": 53,
+  "top_dirs": [
+   ".cargo",
+   ".cargo-husky",
+   ".claude",
+   ".config",
+   ".devcontainer",
+   ".github",
+   "crates",
+   "docs",
+   "js",
+   "scripts"
+  ],
+  "languages": {
+   ".rs": 310,
+   ".md": 153,
+   ".py": 53,
+   ".yml": 39,
+   ".svg": 23
+  },
+  "technologies": [
+   "Docker",
+   "Vue"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Kill switch"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Kill switch",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 53,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 71.5
+  },
+  "readme_chars": 29405,
+  "error": null,
+  "rank": 37
+ },
+ {
+  "full_name": "TraderAlice/OpenAlice",
+  "url": "https://github.com/TraderAlice/OpenAlice",
+  "description": "Your one-person Wall Street. An AI trading agent covering equities, crypto, commodities, forex, and macro — from research through position entry, ongoing management, to exit.",
+  "stars": 7502,
+  "forks": 1177,
+  "language": "TypeScript",
+  "license": "AGPL-3.0",
+  "pushed_at": "2026-11-22T06:55:53Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 4065,
+  "python_files": 298,
+  "top_dirs": [
+   ".github",
+   "apps",
+   "default",
+   "docs",
+   "packages",
+   "patches",
+   "plans",
+   "scripts",
+   "services",
+   "signpath",
+   "src",
+   "templates",
+   "tests",
+   "ui"
+  ],
+  "languages": {
+   ".ts": 2294,
+   ".tsx": 541,
+   ".py": 298,
+   ".proto": 203,
+   ".png": 194
+  },
+  "technologies": [
+   "CCXT",
+   "Docker",
+   "OpenAI API",
+   "React"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Forte adoption (7,502 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence AGPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 86,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 70.9
+  },
+  "readme_chars": 8154,
+  "error": null,
+  "rank": 38
+ },
+ {
+  "full_name": "GifariKemal/xaubot-ai",
+  "url": "https://github.com/GifariKemal/xaubot-ai",
+  "description": "AI-powered XAUUSD (Gold) trading bot with XGBoost ML, Smart Money Concepts (SMC), and HMM regime detection for MetaTrader 5",
+  "stars": 123,
+  "forks": 40,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-02-11T16:37:19Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "ml_finance"
+  ],
+  "files_count": 481,
+  "python_files": 136,
+  "top_dirs": [
+   "archive",
+   "backtests",
+   "data",
+   "docker",
+   "docs",
+   "ea-research",
+   "models",
+   "scripts",
+   "src",
+   "tests",
+   "web-dashboard"
+  ],
+  "languages": {
+   ".py": 136,
+   ".md": 80,
+   ".log": 52,
+   ".tsx": 46,
+   ".xlsx": 44
+  },
+  "technologies": [
+   "Docker",
+   "FastAPI",
+   "MQL4/MQL5",
+   "MetaTrader5",
+   "Next.js",
+   "React",
+   "VectorBT",
+   "XGBoost",
+   "backtesting.py",
+   "hmmlearn",
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "SMC/ICT"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing",
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 9.4,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Gestion du risque : Drawdown, Position sizing, Stop loss, Take profit",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 47,
+   "freshness": 75,
+   "quality": 80,
+   "relevance": 58,
+   "reusability": 100,
+   "overall": 70.5
+  },
+  "readme_chars": 7682,
+  "error": null,
+  "rank": 39
+ },
+ {
+  "full_name": "hsliuping/TradingAgents-CN",
+  "url": "https://github.com/hsliuping/TradingAgents-CN",
+  "description": "基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版",
+  "stars": 33075,
+  "forks": 6876,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-14T13:49:42Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents"
+  ],
+  "files_count": 1639,
+  "python_files": 1248,
+  "top_dirs": [
+   "\"docs",
+   ".github",
+   ".streamlit",
+   "app",
+   "assets",
+   "cli",
+   "config",
+   "core",
+   "docs",
+   "e2e",
+   "frontend",
+   "images",
+   "install",
+   "installer",
+   "migrations"
+  ],
+  "languages": {
+   ".py": 1248,
+   ".vue": 124,
+   ".ts": 91,
+   ".md": 58,
+   ".png": 36
+  },
+  "technologies": [
+   "FastAPI",
+   "LangGraph",
+   "OpenAI API",
+   "Redis",
+   "Vue",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.4,
+  "strengths": [
+   "Forte adoption (33,075 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 100,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 70.3
+  },
+  "readme_chars": 5514,
+  "error": null,
+  "rank": 40
+ },
+ {
+  "full_name": "PyneSys/pynecore",
+  "url": "https://github.com/PyneSys/pynecore",
+  "description": "Pine Script-compatible Python runtime for indicators and strategies, validated against TradingView on real published scripts",
+  "stars": 282,
+  "forks": 83,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-23T15:56:03Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 1592,
+  "python_files": 1180,
+  "top_dirs": [
+   ".github",
+   "broker_lab",
+   "build",
+   "docs",
+   "rust",
+   "scripts",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 1180,
+   ".md": 125,
+   ".rs": 100,
+   ".csv": 69,
+   ".toml": 33
+  },
+  "technologies": [
+   "CCXT"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 54,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 8,
+   "reusability": 100,
+   "overall": 70.3
+  },
+  "readme_chars": 8586,
+  "error": null,
+  "rank": 41
+ },
+ {
+  "full_name": "MT5-Automation-Labs/mt5-xauusd-bot",
+  "url": "https://github.com/MT5-Automation-Labs/mt5-xauusd-bot",
+  "description": "Python multi-strategy XAUUSD trading bot for MetaTrader 5: reads terminal data, runs technical strategies such as an HFT EMA scalper, and routes orders through a shared risk layer. Windows live trading, simulated macOS mode.",
+  "stars": 115,
+  "forks": 1,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2026-10-15T11:19:44Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 58,
+  "python_files": 36,
+  "top_dirs": [
+   "data",
+   "docs",
+   "mt5bot",
+   "scripts",
+   "tests"
+  ],
+  "languages": {
+   ".py": 36,
+   ".bat": 9,
+   ".md": 5,
+   ".txt": 2,
+   ".example": 1
+  },
+  "technologies": [
+   "MetaTrader5"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Breakout",
+   "Mean reversion",
+   "Momentum",
+   "Order flow",
+   "Scalping",
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown",
+   "Limite journalière",
+   "Position sizing",
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 1.3,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Limite journalière, Position sizing, Trailing stop"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 46,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 83,
+   "reusability": 55,
+   "overall": 70.1
+  },
+  "readme_chars": 7162,
+  "error": null,
+  "rank": 42
+ },
+ {
+  "full_name": "firmai/financial-machine-learning",
+  "url": "https://github.com/firmai/financial-machine-learning",
+  "description": "A curated list of practical financial machine learning tools and applications.",
+  "stars": 8846,
+  "forks": 1413,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2025-01-03T01:27:50Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 31,
+  "python_files": 7,
+  "top_dirs": [
+   ".github",
+   "generated_wiki",
+   "raw_data"
+  ],
+  "languages": {
+   ".md": 17,
+   ".py": 7,
+   ".yml": 3,
+   ".drawio": 1,
+   ".csv": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "A2C/A3C",
+   "CNN",
+   "DQN",
+   "LSTM",
+   "PPO",
+   "Sentiment/NLP",
+   "XGBoost/GBM"
+  ],
+  "strategies": [
+   "Market making",
+   "Order flow",
+   "Trend following"
+  ],
+  "learning_methods": [
+   "Optimisation bayésienne",
+   "Reinforcement Learning",
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 22.7,
+  "strengths": [
+   "Forte adoption (8,846 ★)",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Gestion du risque : VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 88,
+   "freshness": 45,
+   "quality": 65,
+   "relevance": 100,
+   "reusability": 40,
+   "overall": 69.7
+  },
+  "readme_chars": 60000,
+  "error": null,
+  "rank": 43
+ },
+ {
+  "full_name": "HKUDS/AI-Trader",
+  "url": "https://github.com/HKUDS/AI-Trader",
+  "description": "\"AI-Trader: 100% Fully-Automated Agent-Native Trading\"  ",
+  "stars": 23377,
+  "forks": 3520,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2026-06-11T09:26:03Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 149,
+  "python_files": 74,
+  "top_dirs": [
+   "assets",
+   "docs",
+   "research",
+   "service",
+   "skills"
+  ],
+  "languages": {
+   ".py": 74,
+   ".json": 32,
+   ".md": 16,
+   ".tsx": 10,
+   ".yaml": 2
+  },
+  "technologies": [
+   "FastAPI",
+   "Redis",
+   "statsmodels",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 5.5,
+  "strengths": [
+   "Forte adoption (23,377 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 97,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 69.6
+  },
+  "readme_chars": 8561,
+  "error": null,
+  "rank": 44
+ },
+ {
+  "full_name": "Lumiwealth/lumibot",
+  "url": "https://github.com/Lumiwealth/lumibot",
+  "description": "Python trading framework with AI agents that actually place the trade. Backtest, paper and live trade on 12 brokers: stocks, options, futures, forex, crypto and prediction markets.",
+  "stars": 2254,
+  "forks": 435,
+  "language": "Python",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-11-25T17:52:34Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents",
+   "backtesting_optimization"
+  ],
+  "files_count": 2671,
+  "python_files": 1124,
+  "top_dirs": [
+   ".github",
+   ".secrets",
+   "agent_eval_baselines",
+   "agent_eval_cases",
+   "agent_eval_fixtures",
+   "artifacts",
+   "ci",
+   "data",
+   "docs",
+   "docsrc",
+   "examples",
+   "integrations",
+   "lumibot",
+   "reports",
+   "scripts"
+  ],
+  "languages": {
+   ".py": 1124,
+   ".rst": 367,
+   ".md": 283,
+   ".png": 273,
+   ".json": 187
+  },
+  "technologies": [
+   "Alpaca",
+   "CCXT",
+   "Flask",
+   "OpenAI API",
+   "SQLAlchemy",
+   "WebSockets",
+   "backtesting.py",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (2,254 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 75,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 25,
+   "reusability": 55,
+   "overall": 69.6
+  },
+  "readme_chars": 17439,
+  "error": null,
+  "rank": 45
+ },
+ {
+  "full_name": "edtechre/pybroker",
+  "url": "https://github.com/edtechre/pybroker",
+  "description": "Algorithmic Trading in Python with Machine Learning",
+  "stars": 3728,
+  "forks": 466,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-25T03:03:49Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization",
+   "ml_finance"
+  ],
+  "files_count": 318,
+  "python_files": 65,
+  "top_dirs": [
+   ".bench",
+   ".claude",
+   ".github",
+   "benchmarks",
+   "docs",
+   "scripts",
+   "skills",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 65,
+   ".md": 62,
+   ".po": 45,
+   ".mo": 39,
+   ".rst": 26
+  },
+  "technologies": [
+   "Alpaca",
+   "Optuna",
+   "Ray/RLlib",
+   "arch (GARCH)",
+   "scikit-learn",
+   "yfinance"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Optimisation bayésienne"
+  ],
+  "risk_management": [
+   "Stop loss"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (3,728 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Stop loss"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 79,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 69.2
+  },
+  "readme_chars": 8762,
+  "error": null,
+  "rank": 46
+ },
+ {
+  "full_name": "cn-vhql/FactorHub",
+  "url": "https://github.com/cn-vhql/FactorHub",
+  "description": "FactorHub is an open-source modern quantitative factor analysis platform designed specifically for the Chinese A-share market.  FactorHub = Factor + Hub  A full-stack quantitative investment research system integrating factor management, analysis, mining, portfolio optimization, and strategy backtesting.",
+  "stars": 435,
+  "forks": 125,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2026-07-12T07:31:38Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 153,
+  "python_files": 79,
+  "top_dirs": [
+   ".claude",
+   ".github",
+   "backend",
+   "config",
+   "data",
+   "docker",
+   "frontend",
+   "image",
+   "scripts",
+   "tests",
+   "utils"
+  ],
+  "languages": {
+   ".py": 79,
+   ".tsx": 15,
+   ".png": 15,
+   ".css": 9,
+   ".json": 7
+  },
+  "technologies": [
+   "Docker",
+   "FastAPI",
+   "SQLAlchemy",
+   "TA-Lib",
+   "VectorBT",
+   "XGBoost",
+   "scikit-learn",
+   "statsmodels"
+  ],
+  "ai_models": [
+   "Genetic",
+   "XGBoost/GBM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Drawdown"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 4.5,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 59,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 42,
+   "reusability": 55,
+   "overall": 69.0
+  },
+  "readme_chars": 9146,
+  "error": null,
+  "rank": 47
+ },
+ {
+  "full_name": "facioquo/stock-indicators-dotnet",
+  "url": "https://github.com/facioquo/stock-indicators-dotnet",
+  "description": "Stock Indicators for .NET is a C# NuGet package that transforms raw equity, commodity, forex, or cryptocurrency financial market price quotes into technical indicators and trading insights. You'll need this essential data in the investment tools that you're building for algorithmic trading, technical analysis, machine learning, or visual charting.",
+  "stars": 1255,
+  "forks": 281,
+  "language": "C#",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-25T04:34:49Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "ml_finance"
+  ],
+  "files_count": 2079,
+  "python_files": 0,
+  "top_dirs": [
+   ".agents",
+   ".claude",
+   ".devcontainer",
+   ".github",
+   ".vscode",
+   "docs",
+   "src",
+   "tests",
+   "tools"
+  ],
+  "languages": {
+   ".cs": 1287,
+   ".json": 228,
+   ".md": 200,
+   ".png": 113,
+   ".xlsx": 80
+  },
+  "technologies": [
+   "C#/.NET",
+   "Vue"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Online learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (1,255 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Pas en Python (C#)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 69,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 8,
+   "reusability": 75,
+   "overall": 68.9
+  },
+  "readme_chars": 2750,
+  "error": null,
+  "rank": 48
+ },
+ {
+  "full_name": "Ichinga-Samuel/aiomql",
+  "url": "https://github.com/Ichinga-Samuel/aiomql",
+  "description": "Asynchronous Python Library For MetaTrader 5",
+  "stars": 154,
+  "forks": 46,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-07-26T17:32:54Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 354,
+  "python_files": 302,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "examples",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 302,
+   ".md": 45,
+   ".yml": 1,
+   ".png": 1,
+   ".toml": 1
+  },
+  "technologies": [
+   "MetaTrader5",
+   "TA-Lib",
+   "backtesting.py"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Scalping"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Take profit",
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 4.0,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Take profit, Trailing stop",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 49,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 68.2
+  },
+  "readme_chars": 10424,
+  "error": null,
+  "rank": 49
+ },
+ {
+  "full_name": "51bitquant/howtrader",
+  "url": "https://github.com/51bitquant/howtrader",
+  "description": "Howtrader: A crypto quant framework for developing, backtesting, and executing your own trading strategies. Seamlessly integrates with TradingView and other third-party signals. Simply send a post request to automate trading and order placement. Supports Binance and Okex exchanges.",
+  "stars": 975,
+  "forks": 336,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-06-07T09:33:24Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 205,
+  "python_files": 160,
+  "top_dirs": [
+   "\"docs",
+   "docker",
+   "docs",
+   "examples",
+   "howtrader"
+  ],
+  "languages": {
+   ".py": 160,
+   ".ico": 20,
+   ".md\"": 11,
+   ".png": 5,
+   ".md": 3
+  },
+  "technologies": [
+   "Docker",
+   "Flask"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 5.6,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 66,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 0,
+   "reusability": 100,
+   "overall": 67.6
+  },
+  "readme_chars": 21214,
+  "error": null,
+  "rank": 50
+ },
+ {
+  "full_name": "ricequant/rqalpha",
+  "url": "https://github.com/ricequant/rqalpha",
+  "description": "A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities",
+  "stars": 6896,
+  "forks": 1803,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-10-28T02:43:18Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 313,
+  "python_files": 222,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "performance",
+   "rqalpha",
+   "tests"
+  ],
+  "languages": {
+   ".py": 222,
+   ".rst": 28,
+   ".txt": 17,
+   ".png": 8,
+   ".md": 7
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.9,
+  "strengths": [
+   "Forte adoption (6,896 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 85,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 0,
+   "reusability": 55,
+   "overall": 67.3
+  },
+  "readme_chars": 7722,
+  "error": null,
+  "rank": 51
+ },
+ {
+  "full_name": "Yvictor/TradingGym",
+  "url": "https://github.com/Yvictor/TradingGym",
+  "description": "Trading and Backtesting environment for training reinforcement learning agent or simple rule base algo.",
+  "stars": 1932,
+  "forks": 374,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2024-02-11T11:53:21Z",
+  "archived": false,
+  "categories": [
+   "autonomous_agents",
+   "reinforcement_learning"
+  ],
+  "files_count": 20,
+  "python_files": 9,
+  "top_dirs": [
+   "dataset",
+   "fig",
+   "trading_env"
+  ],
+  "languages": {
+   ".py": 9,
+   ".gif": 3,
+   ".h5": 2,
+   ".yml": 1,
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "A2C/A3C",
+   "DQN"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 33.5,
+  "strengths": [
+   "Forte adoption (1,932 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Inactif depuis 2.8 ans",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 73,
+   "freshness": 45,
+   "quality": 80,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 66.0
+  },
+  "readme_chars": 8382,
+  "error": null,
+  "rank": 52
+ },
+ {
+  "full_name": "Joaopeuko/Mql5-Python-Integration",
+  "url": "https://github.com/Joaopeuko/Mql5-Python-Integration",
+  "description": "I created this library to streamline the process of developing an Expert Advisor in MQL5. While MQL5 development can be complex, the same task is more straightforward in Python.",
+  "stars": 217,
+  "forks": 55,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2025-12-15T20:17:29Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 78,
+  "python_files": 35,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "mqpy",
+   "scripts",
+   "tests"
+  ],
+  "languages": {
+   ".py": 35,
+   ".yaml": 16,
+   ".md": 13,
+   ".yml": 3,
+   ".svg": 3
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 11.3,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 52,
+   "freshness": 75,
+   "quality": 100,
+   "relevance": 8,
+   "reusability": 100,
+   "overall": 65.9
+  },
+  "readme_chars": 1864,
+  "error": null,
+  "rank": 53
+ },
+ {
+  "full_name": "chrisworsey55/atlas-gic",
+  "url": "https://github.com/chrisworsey55/atlas-gic",
+  "description": "ATLAS by General Intelligence Capital — Self-improving AI trading agents using Karpathy-style autoresearch",
+  "stars": 2465,
+  "forks": 440,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-09-22T11:51:44Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 20,
+  "python_files": 6,
+  "top_dirs": [
+   "architecture",
+   "prompts",
+   "results",
+   "src"
+  ],
+  "languages": {
+   ".md": 9,
+   ".py": 6,
+   ".json": 2,
+   ".png": 1,
+   ".csv": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "Genetic",
+   "HMM/Regime",
+   "LLM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "Position sizing"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 2.1,
+  "strengths": [
+   "Forte adoption (2,465 ★)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Position sizing"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 75,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 75,
+   "reusability": 40,
+   "overall": 65.8
+  },
+  "readme_chars": 10202,
+  "error": null,
+  "rank": 54
+ },
+ {
+  "full_name": "LeonardoBerti00/DeepMarket",
+  "url": "https://github.com/LeonardoBerti00/DeepMarket",
+  "description": "DeepMarket is a framework for performing Limit Order Book simulation with Deep Learning. This is also the official repository for the paper 'TRADES: Generating Realistic Market Simulations with Diffusion Models'.",
+  "stars": 117,
+  "forks": 22,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-25T15:13:21Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 244,
+  "python_files": 168,
+  "top_dirs": [
+   ".vscode",
+   "ABIDES",
+   "data",
+   "evaluation",
+   "models",
+   "preprocessing",
+   "utils"
+  ],
+  "languages": {
+   ".py": 168,
+   ".sh": 32,
+   ".txt": 11,
+   ".json": 7,
+   ".csv": 5
+  },
+  "technologies": [
+   "PyTorch"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 46,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 100,
+   "overall": 65.8
+  },
+  "readme_chars": 6924,
+  "error": null,
+  "rank": 55
+ },
+ {
+  "full_name": "gbeced/basana",
+  "url": "https://github.com/gbeced/basana",
+  "description": "A Python async and event driven framework for algorithmic trading, with a focus on crypto currencies.",
+  "stars": 878,
+  "forks": 112,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-06T16:36:10Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 242,
+  "python_files": 186,
+  "top_dirs": [
+   ".github",
+   "basana",
+   "docs",
+   "non-shippable",
+   "samples",
+   "tests"
+  ],
+  "languages": {
+   ".py": 186,
+   ".rst": 27,
+   ".md": 6,
+   ".csv": 6,
+   ".json": 4
+  },
+  "technologies": [
+   "CCXT",
+   "WebSockets",
+   "statsmodels"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow",
+   "Pairs/StatArb"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.6,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 65,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 65.7
+  },
+  "readme_chars": 3228,
+  "error": null,
+  "rank": 56
+ },
+ {
+  "full_name": "murtazayusuf/OrderflowChart",
+  "url": "https://github.com/murtazayusuf/OrderflowChart",
+  "description": "Plot orderflow footprint charts using plotly in python.",
+  "stars": 270,
+  "forks": 71,
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-01T13:17:56Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 20,
+  "python_files": 7,
+  "top_dirs": [
+   ".github",
+   "OrderFlow",
+   "data",
+   "examples",
+   "tests"
+  ],
+  "languages": {
+   ".py": 7,
+   ".csv": 4,
+   ".md": 2,
+   ".yml": 1,
+   ".json": 1
+  },
+  "technologies": [
+   "Dash"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": false,
+  "months_idle": 0.8,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Documentation limitée",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 54,
+   "freshness": 100,
+   "quality": 75,
+   "relevance": 8,
+   "reusability": 100,
+   "overall": 65.2
+  },
+  "readme_chars": 5823,
+  "error": null,
+  "rank": 57
+ },
+ {
+  "full_name": "QuantMLResearch/pyrust-bt",
+  "url": "https://github.com/QuantMLResearch/pyrust-bt",
+  "description": "Hybrid Python + Rust backtesting framework ",
+  "stars": 328,
+  "forks": 65,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2026-07-20T06:27:20Z",
+  "archived": false,
+  "categories": [
+   "backtesting_optimization"
+  ],
+  "files_count": 68,
+  "python_files": 29,
+  "top_dirs": [
+   "\"images",
+   "docs",
+   "examples",
+   "frontend",
+   "images",
+   "python",
+   "rust",
+   "tests"
+  ],
+  "languages": {
+   ".py": 29,
+   ".md": 14,
+   ".rs": 10,
+   ".png": 5,
+   ".csv": 3
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Breakout",
+   "Momentum",
+   "Order flow",
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 4.2,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 56,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 42,
+   "reusability": 55,
+   "overall": 64.3
+  },
+  "readme_chars": 7049,
+  "error": null,
+  "rank": 58
+ },
+ {
+  "full_name": "mahmoud20138/OrderFlow-Analysis-Pro",
+  "url": "https://github.com/mahmoud20138/OrderFlow-Analysis-Pro",
+  "description": "Order flow analysis with Bybit + MT5 feeds -- footprint charts, delta analytics, volume profile, pattern detection, Dash dashboard with WebSocket",
+  "stars": 88,
+  "forks": 27,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-04-15T23:15:04Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 50,
+  "python_files": 32,
+  "top_dirs": [
+   ".github",
+   "orderflow_system"
+  ],
+  "languages": {
+   ".py": 32,
+   ".js": 7,
+   ".md": 6,
+   ".html": 1,
+   ".css": 1
+  },
+  "technologies": [
+   "Telegram bot",
+   "WebSockets"
+  ],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [
+   "Breakout",
+   "Momentum",
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 7.3,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Gestion du risque : Trailing stop",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 43,
+   "freshness": 75,
+   "quality": 60,
+   "relevance": 50,
+   "reusability": 100,
+   "overall": 64.1
+  },
+  "readme_chars": 48122,
+  "error": null,
+  "rank": 59
+ },
+ {
+  "full_name": "abhidp/tradingview-to-metatrader5",
+  "url": "https://github.com/abhidp/tradingview-to-metatrader5",
+  "description": "TV2MT5 - a Windows app to copy trade executions in realtime from TradingView to MetaTrader5. Bridge the gap between TradingView's superior charting platform and MetaTrader5's robust trading ecosystem. Execute trades seamlessly, manage positions effortlessly - all while using your preferred platforms.",
+  "stars": 103,
+  "forks": 28,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-06-16T14:12:32Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 68,
+  "python_files": 47,
+  "top_dirs": [
+   "backup",
+   "data",
+   "docs",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 47,
+   ".md": 6,
+   ".png": 3,
+   ".txt": 2,
+   ".ps1": 2
+  },
+  "technologies": [
+   "Docker",
+   "MetaTrader5",
+   "Redis",
+   "SQLAlchemy"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Scalping"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 5.3,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 45,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 8,
+   "reusability": 100,
+   "overall": 63.9
+  },
+  "readme_chars": 4460,
+  "error": null,
+  "rank": 60
+ },
+ {
+  "full_name": "fintechees/Expert-Advisor-Studio",
+  "url": "https://github.com/fintechees/Expert-Advisor-Studio",
+  "description": "Expert Advisors, Browser-based EA, Free Crypto / Forex Historical DATA API plugins, EA Codes Generator, Market Maker Bot, Crypto Options Plugin, DEX / Payment Gateway Plugins, Binance API, FIX API related. Fintechee means Fintech ee.",
+  "stars": 367,
+  "forks": 64,
+  "language": "JavaScript",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-10-18T04:58:24Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 181,
+  "python_files": 0,
+  "top_dirs": [
+   "AI",
+   "EA",
+   "Indicators",
+   "screenshot"
+  ],
+  "languages": {
+   ".js": 89,
+   ".png": 33,
+   ".txt": 30,
+   ".md": 16,
+   ".cpp": 3
+  },
+  "technologies": [],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [
+   "Arbitrage",
+   "Market making",
+   "Scalping",
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Trailing stop",
+   "VaR/CVaR"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 1.2,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Trailing stop, VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (JavaScript)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 57,
+   "freshness": 100,
+   "quality": 80,
+   "relevance": 58,
+   "reusability": 30,
+   "overall": 62.9
+  },
+  "readme_chars": 21581,
+  "error": null,
+  "rank": 61
+ },
+ {
+  "full_name": "bfolkens/py-market-profile",
+  "url": "https://github.com/bfolkens/py-market-profile",
+  "description": "A library to calculate Market Profile (aka Volume Profile) for financial data from a Pandas DataFrame.",
+  "stars": 413,
+  "forks": 133,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-07T20:36:21Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 32,
+  "python_files": 7,
+  "top_dirs": [
+   ".github",
+   "docs",
+   "examples",
+   "nix",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".py": 7,
+   ".rst": 4,
+   ".nix": 3,
+   ".yml": 2,
+   ".yaml": 1
+  },
+  "technologies": [
+   "Docker"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.6,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 58,
+   "freshness": 100,
+   "quality": 100,
+   "relevance": 8,
+   "reusability": 55,
+   "overall": 62.2
+  },
+  "readme_chars": 3486,
+  "error": null,
+  "rank": 62
+ },
+ {
+  "full_name": "robertmartin8/MachineLearningStocks",
+  "url": "https://github.com/robertmartin8/MachineLearningStocks",
+  "description": "Using python and scikit-learn to make stock predictions",
+  "stars": 1970,
+  "forks": 538,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2024-06-17T22:43:10Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 17,
+  "python_files": 10,
+  "top_dirs": [
+   "tests"
+  ],
+  "languages": {
+   ".py": 10,
+   ".csv": 4,
+   ".txt": 2,
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "Random Forest"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Trailing stop"
+  ],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 29.3,
+  "strengths": [
+   "Forte adoption (1,970 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente",
+   "Gestion du risque : Trailing stop",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Inactif depuis 2.4 ans"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 73,
+   "freshness": 45,
+   "quality": 60,
+   "relevance": 25,
+   "reusability": 100,
+   "overall": 62.1
+  },
+  "readme_chars": 21596,
+  "error": null,
+  "rank": 63
+ },
+ {
+  "full_name": "The-Swarm-Corporation/AutoHedge",
+  "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+  "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
+  "stars": 6739,
+  "forks": 984,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-05-11T05:44:09Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 51,
+  "python_files": 19,
+  "top_dirs": [
+   ".github",
+   "autohedge",
+   "experimental",
+   "logs"
+  ],
+  "languages": {
+   ".yml": 22,
+   ".py": 19,
+   ".md": 3,
+   ".csv": 2,
+   ".example": 1
+  },
+  "technologies": [
+   "FastAPI",
+   "yfinance"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [
+   "Position sizing"
+  ],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": false,
+  "months_idle": 6.5,
+  "strengths": [
+   "Forte adoption (6,739 ★)",
+   "Intégration continue (GitHub Actions)",
+   "Gestion du risque : Position sizing",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 85,
+   "freshness": 75,
+   "quality": 40,
+   "relevance": 17,
+   "reusability": 85,
+   "overall": 60.9
+  },
+  "readme_chars": 3958,
+  "error": null,
+  "rank": 64
+ },
+ {
+  "full_name": "EA31337/EA31337-classes",
+  "url": "https://github.com/EA31337/EA31337-classes",
+  "description": "📦📈 EA31337 framework (MQL library for writing trading Expert Advisors, indicators and scripts)",
+  "stars": 281,
+  "forks": 127,
+  "language": "MQL5",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-04-22T00:16:27Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 634,
+  "python_files": 1,
+  "top_dirs": [
+   ".github",
+   "3D",
+   "Account",
+   "Buffer",
+   "Exchange",
+   "Indicator",
+   "Indicators",
+   "Storage",
+   "Task",
+   "Tick",
+   "Trade",
+   "docs",
+   "tests"
+  ],
+  "languages": {
+   ".h": 171,
+   ".mqh": 140,
+   ".mq5": 132,
+   ".mq4": 131,
+   ".yml": 20
+  },
+  "technologies": [
+   "Docker",
+   "MQL4/MQL5"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Stop loss"
+  ],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 7.1,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Gestion du risque : Stop loss"
+  ],
+  "weaknesses": [
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 54,
+   "freshness": 75,
+   "quality": 100,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 59.2
+  },
+  "readme_chars": 16606,
+  "error": null,
+  "rank": 65
+ },
+ {
+  "full_name": "pythonlessons/RL-Bitcoin-trading-bot",
+  "url": "https://github.com/pythonlessons/RL-Bitcoin-trading-bot",
+  "description": "Trying to create Reinforcement Learning powered Bitcoin trading bot",
+  "stars": 419,
+  "forks": 192,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2025-06-04T12:29:31Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 160,
+  "python_files": 32,
+  "top_dirs": [
+   "RL-Bitcoin-trading-bot_1",
+   "RL-Bitcoin-trading-bot_2",
+   "RL-Bitcoin-trading-bot_3",
+   "RL-Bitcoin-trading-bot_4",
+   "RL-Bitcoin-trading-bot_5",
+   "RL-Bitcoin-trading-bot_6",
+   "RL-Bitcoin-trading-bot_7"
+  ],
+  "languages": {
+   ".h5": 48,
+   ".py": 32,
+   ".txt": 29,
+   ".png": 24,
+   ".md": 8
+  },
+  "technologies": [
+   "TensorFlow",
+   "ta"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 17.7,
+  "strengths": [
+   "Tests automatisés présents",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Documentation limitée",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 58,
+   "freshness": 75,
+   "quality": 55,
+   "relevance": 8,
+   "reusability": 100,
+   "overall": 58.5
+  },
+  "readme_chars": 746,
+  "error": null,
+  "rank": 66
+ },
+ {
+  "full_name": "francomascareloai/EA_SCALPER_XAUUSD",
+  "url": "https://github.com/francomascareloai/EA_SCALPER_XAUUSD",
+  "description": "WIP — XAUUSD (Gold) automated-trading research, in the open. MQL5 (public) + Python/NautilusTrader (private). Studied thousands of bots first. No signals, no profit claims — just the engineering.",
+  "stars": 307,
+  "forks": 74,
+  "language": "MQL5",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-19T03:44:18Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 1054,
+  "python_files": 220,
+  "top_dirs": [
+   ".github",
+   "DOCS",
+   "MQL5",
+   "data",
+   "infrastructure",
+   "models",
+   "scripts",
+   "tests"
+  ],
+  "languages": {
+   ".mqh": 531,
+   ".py": 220,
+   ".md": 154,
+   ".bmp": 46,
+   ".mq5": 18
+  },
+  "technologies": [
+   "FastAPI",
+   "MQL4/MQL5",
+   "Optuna",
+   "PyTorch",
+   "VectorBT",
+   "arch (GARCH)",
+   "backtesting.py",
+   "scikit-learn",
+   "statsmodels"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Scalping"
+  ],
+  "learning_methods": [
+   "Walk-forward"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": false,
+  "months_idle": 0.2,
+  "strengths": [
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 55,
+   "freshness": 100,
+   "quality": 75,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 58.2
+  },
+  "readme_chars": 4689,
+  "error": null,
+  "rank": 67
+ },
+ {
+  "full_name": "Ahmed-GoCode/Quant-Edge-Indicators",
+  "url": "https://github.com/Ahmed-GoCode/Quant-Edge-Indicators",
+  "description": "⚡ A professional open-source algorithmic trading suite for TradingView. Features 16 Pine Script v6 strategies covering Smart Money Concepts (SMC), Order Flow, Momentum, and Trend Breakouts.",
+  "stars": 83,
+  "forks": 12,
+  "language": null,
+  "license": "MPL-2.0",
+  "pushed_at": "2026-08-17T08:03:34Z",
+  "archived": false,
+  "categories": [
+   "order_flow",
+   "ml_finance"
+  ],
+  "files_count": 18,
+  "python_files": 0,
+  "top_dirs": [
+   "Quant-Edge-Indicators"
+  ],
+  "languages": {
+   ".pinescript": 16,
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Breakout",
+   "Mean reversion",
+   "Momentum",
+   "Order flow",
+   "SMC/ICT",
+   "Scalping",
+   "Trend following"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Position sizing",
+   "Trailing stop"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 3.3,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Position sizing, Trailing stop",
+   "Licence permissive (MPL-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Pas en Python (None)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 43,
+   "freshness": 100,
+   "quality": 25,
+   "relevance": 75,
+   "reusability": 60,
+   "overall": 57.7
+  },
+  "readme_chars": 7353,
+  "error": null,
+  "rank": 68
+ },
+ {
+  "full_name": "roan-maverick/tradingview-order-flow-strategy-indicator",
+  "url": "https://github.com/roan-maverick/tradingview-order-flow-strategy-indicator",
+  "description": "Orderflow Strategy TradingView Indicator",
+  "stars": 74,
+  "forks": 23,
+  "language": null,
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-15T05:22:00Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 11,
+  "python_files": 1,
+  "top_dirs": [
+   "agent",
+   "docs",
+   "examples"
+  ],
+  "languages": {
+   ".md": 5,
+   ".jpg": 1,
+   ".json": 1,
+   ".py": 1,
+   ".pine": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "HMM/Regime",
+   "LLM"
+  ],
+  "strategies": [
+   "Breakout",
+   "Momentum",
+   "Order flow",
+   "SMC/ICT"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Limite journalière",
+   "Trailing stop"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.3,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Limite journalière, Trailing stop"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 42,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 75,
+   "reusability": 40,
+   "overall": 57.4
+  },
+  "readme_chars": 17400,
+  "error": null,
+  "rank": 69
+ },
+ {
+  "full_name": "kkyon/botflow",
+  "url": "https://github.com/kkyon/botflow",
+  "description": "Python Fast Dataflow programming  framework for Data pipeline work( Web Crawler,Machine Learning,Quantitative Trading.etc)",
+  "stars": 1195,
+  "forks": 101,
+  "language": "Python",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-02-03T02:17:56Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 85,
+  "python_files": 49,
+  "top_dirs": [
+   "botflow",
+   "docs",
+   "examples",
+   "tests"
+  ],
+  "languages": {
+   ".py": 49,
+   ".rst": 16,
+   ".jpg": 8,
+   ".yml": 2,
+   ".txt": 2
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Arbitrage"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 9.7,
+  "strengths": [
+   "Forte adoption (1,195 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 68,
+   "freshness": 75,
+   "quality": 80,
+   "relevance": 8,
+   "reusability": 55,
+   "overall": 57.0
+  },
+  "readme_chars": 4951,
+  "error": null,
+  "rank": 70
+ },
+ {
+  "full_name": "chirindaopensource/agentic_architecture_for_institutional_asset_management",
+  "url": "https://github.com/chirindaopensource/agentic_architecture_for_institutional_asset_management",
+  "description": "End-to-End Python implementation of Ang et al's (2026) Agentic 'Self-Driving Portfolio'. Implements: Black-Litterman equilibrium priors, Grinold-Kroner building blocks, Campbell-Shiller CAPE analysis, Ledoit-Wolf covariance shrinkage, Risk Parity, Hierarchical Risk Parity, and Robust Mean-Variance optimization across 18 asset classes.",
+  "stars": 16,
+  "forks": 6,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2026-04-18T16:21:08Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 12,
+  "python_files": 4,
+  "top_dirs": [],
+  "languages": {
+   ".py": 4,
+   ".png": 3,
+   ".md": 1,
+   ".ipynb": 1,
+   ".yaml": 1
+  },
+  "technologies": [
+   "OpenAI API",
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "HMM/Regime",
+   "LLM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Momentum",
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Agents LLM",
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 7.3,
+  "strengths": [
+   "Documentation conséquente",
+   "Gestion du risque : Drawdown, VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 27,
+   "freshness": 75,
+   "quality": 25,
+   "relevance": 83,
+   "reusability": 85,
+   "overall": 56.8
+  },
+  "readme_chars": 21486,
+  "error": null,
+  "rank": 71
+ },
+ {
+  "full_name": "blankly-finance/blankly",
+  "url": "https://github.com/blankly-finance/blankly",
+  "description": "🚀 💸  Easily build, backtest and deploy your algo in just a few lines of code. Trade stocks, cryptos, and forex across exchanges w/ one package.",
+  "stars": 2485,
+  "forks": 312,
+  "language": "Python",
+  "license": "LGPL-3.0",
+  "pushed_at": "2024-12-30T20:20:29Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "backtesting_optimization"
+  ],
+  "files_count": 216,
+  "python_files": 189,
+  "top_dirs": [
+   ".github",
+   "blankly",
+   "examples",
+   "tests"
+  ],
+  "languages": {
+   ".py": 189,
+   ".md": 11,
+   ".json": 8,
+   ".yml": 3,
+   ".ini": 1
+  },
+  "technologies": [
+   "Alpaca"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 22.8,
+  "strengths": [
+   "Forte adoption (2,485 ★)",
+   "Tests automatisés présents",
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente"
+  ],
+  "weaknesses": [
+   "Aucune gestion du risque explicite",
+   "Licence LGPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 75,
+   "freshness": 45,
+   "quality": 100,
+   "relevance": 0,
+   "reusability": 55,
+   "overall": 56.6
+  },
+  "readme_chars": 8844,
+  "error": null,
+  "rank": 72
+ },
+ {
+  "full_name": "wquguru/nof0",
+  "url": "https://github.com/wquguru/nof0",
+  "description": "Open-source AI trading arena. A full reproduction of NOF1 Alpha Arena for running and comparing LLM agents.",
+  "stars": 2753,
+  "forks": 427,
+  "language": "Go",
+  "license": null,
+  "pushed_at": "2025-12-07T08:58:49Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "autonomous_agents"
+  ],
+  "files_count": 392,
+  "python_files": 2,
+  "top_dirs": [
+   "gitbook",
+   "go",
+   "markdown",
+   "mcp",
+   "web"
+  ],
+  "languages": {
+   ".go": 184,
+   ".md": 52,
+   ".tsx": 38,
+   ".ts": 29,
+   ".json": 19
+  },
+  "technologies": [
+   "Docker",
+   "Next.js",
+   "OpenAI API",
+   "React"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Agents LLM"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 11.6,
+  "strengths": [
+   "Forte adoption (2,753 ★)",
+   "Tests automatisés présents"
+  ],
+  "weaknesses": [
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 76,
+   "freshness": 75,
+   "quality": 55,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 55.7
+  },
+  "readme_chars": 4531,
+  "error": null,
+  "rank": 73
+ },
+ {
+  "full_name": "tradytics/surpriver",
+  "url": "https://github.com/tradytics/surpriver",
+  "description": "Find big moving stocks before they move using machine learning and anomaly detection",
+  "stars": 1887,
+  "forks": 336,
+  "language": "Python",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-11-24T23:10:08Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 19,
+  "python_files": 3,
+  "top_dirs": [
+   "dictionaries",
+   "figures",
+   "stocks"
+  ],
+  "languages": {
+   ".txt": 4,
+   ".png": 4,
+   ".py": 3,
+   ".md": 1,
+   ".npy": 1
+  },
+  "technologies": [
+   "Docker",
+   "scikit-learn",
+   "ta",
+   "yfinance"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Price action"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Forte adoption (1,887 ★)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 73,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 25,
+   "reusability": 40,
+   "overall": 55.2
+  },
+  "readme_chars": 10160,
+  "error": null,
+  "rank": 74
+ },
+ {
+  "full_name": "zadescoxp/order-flow-screener",
+  "url": "https://github.com/zadescoxp/order-flow-screener",
+  "description": "Free open source order flow screener for spot and perpetual trade orders. ",
+  "stars": 279,
+  "forks": 89,
+  "language": "TypeScript",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-21T09:35:22Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 248,
+  "python_files": 0,
+  "top_dirs": [
+   "__tests__",
+   "app",
+   "assets",
+   "components",
+   "docs",
+   "hooks",
+   "lib",
+   "public"
+  ],
+  "languages": {
+   ".svg": 96,
+   ".ts": 87,
+   ".tsx": 39,
+   ".gif": 6,
+   ".md": 3
+  },
+  "technologies": [
+   "Docker",
+   "Next.js",
+   "React"
+  ],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Online learning"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.1,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (TypeScript)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 54,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 25,
+   "reusability": 60,
+   "overall": 54.6
+  },
+  "readme_chars": 34316,
+  "error": null,
+  "rank": 75
+ },
+ {
+  "full_name": "KAPKEPOT/tonpo-bot",
+  "url": "https://github.com/KAPKEPOT/tonpo-bot",
+  "description": "Python Telegram bot for MetaTrader 5 forex trade automation with smart risk management, position sizing, and trade execution.",
+  "stars": 15,
+  "forks": 3,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-20T18:18:53Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "risk_management"
+  ],
+  "files_count": 73,
+  "python_files": 61,
+  "top_dirs": [
+   "bot",
+   "config",
+   "core",
+   "database",
+   "gateway_client",
+   "services",
+   "utils"
+  ],
+  "languages": {
+   ".py": 61,
+   ".txt": 2,
+   ".example": 1,
+   ".md": 1,
+   ".ini": 1
+  },
+  "technologies": [
+   "Celery",
+   "Docker",
+   "Redis",
+   "SQLAlchemy",
+   "Telegram bot"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Scalping"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Position sizing",
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.2,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Position sizing, Stop loss, Take profit",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 27,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 33,
+   "reusability": 85,
+   "overall": 54.4
+  },
+  "readme_chars": 12572,
+  "error": null,
+  "rank": 76
+ },
+ {
+  "full_name": "LastAncientOne/Deep_Learning_Machine_Learning_Stock",
+  "url": "https://github.com/LastAncientOne/Deep_Learning_Machine_Learning_Stock",
+  "description": "Deep Learning and Machine Learning stocks represent promising opportunities for both long-term and short-term investors and traders.",
+  "stars": 1794,
+  "forks": 367,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2024-03-01T00:12:23Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 241,
+  "python_files": 5,
+  "top_dirs": [
+   "Stock_Algorithms",
+   "Stock_Apps"
+  ],
+  "languages": {
+   ".ipynb": 228,
+   ".py": 5,
+   ".png": 4,
+   ".md": 3
+  },
+  "technologies": [],
+  "ai_models": [
+   "Random Forest"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 32.9,
+  "strengths": [
+   "Forte adoption (1,794 ★)",
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Inactif depuis 2.7 ans",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 72,
+   "freshness": 45,
+   "quality": 25,
+   "relevance": 33,
+   "reusability": 85,
+   "overall": 53.5
+  },
+  "readme_chars": 13858,
+  "error": null,
+  "rank": 77
+ },
+ {
+  "full_name": "Royatvand/mql5-risk-manager",
+  "url": "https://github.com/Royatvand/mql5-risk-manager",
+  "description": "Advanced MetaTrader 5 trade-management panel: risk-based position sizing, market & pending orders, on-chart SL/TP preview, daily-loss & drawdown guards, news/spread/session filters, break-even, trailing & partial close.",
+  "stars": 29,
+  "forks": 3,
+  "language": "MQL5",
+  "license": "MIT",
+  "pushed_at": "2026-11-13T11:16:45Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 9,
+  "python_files": 0,
+  "top_dirs": [
+   "Experts",
+   "docs"
+  ],
+  "languages": {
+   ".png": 5,
+   ".md": 2,
+   ".mq5": 1
+  },
+  "technologies": [
+   "MQL4/MQL5"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "SMC/ICT"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown",
+   "Limite journalière",
+   "Position sizing",
+   "Risque par trade",
+   "Stop loss",
+   "Take profit",
+   "Trailing stop"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.4,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, Limite journalière, Position sizing, Risque par trade",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Pas en Python (MQL5)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 33,
+   "freshness": 100,
+   "quality": 25,
+   "relevance": 67,
+   "reusability": 60,
+   "overall": 53.5
+  },
+  "readme_chars": 7949,
+  "error": null,
+  "rank": 78
+ },
+ {
+  "full_name": "Ceruleanacg/Personae",
+  "url": "https://github.com/Ceruleanacg/Personae",
+  "description": "📈 Personae is a repo of implements and environment of Deep Reinforcement Learning & Supervised Learning for Quantitative Trading.",
+  "stars": 1410,
+  "forks": 342,
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2018-11-29T17:06:12Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 122,
+  "python_files": 43,
+  "top_dirs": [
+   "algorithm",
+   "base",
+   "checkpoints",
+   "deprecated",
+   "helper",
+   "playbook",
+   "playground",
+   "script",
+   "spider",
+   "static",
+   "strategy"
+  ],
+  "languages": {
+   ".py": 43,
+   ".json": 20,
+   ".data-00000-of-00001": 10,
+   ".index": 10,
+   ".meta": 10
+  },
+  "technologies": [
+   "Docker"
+  ],
+  "ai_models": [
+   "DQN",
+   "LSTM"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 96.0,
+  "strengths": [
+   "Forte adoption (1,410 ★)",
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Inactif depuis 8.0 ans",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 70,
+   "freshness": 20,
+   "quality": 45,
+   "relevance": 33,
+   "reusability": 85,
+   "overall": 53.2
+  },
+  "readme_chars": 7758,
+  "error": null,
+  "rank": 79
+ },
+ {
+  "full_name": "LiamConnell/deep-algotrading",
+  "url": "https://github.com/LiamConnell/deep-algotrading",
+  "description": "A resource for learning about deep learning techniques from regression to LSTM and Reinforcement Learning using financial data and the fitness functions of algorithmic trading",
+  "stars": 248,
+  "forks": 76,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2024-06-10T19:15:39Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 25,
+  "python_files": 2,
+  "top_dirs": [
+   ".ipynb_checkpoints",
+   "DataFlow_Suite",
+   "notebooks"
+  ],
+  "languages": {
+   ".ipynb": 19,
+   ".py": 2,
+   ".pkl": 2,
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "LSTM"
+  ],
+  "strategies": [
+   "Momentum"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 29.5,
+  "strengths": [
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Inactif depuis 2.5 ans",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 53,
+   "freshness": 45,
+   "quality": 45,
+   "relevance": 33,
+   "reusability": 85,
+   "overall": 52.7
+  },
+  "readme_chars": 22413,
+  "error": null,
+  "rank": 80
+ },
+ {
+  "full_name": "tradoor-terminal/tradoor",
+  "url": "https://github.com/tradoor-terminal/tradoor",
+  "description": "Open-source crypto trading terminal in the browser: charts, DOM, footprint, TPO market profile, liquidations and order flow from 15 exchanges, your own indicators in Frost Script, a journal and paper trading. Rust, WebAssembly, WebGL2.",
+  "stars": 338,
+  "forks": 68,
+  "language": "TypeScript",
+  "license": "AGPL-3.0",
+  "pushed_at": "2026-11-25T15:24:15Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 545,
+  "python_files": 0,
+  "top_dirs": [
+   ".github",
+   "bins",
+   "crates",
+   "deploy",
+   "docs",
+   "migrations",
+   "scripts",
+   "signers",
+   "web"
+  ],
+  "languages": {
+   ".ts": 187,
+   ".rs": 113,
+   ".tsx": 69,
+   ".sql": 44,
+   ".frost": 23
+  },
+  "technologies": [
+   "Docker"
+  ],
+  "ai_models": [
+   "LLM"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Drawdown",
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Drawdown, VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Licence AGPL-3.0 : réutilisation du code contrainte (copyleft)",
+   "Pas en Python (TypeScript)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 56,
+   "freshness": 100,
+   "quality": 65,
+   "relevance": 33,
+   "reusability": 15,
+   "overall": 51.7
+  },
+  "readme_chars": 21843,
+  "error": null,
+  "rank": 81
+ },
+ {
+  "full_name": "DegenSugarBoo/OpenBook",
+  "url": "https://github.com/DegenSugarBoo/OpenBook",
+  "description": "Real-time Crypto Futures depth heatmap in Rust (egui/eframe) with live order flow and trade tape.",
+  "stars": 196,
+  "forks": 54,
+  "language": "Rust",
+  "license": "MIT",
+  "pushed_at": "2026-03-02T19:58:20Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 17,
+  "python_files": 0,
+  "top_dirs": [
+   "assets",
+   "src",
+   "tests"
+  ],
+  "languages": {
+   ".rs": 10,
+   ".lock": 1,
+   ".toml": 1,
+   ".md": 1,
+   ".ttf": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 8.8,
+  "strengths": [
+   "Tests automatisés présents",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (Rust)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 51,
+   "freshness": 75,
+   "quality": 55,
+   "relevance": 8,
+   "reusability": 75,
+   "overall": 51.7
+  },
+  "readme_chars": 4941,
+  "error": null,
+  "rank": 82
+ },
+ {
+  "full_name": "sadighian/crypto-rl",
+  "url": "https://github.com/sadighian/crypto-rl",
+  "description": "Deep Reinforcement Learning toolkit: record and replay cryptocurrency limit order book data & train a DDQN agent",
+  "stars": 967,
+  "forks": 239,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2022-01-12T11:56:35Z",
+  "archived": false,
+  "categories": [
+   "autonomous_agents",
+   "reinforcement_learning",
+   "order_flow"
+  ],
+  "files_count": 70,
+  "python_files": 52,
+  "top_dirs": [
+   "agent",
+   "data_recorder",
+   "design_patterns",
+   "gym_trading",
+   "indicators"
+  ],
+  "languages": {
+   ".py": 52,
+   ".md": 9,
+   ".png": 6,
+   ".xz": 1,
+   ".txt": 1
+  },
+  "technologies": [
+   "Gym",
+   "WebSockets",
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "DQN"
+  ],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 58.5,
+  "strengths": [
+   "Tests automatisés présents",
+   "Documentation conséquente"
+  ],
+  "weaknesses": [
+   "Inactif depuis 4.9 ans",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 66,
+   "freshness": 20,
+   "quality": 80,
+   "relevance": 25,
+   "reusability": 55,
+   "overall": 51.6
+  },
+  "readme_chars": 8617,
+  "error": null,
+  "rank": 83
+ },
+ {
+  "full_name": "grananqvist/Awesome-Quant-Machine-Learning-Trading",
+  "url": "https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading",
+  "description": "Quant/Algorithm trading resources with an emphasis on Machine Learning",
+  "stars": 4155,
+  "forks": 707,
+  "language": null,
+  "license": null,
+  "pushed_at": "2025-05-21T20:41:58Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 1,
+  "python_files": 0,
+  "top_dirs": [],
+  "languages": {
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "CNN",
+   "DQN",
+   "Genetic",
+   "LSTM",
+   "Sentiment/NLP"
+  ],
+  "strategies": [
+   "Order flow",
+   "Pairs/StatArb"
+  ],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 18.2,
+  "strengths": [
+   "Forte adoption (4,155 ★)",
+   "Documentation conséquente"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (None)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 80,
+   "freshness": 45,
+   "quality": 25,
+   "relevance": 83,
+   "reusability": 15,
+   "overall": 51.5
+  },
+  "readme_chars": 20029,
+  "error": null,
+  "rank": 84
+ },
+ {
+  "full_name": "notadamking/RLTrader",
+  "url": "https://github.com/notadamking/RLTrader",
+  "description": "A cryptocurrency trading environment using deep reinforcement learning and OpenAI's gym",
+  "stars": 1866,
+  "forks": 539,
+  "language": "Python",
+  "license": "GPL-3.0",
+  "pushed_at": "2022-01-22T05:01:41Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 67,
+  "python_files": 38,
+  "top_dirs": [
+   ".github",
+   "config",
+   "data",
+   "docker",
+   "lib",
+   "test"
+  ],
+  "languages": {
+   ".py": 38,
+   ".txt": 4,
+   ".yml": 2,
+   ".csv": 2,
+   ".ipynb": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Optimisation bayésienne",
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": true,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 58.2,
+  "strengths": [
+   "Forte adoption (1,866 ★)",
+   "Tests automatisés présents",
+   "Documentation conséquente"
+  ],
+  "weaknesses": [
+   "Inactif depuis 4.8 ans",
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 73,
+   "freshness": 20,
+   "quality": 80,
+   "relevance": 17,
+   "reusability": 55,
+   "overall": 51.5
+  },
+  "readme_chars": 6629,
+  "error": null,
+  "rank": 85
+ },
+ {
+  "full_name": "miindisponi99/Statistical-Arbitrage-Emerging-Markets",
+  "url": "https://github.com/miindisponi99/Statistical-Arbitrage-Emerging-Markets",
+  "description": "Built a pairs trading strategy in emerging markets using a rolling Kalman-filter beta and spread half-life, with z-score position sizing, and comprehensive back-testing with liquidity adjustments and transaction cost analysis for enhanced risk management",
+  "stars": 19,
+  "forks": 0,
+  "language": "Jupyter Notebook",
+  "license": "Apache-2.0",
+  "pushed_at": "2024-08-10T11:33:04Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 6,
+  "python_files": 1,
+  "top_dirs": [],
+  "languages": {
+   ".ipynb": 1,
+   ".md": 1,
+   ".py": 1,
+   ".json": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Arbitrage",
+   "Mean reversion",
+   "Pairs/StatArb"
+  ],
+  "learning_methods": [
+   "Supervisé",
+   "Évolutionnaire"
+  ],
+  "risk_management": [
+   "Position sizing",
+   "Stop loss",
+   "Take profit"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 27.5,
+  "strengths": [
+   "Documentation conséquente",
+   "Gestion du risque : Position sizing, Stop loss, Take profit",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Inactif depuis 2.3 ans"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 29,
+   "freshness": 45,
+   "quality": 25,
+   "relevance": 67,
+   "reusability": 85,
+   "overall": 49.3
+  },
+  "readme_chars": 7551,
+  "error": null,
+  "rank": 86
+ },
+ {
+  "full_name": "Aisland-SJL/StarMap",
+  "url": "https://github.com/Aisland-SJL/StarMap",
+  "description": "⭐ StarMap — your personal star-charted travel atlas: footprints, photos, and drone panoramas on an interactive Cesium globe.",
+  "stars": 119,
+  "forks": 18,
+  "language": "TypeScript",
+  "license": "MIT",
+  "pushed_at": "2026-09-02T12:55:15Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 88,
+  "python_files": 0,
+  "top_dirs": [
+   "01_Web",
+   "02_Assets",
+   "03_Reference",
+   "05_Test",
+   "docs"
+  ],
+  "languages": {
+   ".tsx": 25,
+   ".md": 15,
+   ".ts": 15,
+   ".json": 10,
+   ".mjs": 5
+  },
+  "technologies": [
+   "React"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 2.8,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (TypeScript)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 46,
+   "freshness": 100,
+   "quality": 45,
+   "relevance": 8,
+   "reusability": 60,
+   "overall": 49.2
+  },
+  "readme_chars": 9521,
+  "error": null,
+  "rank": 87
+ },
+ {
+  "full_name": "EarnForex/PositionSizer",
+  "url": "https://github.com/EarnForex/PositionSizer",
+  "description": "Calculate your position size based on the risk and account size and execute your trades with this free MetaTrader expert advisor. ",
+  "stars": 615,
+  "forks": 222,
+  "language": "MQL5",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-10T08:58:54Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 68,
+  "python_files": 0,
+  "top_dirs": [
+   "MQL4",
+   "MQL5",
+   "README Images"
+  ],
+  "languages": {
+   ".mqh": 36,
+   ".bmp": 24,
+   ".md": 2,
+   ".ico": 2,
+   ".png": 2
+  },
+  "technologies": [
+   "MQL4/MQL5"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [
+   "Position sizing"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 0.5,
+  "strengths": [
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Position sizing",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Pas en Python (MQL5)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 62,
+   "freshness": 100,
+   "quality": 20,
+   "relevance": 8,
+   "reusability": 60,
+   "overall": 48.2
+  },
+  "readme_chars": 1283,
+  "error": null,
+  "rank": 88
+ },
+ {
+  "full_name": "PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Bots-with-Python",
+  "url": "https://github.com/PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Bots-with-Python",
+  "description": "",
+  "stars": 410,
+  "forks": 165,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2025-12-15T09:44:57Z",
+  "archived": false,
+  "categories": [
+   "ml_finance"
+  ],
+  "files_count": 107,
+  "python_files": 46,
+  "top_dirs": [
+   "Eclipse Projects",
+   "Images",
+   "Lecture Notebooks",
+   "section 0001",
+   "section 0002",
+   "section 0003",
+   "section 0004",
+   "section 0005",
+   "section 0006"
+  ],
+  "languages": {
+   ".py": 46,
+   ".ipynb": 24,
+   ".joblib": 12,
+   ".csv": 10,
+   ".zip": 8
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 11.3,
+  "strengths": [
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 58,
+   "freshness": 75,
+   "quality": 20,
+   "relevance": 0,
+   "reusability": 85,
+   "overall": 46.8
+  },
+  "readme_chars": 3655,
+  "error": null,
+  "rank": 89
+ },
+ {
+  "full_name": "Azhagesan-dev/OrderFlowMap",
+  "url": "https://github.com/Azhagesan-dev/OrderFlowMap",
+  "description": "Bookmap-style order flow visualizer in a single HTML file — real-time heatmaps, trade bubbles, DOM ladder, volume profile, CVD, and liquidity wall detection. Works with OpenAlgo WebSocket for live Indian market data (NSE/NFO/BSE/MCX).",
+  "stars": 120,
+  "forks": 25,
+  "language": "HTML",
+  "license": "MIT",
+  "pushed_at": "2026-04-17T09:12:23Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 7,
+  "python_files": 0,
+  "top_dirs": [],
+  "languages": {
+   ".md": 3,
+   ".html": 1,
+   ".png": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "HMM/Regime"
+  ],
+  "strategies": [
+   "Order flow",
+   "Scalping"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 7.3,
+  "strengths": [
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (HTML)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 46,
+   "freshness": 75,
+   "quality": 25,
+   "relevance": 33,
+   "reusability": 60,
+   "overall": 46.5
+  },
+  "readme_chars": 16010,
+  "error": null,
+  "rank": 90
+ },
+ {
+  "full_name": "benstaf/FinRL_DeepSeek",
+  "url": "https://github.com/benstaf/FinRL_DeepSeek",
+  "description": "Code for the paper \"FinRL-DeepSeek: LLM-Infused Risk-Sensitive Reinforcement Learning for Trading Agents\" arXiv:2502.07393",
+  "stars": 332,
+  "forks": 114,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2025-04-08T12:22:13Z",
+  "archived": false,
+  "categories": [
+   "ai_trading_agents",
+   "reinforcement_learning"
+  ],
+  "files_count": 47,
+  "python_files": 27,
+  "top_dirs": [],
+  "languages": {
+   ".py": 27,
+   ".log": 15,
+   ".ipynb": 1,
+   ".jpg": 1,
+   ".md": 1
+  },
+  "technologies": [],
+  "ai_models": [
+   "LLM",
+   "PPO",
+   "Sentiment/NLP"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 19.6,
+  "strengths": [
+   "Gestion du risque : VaR/CVaR",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 56,
+   "freshness": 45,
+   "quality": 0,
+   "relevance": 42,
+   "reusability": 85,
+   "overall": 46.1
+  },
+  "readme_chars": 2955,
+  "error": null,
+  "rank": 91
+ },
+ {
+  "full_name": "cove9988/TradingGym",
+  "url": "https://github.com/cove9988/TradingGym",
+  "description": "Trading Gym is an open source project for the development of reinforcement learning algorithms in the context of trading.",
+  "stars": 220,
+  "forks": 54,
+  "language": "Jupyter Notebook",
+  "license": "MIT",
+  "pushed_at": "2024-09-23T00:44:41Z",
+  "archived": false,
+  "categories": [
+   "forex_algo",
+   "reinforcement_learning"
+  ],
+  "files_count": 187,
+  "python_files": 10,
+  "top_dirs": [
+   "data",
+   "env",
+   "log"
+  ],
+  "languages": {
+   ".csv": 157,
+   ".py": 10,
+   ".md": 7,
+   ".json": 4,
+   ".png": 3
+  },
+  "technologies": [
+   "Gym",
+   "PyTorch",
+   "QuantStats",
+   "Stable-Baselines3"
+  ],
+  "ai_models": [
+   "DQN"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [
+   "Stop loss"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 26.1,
+  "strengths": [
+   "Gestion du risque : Stop loss",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 2.2 ans"
+  ],
+  "reusability": "Code réutilisable",
+  "scores": {
+   "popularity": 52,
+   "freshness": 45,
+   "quality": 20,
+   "relevance": 25,
+   "reusability": 85,
+   "overall": 45.8
+  },
+  "readme_chars": 3142,
+  "error": null,
+  "rank": 92
+ },
+ {
+  "full_name": "trading-code/ninjatrader-freeorderflow",
+  "url": "https://github.com/trading-code/ninjatrader-freeorderflow",
+  "description": "Free Order Flow indicators for NinjaTrader 8",
+  "stars": 160,
+  "forks": 55,
+  "language": "C#",
+  "license": "MIT",
+  "pushed_at": "2025-11-19T14:45:34Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 28,
+  "python_files": 0,
+  "top_dirs": [
+   ".github",
+   "DrawingTools",
+   "Indicators",
+   "InvestSoft",
+   "MarketAnalyzerColumns",
+   "Strategies",
+   "deps",
+   "publish"
+  ],
+  "languages": {
+   ".cs": 9,
+   ".dll": 8,
+   ".yml": 3,
+   ".txt": 2,
+   ".csproj": 1
+  },
+  "technologies": [
+   "C#/.NET"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": false,
+  "months_idle": 12.2,
+  "strengths": [
+   "Intégration continue (GitHub Actions)",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (C#)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 49,
+   "freshness": 75,
+   "quality": 40,
+   "relevance": 8,
+   "reusability": 60,
+   "overall": 45.2
+  },
+  "readme_chars": 81,
+  "error": null,
+  "rank": 93
+ },
+ {
+  "full_name": "Albert-Z-Guo/Deep-Reinforcement-Stock-Trading",
+  "url": "https://github.com/Albert-Z-Guo/Deep-Reinforcement-Stock-Trading",
+  "description": "A light-weight deep reinforcement learning framework for portfolio management. This project explores the possibility of applying deep reinforcement learning algorithms to stock trading in a highly modular and scalable framework.",
+  "stars": 688,
+  "forks": 156,
+  "language": "Jupyter Notebook",
+  "license": "GPL-3.0",
+  "pushed_at": "2024-11-06T17:33:17Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 34,
+  "python_files": 6,
+  "top_dirs": [
+   "agents",
+   "data",
+   "logs",
+   "saved_models",
+   "visualizations"
+  ],
+  "languages": {
+   ".csv": 10,
+   ".py": 6,
+   ".h5": 6,
+   ".png": 4,
+   ".private": 2
+  },
+  "technologies": [
+   "TensorFlow",
+   "empyrical",
+   "statsmodels"
+  ],
+  "ai_models": [
+   "CNN",
+   "DQN",
+   "LSTM",
+   "PPO"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 24.6,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 2.1 ans",
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 63,
+   "freshness": 45,
+   "quality": 20,
+   "relevance": 50,
+   "reusability": 40,
+   "overall": 44.5
+  },
+  "readme_chars": 5021,
+  "error": null,
+  "rank": 94
+ },
+ {
+  "full_name": "srlcarlg/srl-ctrader-indicators",
+  "url": "https://github.com/srlcarlg/srl-ctrader-indicators",
+  "description": "Order Flow Ticks, Volume/TPO Profile, Weis & Wyckoff System and more for cTrader trading plataform!",
+  "stars": 98,
+  "forks": 30,
+  "language": "C#",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-09-05T20:47:20Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 109,
+  "python_files": 0,
+  "top_dirs": [
+   "Images",
+   "NET 6.0",
+   "Raw Source Code"
+  ],
+  "languages": {
+   ".png": 84,
+   ".algo": 9,
+   ".cs": 9,
+   ".md": 2,
+   ".db": 2
+  },
+  "technologies": [
+   "C#/.NET"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 2.6,
+  "strengths": [
+   "Activement maintenu (< 6 mois)",
+   "Licence permissive (Apache-2.0)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (C#)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 44,
+   "freshness": 100,
+   "quality": 20,
+   "relevance": 8,
+   "reusability": 60,
+   "overall": 43.8
+  },
+  "readme_chars": 2771,
+  "error": null,
+  "rank": 95
+ },
+ {
+  "full_name": "tapedelta/kline-orderbook-chart",
+  "url": "https://github.com/tapedelta/kline-orderbook-chart",
+  "description": "orderbook heatmap, footprint chart, liquidation heatmap, candlestick, indicators, algo trading",
+  "stars": 78,
+  "forks": 16,
+  "language": null,
+  "license": "NOASSERTION",
+  "pushed_at": "2026-07-16T13:45:37Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 55,
+  "python_files": 0,
+  "top_dirs": [
+   ".github",
+   "assets",
+   "demo",
+   "docs"
+  ],
+  "languages": {
+   ".md": 25,
+   ".js": 8,
+   ".png": 6,
+   ".vue": 5,
+   ".yml": 4
+  },
+  "technologies": [
+   "Vue"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": true,
+  "has_docs": true,
+  "months_idle": 4.3,
+  "strengths": [
+   "Intégration continue (GitHub Actions)",
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (None)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 42,
+   "freshness": 100,
+   "quality": 65,
+   "relevance": 8,
+   "reusability": 15,
+   "overall": 43.2
+  },
+  "readme_chars": 25962,
+  "error": null,
+  "rank": 96
+ },
+ {
+  "full_name": "fortitudo-tech/pcrm-book",
+  "url": "https://github.com/fortitudo-tech/pcrm-book",
+  "description": "Portfolio Construction and Risk Management book's Python code.",
+  "stars": 216,
+  "forks": 59,
+  "language": "Jupyter Notebook",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-11-02T15:24:24Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 36,
+  "python_files": 1,
+  "top_dirs": [
+   ".github",
+   "code",
+   "src"
+  ],
+  "languages": {
+   ".ipynb": 24,
+   ".yml": 2,
+   ".md": 2,
+   ".csv": 2,
+   ".npy": 1
+  },
+  "technologies": [
+   "yfinance"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 0.8,
+  "strengths": [
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 52,
+   "freshness": 100,
+   "quality": 20,
+   "relevance": 8,
+   "reusability": 40,
+   "overall": 41.6
+  },
+  "readme_chars": 4079,
+  "error": null,
+  "rank": 97
+ },
+ {
+  "full_name": "ellisharish/metatrader-4",
+  "url": "https://github.com/ellisharish/metatrader-4",
+  "description": "Metatrader 4 for Windows 10/11. Trades forex, CFDs and futures with live charts, technical indicators and automated expert advisors, then backtests strategies on historical price data before going live.",
+  "stars": 122,
+  "forks": 0,
+  "language": null,
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-25T11:50:57Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 7,
+  "python_files": 0,
+  "top_dirs": [
+   "assets",
+   "docs"
+  ],
+  "languages": {
+   ".md": 2,
+   ".svg": 2,
+   ".png": 1,
+   ".html": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Price action"
+  ],
+  "learning_methods": [],
+  "risk_management": [
+   "Stop loss",
+   "Take profit",
+   "Trailing stop"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 0.0,
+  "strengths": [
+   "Documentation conséquente",
+   "Activement maintenu (< 6 mois)",
+   "Gestion du risque : Stop loss, Take profit, Trailing stop"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (None)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 46,
+   "freshness": 100,
+   "quality": 25,
+   "relevance": 33,
+   "reusability": 15,
+   "overall": 41.3
+  },
+  "readme_chars": 8006,
+  "error": null,
+  "rank": 98
+ },
+ {
+  "full_name": "deependersingla/deep_trader",
+  "url": "https://github.com/deependersingla/deep_trader",
+  "description": "This project uses reinforcement learning on stock market and agent tries to learn trading. The goal is to check if the agent can learn to read tape. The project is dedicated to hero in life great Jesse Livermore. ",
+  "stars": 1507,
+  "forks": 492,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2018-01-22T14:35:51Z",
+  "archived": false,
+  "categories": [
+   "autonomous_agents",
+   "reinforcement_learning"
+  ],
+  "files_count": 44,
+  "python_files": 27,
+  "top_dirs": [
+   "data",
+   "ib",
+   "q_learning",
+   "supervised",
+   "tensor-reinforcement"
+  ],
+  "languages": {
+   ".py": 27,
+   ".csv": 11,
+   ".md": 2,
+   ".txt": 2
+  },
+  "technologies": [
+   "scikit-learn"
+  ],
+  "ai_models": [
+   "CNN",
+   "DQN",
+   "Sentiment/NLP"
+  ],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 106.2,
+  "strengths": [
+   "Forte adoption (1,507 ★)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 8.9 ans",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 71,
+   "freshness": 20,
+   "quality": 20,
+   "relevance": 42,
+   "reusability": 40,
+   "overall": 41.0
+  },
+  "readme_chars": 5859,
+  "error": null,
+  "rank": 99
+ },
+ {
+  "full_name": "marksantiago290/OrderFlowBot-NinjaTrading",
+  "url": "https://github.com/marksantiago290/OrderFlowBot-NinjaTrading",
+  "description": "OrderFlowBot is a bot used for trading order flow with a selected ATM (Automated Trading Mechanism) strategy. It is designed to assist with entries in a semi-automated trading approach, but also offers a fully automated trading option. ",
+  "stars": 67,
+  "forks": 13,
+  "language": "C#",
+  "license": "MIT",
+  "pushed_at": "2025-12-02T09:01:12Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 37,
+  "python_files": 0,
+  "top_dirs": [
+   "AddOns",
+   "images"
+  ],
+  "languages": {
+   ".cs": 28,
+   ".png": 6,
+   ".md": 1
+  },
+  "technologies": [
+   "C#/.NET"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": true,
+  "months_idle": 11.8,
+  "strengths": [
+   "Documentation conséquente",
+   "Licence permissive (MIT)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Aucune gestion du risque explicite",
+   "Pas en Python (C#)"
+  ],
+  "reusability": "Idées / architecture à reprendre",
+  "scores": {
+   "popularity": 41,
+   "freshness": 75,
+   "quality": 25,
+   "relevance": 8,
+   "reusability": 60,
+   "overall": 40.1
+  },
+  "readme_chars": 7441,
+  "error": null,
+  "rank": 100
+ },
+ {
+  "full_name": "yuriak/RLQuant",
+  "url": "https://github.com/yuriak/RLQuant",
+  "description": "Applying Reinforcement Learning in Quantitative Trading",
+  "stars": 359,
+  "forks": 104,
+  "language": "Jupyter Notebook",
+  "license": null,
+  "pushed_at": "2024-02-14T17:53:00Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 66,
+  "python_files": 43,
+  "top_dirs": [
+   "agents",
+   "crypto_currency",
+   "env",
+   "history",
+   "model_archive",
+   "resources",
+   "utils"
+  ],
+  "languages": {
+   ".py": 43,
+   ".ipynb": 18,
+   ".pyc": 3,
+   ".md": 1,
+   ".png": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning",
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 33.4,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 2.8 ans",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 57,
+   "freshness": 45,
+   "quality": 20,
+   "relevance": 17,
+   "reusability": 40,
+   "overall": 36.3
+  },
+  "readme_chars": 1938,
+  "error": null,
+  "rank": 101
+ },
+ {
+  "full_name": "kayuksel/forex-rl-challenge",
+  "url": "https://github.com/kayuksel/forex-rl-challenge",
+  "description": "A Deep Reinforcement Learning Challenge on Forex Portfolio Management",
+  "stars": 155,
+  "forks": 68,
+  "language": "Python",
+  "license": "GPL-3.0",
+  "pushed_at": "2024-07-25T10:14:45Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 23,
+  "python_files": 5,
+  "top_dirs": [
+   "dataset",
+   "graphs",
+   "models",
+   "outputs"
+  ],
+  "languages": {
+   ".py": 5,
+   ".png": 5,
+   ".pkl": 4,
+   ".csv": 2,
+   ".md": 1
+  },
+  "technologies": [
+   "PyTorch",
+   "empyrical"
+  ],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [
+   "Drawdown",
+   "VaR/CVaR"
+  ],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 28.1,
+  "strengths": [
+   "Gestion du risque : Drawdown, VaR/CVaR"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 2.3 ans",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 49,
+   "freshness": 45,
+   "quality": 20,
+   "relevance": 25,
+   "reusability": 40,
+   "overall": 35.9
+  },
+  "readme_chars": 3031,
+  "error": null,
+  "rank": 102
+ },
+ {
+  "full_name": "TheSnowGuru/PyTrader-python-mt4-mt5-trading-api-connector-drag-n-drop",
+  "url": "https://github.com/TheSnowGuru/PyTrader-python-mt4-mt5-trading-api-connector-drag-n-drop",
+  "description": "Open Source Trading Strategies & End-to-End solution connecting Metatrader4 & Metatrader5 💹 with Python with a simple drag and drop EA. Fully tested bug free & efficient solution for live & paper trading⭐ Full Documentation ready. Lightweight, efficient and stable implementation  🔥",
+  "stars": 1078,
+  "forks": 95,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2025-05-05T13:14:07Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 84,
+  "python_files": 43,
+  "top_dirs": [
+   "BT strategies",
+   "Miscellaneous",
+   "Older versions",
+   "Strategies",
+   "tick_data"
+  ],
+  "languages": {
+   ".py": 43,
+   ".png": 9,
+   ".pdf": 7,
+   ".ex4": 6,
+   ".ex5": 6
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 18.7,
+  "strengths": [
+   "Forte adoption (1,078 ★)"
+  ],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 67,
+   "freshness": 45,
+   "quality": 20,
+   "relevance": 0,
+   "reusability": 40,
+   "overall": 35.6
+  },
+  "readme_chars": 2820,
+  "error": null,
+  "rank": 103
+ },
+ {
+  "full_name": "hugocen/freqtrade-gym",
+  "url": "https://github.com/hugocen/freqtrade-gym",
+  "description": "A customized gym environment for developing and comparing reinforcement learning algorithms in crypto trading.",
+  "stars": 229,
+  "forks": 43,
+  "language": "Python",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-01-08T09:10:18Z",
+  "archived": false,
+  "categories": [
+   "reinforcement_learning"
+  ],
+  "files_count": 14,
+  "python_files": 7,
+  "top_dirs": [],
+  "languages": {
+   ".py": 7,
+   ".md": 1,
+   ".png": 1,
+   ".json": 1,
+   ".sqlite": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Reinforcement Learning"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 10.6,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 52,
+   "freshness": 75,
+   "quality": 0,
+   "relevance": 8,
+   "reusability": 40,
+   "overall": 34.0
+  },
+  "readme_chars": 3939,
+  "error": null,
+  "rank": 104
+ },
+ {
+  "full_name": "HFTHaidra/HFT-Arbitrage-EA-MQL4-MQL5",
+  "url": "https://github.com/HFTHaidra/HFT-Arbitrage-EA-MQL4-MQL5",
+  "description": "HFT Arbitrage EA is A trading system based on a backlog of data feed. HFT Arbitrage EA To work successfully, it needs a faster data feed agent and slow forex broker where data feed lag.  Data feed lags occur because of the operation of the software error broker and problems on its server. Just the broker can use the bridge (Bridge), which connects it with the liquidity provider. In this way, data feed may also be breaking.  Especially on time of the release of important news, analysts rating agencies, changes in economic data, and so on, can we see a noticeable difference in the data feed.  HFT Arbitrage EA receives data feed every millisecond from Darwinex (MT5 ) and compares them with the prices in the terminal broker. When there is a backlog of data feed, expert arbitrage trading algorithm starts trading and allows to obtain the maximum profit from each signal.",
+  "stars": 137,
+  "forks": 45,
+  "language": "MQL5",
+  "license": null,
+  "pushed_at": "2025-12-02T08:02:42Z",
+  "archived": false,
+  "categories": [
+   "forex_algo"
+  ],
+  "files_count": 26,
+  "python_files": 0,
+  "top_dirs": [
+   "DarwinexFast",
+   "Experts",
+   "Include",
+   "SlowBreker"
+  ],
+  "languages": {
+   ".ex5": 4,
+   ".mq5": 4,
+   ".mqh": 4,
+   ".ex4": 4,
+   ".set": 3
+  },
+  "technologies": [
+   "MQL4/MQL5"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Arbitrage"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 11.8,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue",
+   "Pas en Python (MQL5)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 48,
+   "freshness": 75,
+   "quality": 20,
+   "relevance": 8,
+   "reusability": 15,
+   "overall": 31.8
+  },
+  "readme_chars": 1043,
+  "error": null,
+  "rank": 105
+ },
+ {
+  "full_name": "yt-feng/VPIN",
+  "url": "https://github.com/yt-feng/VPIN",
+  "description": "Order flow toxicity; Volume-Synchronized Probability of Informed Trading",
+  "stars": 105,
+  "forks": 43,
+  "language": "Jupyter Notebook",
+  "license": "AGPL-3.0",
+  "pushed_at": "2026-04-30T01:35:16Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 10,
+  "python_files": 0,
+  "top_dirs": [
+   "dataset"
+  ],
+  "languages": {
+   ".png": 2,
+   ".md": 1,
+   ".ipynb": 1,
+   ".pdf": 1,
+   ".txt": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [
+   "Market making",
+   "Order flow"
+  ],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 6.9,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence AGPL-3.0 : réutilisation du code contrainte (copyleft)",
+   "Pas en Python (Jupyter Notebook)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 45,
+   "freshness": 75,
+   "quality": 0,
+   "relevance": 25,
+   "reusability": 15,
+   "overall": 30.5
+  },
+  "readme_chars": 1964,
+  "error": null,
+  "rank": 106
+ },
+ {
+  "full_name": "alpacahq/example-hftish",
+  "url": "https://github.com/alpacahq/example-hftish",
+  "description": "Example Order Book Imbalance Algorithm",
+  "stars": 874,
+  "forks": 248,
+  "language": "Python",
+  "license": null,
+  "pushed_at": "2023-07-25T16:50:41Z",
+  "archived": false,
+  "categories": [
+   "order_flow"
+  ],
+  "files_count": 5,
+  "python_files": 1,
+  "top_dirs": [],
+  "languages": {
+   ".lock": 1,
+   ".md": 1,
+   ".py": 1
+  },
+  "technologies": [
+   "Alpaca"
+  ],
+  "ai_models": [],
+  "strategies": [
+   "Order flow"
+  ],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 40.1,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 3.3 ans",
+   "Aucune gestion du risque explicite",
+   "Licence absente/indéterminée : réutilisation du code exclue"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 65,
+   "freshness": 20,
+   "quality": 0,
+   "relevance": 8,
+   "reusability": 40,
+   "overall": 29.0
+  },
+  "readme_chars": 2676,
+  "error": null,
+  "rank": 107
+ },
+ {
+  "full_name": "andreassteinerconsulting/python_notebooks",
+  "url": "https://github.com/andreassteinerconsulting/python_notebooks",
+  "description": "This repository contains Python notebooks related to investment risk management, portfolio construction & asset allocation and related topics.",
+  "stars": 15,
+  "forks": 1,
+  "language": "Jupyter Notebook",
+  "license": "GPL-3.0",
+  "pushed_at": "2026-02-04T20:34:09Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 11,
+  "python_files": 0,
+  "top_dirs": [],
+  "languages": {
+   ".ipynb": 10
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 9.6,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Aucune gestion du risque explicite",
+   "Licence GPL-3.0 : réutilisation du code contrainte (copyleft)",
+   "Pas en Python (Jupyter Notebook)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 27,
+   "freshness": 75,
+   "quality": 0,
+   "relevance": 0,
+   "reusability": 15,
+   "overall": 20.9
+  },
+  "readme_chars": 0,
+  "error": null,
+  "rank": 108
+ },
+ {
+  "full_name": "hoangsonww/Stock-Market-Simulator",
+  "url": "https://github.com/hoangsonww/Stock-Market-Simulator",
+  "description": "📈 This repository hosts a Stock Market Simulation in Python, providing tools to mimic market behaviors, portfolio management, and trading strategies. It serves as an educational resource for learning about financial markets and algorithmic trading, offering a practical platform for testing theories and strategies in a risk-free environment.",
+  "stars": 23,
+  "forks": 11,
+  "language": "Python",
+  "license": "EPL-2.0",
+  "pushed_at": "2023-03-27T18:18:58Z",
+  "archived": false,
+  "categories": [
+   "risk_management"
+  ],
+  "files_count": 2,
+  "python_files": 1,
+  "top_dirs": [],
+  "languages": {
+   ".py": 1
+  },
+  "technologies": [],
+  "ai_models": [],
+  "strategies": [],
+  "learning_methods": [
+   "Supervisé"
+  ],
+  "risk_management": [],
+  "has_tests": false,
+  "has_ci": false,
+  "has_docs": false,
+  "months_idle": 44.0,
+  "strengths": [],
+  "weaknesses": [
+   "Aucun test détecté",
+   "Documentation limitée",
+   "Inactif depuis 3.7 ans",
+   "Aucune gestion du risque explicite",
+   "Licence EPL-2.0 : réutilisation du code contrainte (copyleft)"
+  ],
+  "reusability": "Inspiration uniquement",
+  "scores": {
+   "popularity": 31,
+   "freshness": 20,
+   "quality": 0,
+   "relevance": 8,
+   "reusability": 40,
+   "overall": 20.3
+  },
+  "readme_chars": 0,
+  "error": null,
+  "rank": 109
+ }
+]

@@ -1,0 +1,72 @@
+{
+  "trend_pullback": {
+    "params": {
+      "rr": 2.0,
+      "sl_atr": 0.4,
+      "min_sl_atr": 1.0,
+      "rsi_lo": 38,
+      "rsi_hi": 68
+    },
+    "enabled": true
+  },
+  "breakout": {
+    "params": {
+      "rr": 2.0,
+      "squeeze_rank": 0.3,
+      "sl_atr": 1.2,
+      "vol_z": 0.5
+    },
+    "enabled": true
+  },
+  "mean_reversion": {
+    "params": {
+      "rsi_ext": 28.180213476554442,
+      "sl_atr": 0.7671120830748656,
+      "min_rr": 1.3314523995998881,
+      "max_rr": 2.5
+    },
+    "enabled": true
+  },
+  "smc_sweep": {
+    "params": {
+      "window": 6,
+      "sl_atr": 0.25,
+      "rr": 2.5,
+      "min_rr": 1.8
+    },
+    "enabled": true
+  },
+  "orderflow_absorption": {
+    "params": {
+      "sl_atr": 0.4,
+      "rr": 2.0,
+      "min_rr": 1.3
+    },
+    "enabled": true
+  },
+  "momentum": {
+    "params": {
+      "adx_min": 30,
+      "sl_atr": 1.5,
+      "rr": 1.8
+    },
+    "enabled": true
+  },
+  "trend_trail": {
+    "params": {
+      "sl_atr": 2.0,
+      "trail_atr": 3.0,
+      "cap_rr": 8.0
+    },
+    "enabled": true
+  },
+  "london_breakout": {
+    "params": {
+      "rr": 2.0618101782710436,
+      "min_rng_atr": 1.4507143064099162,
+      "max_rng_atr": 4.3299848545285125,
+      "trail_atr": 0.0
+    },
+    "enabled": true
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "trade": {
+    "id": 21,
+    "ticket": 100021,
+    "signal_id": "b6a3c3a11704",
+    "symbol": "EURUSD",
+    "direction": "BUY",
+    "strategy": "trend_trail",
+    "timeframe": "H1",
+    "regime": "TRANSITION",
+    "volume": 0.15,
+    "entry_price": 1.1094000000000002,
+    "exit_price": 1.13237,
+    "requested_price": 1.1094000000000002,
+    "slippage_pips": 0.0,
+    "sl_initial": 1.1030313375845002,
+    "tp_initial": 1.1629592993239988,
+    "sl": 1.13237,
+    "tp": 1.1629592993239988,
+    "open_time": "2025-04-10T13:00:00+00:00",
+    "close_time": "2025-04-11T10:58:00+00:00",
+    "risk_amount": 95.52993623249905,
+    "risk_pct": 0.9714230419757033,
+    "pnl": 343.5,
+    "pnl_r": 3.596,
+    "commission": -1.05,
+    "swap": 0.0,
+    "close_reason": "SL",
+    "status": "closed",
+    "mode": "auto",
+    "broker": "PAPER",
+    "analysis": {
+      "explanation": "Contexte : Transition (ADX 22, efficacité 0.24), volatilité normale, session Overlap Londres/New York, H4 haussier. Stratégie retenue : Trend Breakout + Trailing (BUY). Cassure du canal 55 barres (plus haut) ; Contexte supérieur aligné (EMA50/EMA200) ; Stop suiveur 3.0 ATR ; Contexte intermédiaire aligné ; ADX 22. Score 75/100, probabilité estimée 34% (historique 43 trades), R/R 8.00, espérance +0.21R.",
+      "reasons": [
+        "Cassure du canal 55 barres (plus haut)",
+        "Contexte supérieur aligné (EMA50/EMA200)",
+        "Stop suiveur 3.0 ATR",
+        "Contexte intermédiaire aligné",
+        "ADX 22"
+      ],
+      "score": 75.4,
+      "probability": 0.337
+    },
+    "market_conditions": {
+      "close": 1.10969,
+      "atr": 0.003329,
+      "adx": 22.165664,
+      "er": 0.239639,
+      "rsi": 69.94611,
+      "regime": "TRANSITION",
+      "vol_state": "NORMAL",
+      "session": "Overlap Londres/New York",
+      "liquidity": 3,
+      "structure": 1,
+      "htf1_trend": 1.0,
+      "htf2_trend": 1.0,
+      "htf1_regime": "TRANSITION",
+      "htf2_regime": "TRANSITION",
+      "htf1_structure": 1,
+      "htf2_structure": 1,
+      "pd_pos": 1.015861,
+      "near_res": 1.11076,
+      "near_sup": 1.10364,
+      "last_sh": 1.10948,
+      "last_sl": 1.09624,
+      "fvg_bull_top": 1.10669,
+      "fvg_bull_bot": 1.10596,
+      "fvg_bear_top": null,
+      "fvg_bear_bot": null,
+      "ob_bull_top": 1.10883,
+      "ob_bull_bot": 1.10669,
+      "ob_bear_top": null,
+      "ob_bear_bot": null,
+      "bsl": 1.10948,
+      "ssl": 1.09624,
+      "vp_poc": 1.095119,
+      "vp_vah": 1.10658,
+      "vp_val": 1.09239,
+      "vol_z": 0.486741,
+      "delta_z": -0.234357,
+      "absorption": false,
+      "since_bull_break": 0,
+      "since_bear_break": 19,
+      "since_sweep_bull": 44,
+      "since_sweep_bear": 24
+    },
+    "events": [
+      {
+        "ts": "2026-11-25T19:35:58.583079+00:00",
+        "event": "Trailing stop : SL 1.10802"
+      },
+      {
+        "ts": "2026-11-25T19:36:00.687223+00:00",
+        "event": "Trailing stop : SL 1.10903"
+      },
+      {
+        "ts": "2026-11-25T19:36:01.687336+00:00",
+        "event": "Trailing stop : SL 1.11153"
+      },
+      {
+        "ts": "2026-11-25T19:36:06.918929+00:00",
+        "event": "Trailing stop : SL 1.11289"
+      },
+      {
+        "ts": "2026-11-25T19:36:07.952701+00:00",
+        "event": "Trailing stop : SL 1.11609"
+      },
+      {
+        "ts": "2026-11-25T19:36:08.947077+00:00",
+        "event": "Trailing stop : SL 1.11985"
+      },
+      {
+        "ts": "2026-11-25T19:36:09.946874+00:00",
+        "event": "Trailing stop : SL 1.12103"
+      },
+      {
+        "ts": "2026-11-25T19:36:11.954350+00:00",
+        "event": "Trailing stop : SL 1.12367"
+      },
+      {
+        "ts": "2026-11-25T19:36:16.116269+00:00",
+        "event": "Trailing stop : SL 1.1267"
+      },
+      {
+        "ts": "2026-11-25T19:36:17.205791+00:00",
+        "event": "Trailing stop : SL 1.13237"
+      }
+    ],
+    "trail": 0.009987993623249692,
+    "be_done": 0
+  },
+  "signal": {
+    "id": "b6a3c3a11704",
+    "created_at": "2025-04-10T13:00:00+00:00",
+    "symbol": "EURUSD",
+    "timeframe": "H1",
+    "direction": "BUY",
+    "strategy": "trend_trail",
+    "entry": 1.10969,
+    "sl": 1.1030313375845002,
+    "tp": 1.1629592993239988,
+    "volume": 0.15,
+    "risk_pct": 0.971253166843563,
+    "risk_amount": 95.52993623249905,
+    "rr": 8.0,
+    "score": 75.4,
+    "probability": 0.337,
+    "ev_r": 0.215,
+    "regime": "TRANSITION",
+    "status": "executed",
+    "valid_until": "2025-04-10T13:30:00+00:00",
+    "decided_by": "auto",
+    "explanation": "Contexte : Transition (ADX 22, efficacité 0.24), volatilité normale, session Overlap Londres/New York, H4 haussier. Stratégie retenue : Trend Breakout + Trailing (BUY). Cassure du canal 55 barres (plus haut) ; Contexte supérieur aligné (EMA50/EMA200) ; Stop suiveur 3.0 ATR ; Contexte intermédiaire aligné ; ADX 22. Score 75/100, probabilité estimée 34% (historique 43 trades), R/R 8.00, espérance +0.21R.",
+    "reasons": [
+      "Cassure du canal 55 barres (plus haut)",
+      "Contexte supérieur aligné (EMA50/EMA200)",
+      "Stop suiveur 3.0 ATR",
+      "Contexte intermédiaire aligné",
+      "ADX 22"
+    ],
+    "analysis": {
+      "close": 1.10969,
+      "atr": 0.003329,
+      "adx": 22.165664,
+      "er": 0.239639,
+      "rsi": 69.94611,
+      "regime": "TRANSITION",
+      "vol_state": "NORMAL",
+      "session": "Overlap Londres/New York",
+      "liquidity": 3,
+      "structure": 1,
+      "htf1_trend": 1.0,
+      "htf2_trend": 1.0,
+      "htf1_regime": "TRANSITION",
+      "htf2_regime": "TRANSITION",
+      "htf1_structure": 1,
+      "htf2_structure": 1,
+      "pd_pos": 1.015861,
+      "near_res": 1.11076,
+      "near_sup": 1.10364,
+      "last_sh": 1.10948,
+      "last_sl": 1.09624,
+      "fvg_bull_top": 1.10669,
+      "fvg_bull_bot": 1.10596,
+      "fvg_bear_top": null,
+      "fvg_bear_bot": null,
+      "ob_bull_top": 1.10883,
+      "ob_bull_bot": 1.10669,
+      "ob_bear_top": null,
+      "ob_bear_bot": null,
+      "bsl": 1.10948,
+      "ssl": 1.09624,
+      "vp_poc": 1.095119,
+      "vp_vah": 1.10658,
+      "vp_val": 1.09239,
+      "vol_z": 0.486741,
+      "delta_z": -0.234357,
+      "absorption": false,
+      "since_bull_break": 0,
+      "since_bear_break": 19,
+      "since_sweep_bull": 44,
+      "since_sweep_bear": 24
+    },
+    "risk_checks": [
+      {
+        "name": "Arrêt d'urgence",
+        "ok": true,
+        "detail": "inactif"
+      },
+      {
+        "name": "Validité du signal",
+        "ok": true,
+        "detail": "valide jusqu'à 13:30 UTC"
+      },
+      {
+        "name": "Perte journalière",
+        "ok": true,
+        "detail": "-1.42% / max 3.0%"
+      },
+      {
+        "name": "Perte hebdomadaire",
+        "ok": true,
+        "detail": "1.96% / max 6.0%"
+      },
+      {
+        "name": "Drawdown maximal",
+        "ok": true,
+        "detail": "7.54% / max 10.0%"
+      },
+      {
+        "name": "Positions simultanées",
+        "ok": true,
+        "detail": "2 ouvertes / max 3"
+      },
+      {
+        "name": "Score minimal",
+        "ok": true,
+        "detail": "75 / min 60"
+      },
+      {
+        "name": "Calendrier économique",
+        "ok": true,
+        "detail": "aucune annonce majeure proche"
+      },
+      {
+        "name": "Protection doublons",
+        "ok": true,
+        "detail": "aucun doublon"
+      },
+      {
+        "name": "Stop Loss cohérent",
+        "ok": true,
+        "detail": "63.7 pips (bornes 5.0-150)"
+      },
+      {
+        "name": "Ratio Risk/Reward",
+        "ok": true,
+        "detail": "8.41 / min 1.5"
+      },
+      {
+        "name": "Spread",
+        "ok": true,
+        "detail": "0.8 pips (max 2.5), 1% du SL (max 15%)"
+      },
+      {
+        "name": "Volume calculable",
+        "ok": true,
+        "detail": "0.15 lot pour 95.53 USD (0.97%)"
+      },
+      {
+        "name": "Marge disponible",
+        "ok": true,
+        "detail": "marge libre 9835.74"
+      },
+      {
+        "name": "Exposition globale",
+        "ok": true,
+        "detail": "1.53% du capital en risque / max 3.0%"
+      },
+      {
+        "name": "Exposition par devise",
+        "ok": true,
+        "detail": "max USD -1.53% / limite 2.0%"
+      }
+    ],
+    "trade_ticket": 100021,
+    "trail": 0.009987993623249692,
+    "mode": "auto"
+  }
+}

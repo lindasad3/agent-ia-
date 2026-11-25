@@ -1,0 +1,59 @@
+{
+  "data": "EURUSD H1 réel, 17009 bougies, 2023-01-01 → 2026-02-24",
+  "ta": {
+    "package": "ta",
+    "version": "0.11.0",
+    "license": "MIT",
+    "rsi14": {
+      "corr": 1.0,
+      "max_abs_diff": 5.298097960348969e-09,
+      "n": 16709
+    },
+    "atr14": {
+      "corr": 1.0,
+      "max_abs_diff": 1.8391191347610913e-13,
+      "n": 16709
+    },
+    "adx14": {
+      "corr": 1.0,
+      "max_abs_diff": 5.168661587617862e-08,
+      "n": 16709
+    },
+    "bb_upper": {
+      "corr": 1.0,
+      "max_abs_diff": 0.0,
+      "n": 16709
+    },
+    "macd": {
+      "corr": 1.0,
+      "max_abs_diff": 0.0,
+      "n": 16709
+    },
+    "verdict": "Nos indicateurs concordent avec la référence (corrélation > 0.99)"
+  },
+  "smartmoneyconcepts": {
+    "package": "smartmoneyconcepts",
+    "version": "0.0.27",
+    "bars": 17009,
+    "lib_bull": 1722,
+    "ours_bull": 1780,
+    "jaccard_bull": 0.9674,
+    "lib_bear": 1610,
+    "ours_bear": 1654,
+    "jaccard_bear": 0.9734,
+    "time_lib_s": 0.217,
+    "time_ours_s": 0.065,
+    "note": "Même définition (gap entre la bougie i-2 et i). La librairie horodate le FVG sur la bougie centrale, ce qui n'est connu qu'une bougie plus tard : notre module l'horodate à sa confirmation (pas de look-ahead). Décision : garder notre module (sans dépendance, anti-fuite), utiliser la librairie comme référence de test."
+  },
+  "optuna": {
+    "package": "optuna",
+    "version": "5.1.0",
+    "runs": [
+      1.751911,
+      1.751911
+    ],
+    "deterministic": true,
+    "found_x": 1.751911,
+    "target_x": 1.7
+  }
+}

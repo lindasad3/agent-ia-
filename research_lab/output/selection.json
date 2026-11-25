@@ -1,0 +1,46 @@
+{
+  "analysed": 109,
+  "found": 504,
+  "decisions": [
+    {
+      "need": "Indicateurs",
+      "choice": "Maison (validé contre ta, MIT)",
+      "status": "adopté"
+    },
+    {
+      "need": "Smart Money Concepts",
+      "choice": "Maison (réf. joshyattridge/smart-money-concepts, Jaccard 0.97)",
+      "status": "adopté"
+    },
+    {
+      "need": "Exécution MT5",
+      "choice": "Connecteur maison (idées aiomql)",
+      "status": "adopté"
+    },
+    {
+      "need": "Optimisation",
+      "choice": "Optuna TPE + MedianPruner, imbriquée",
+      "status": "adopté"
+    },
+    {
+      "need": "Méta-modèle",
+      "choice": "HistGradientBoosting + purged WF CV",
+      "status": "adopté (activation conditionnelle)"
+    },
+    {
+      "need": "Order flow",
+      "choice": "Plugin Quantower C# maison",
+      "status": "adopté"
+    },
+    {
+      "need": "Allocation portefeuille",
+      "choice": "skfolio",
+      "status": "V2"
+    },
+    {
+      "need": "Agents LLM / RL",
+      "choice": "-",
+      "status": "écarté V1 (pas de preuve OOS)"
+    }
+  ]
+}

@@ -1,0 +1,2228 @@
+{
+ "breakout": {
+  "by_regime": {
+   "RANGE": {
+    "n": 468,
+    "wins": 227,
+    "sum_r": -4.708,
+    "exp_r": -0.0101,
+    "pf": 0.979
+   },
+   "TRANSITION": {
+    "n": 384,
+    "wins": 180,
+    "sum_r": -42.228,
+    "exp_r": -0.11,
+    "pf": 0.764
+   },
+   "TREND_DOWN": {
+    "n": 104,
+    "wins": 48,
+    "sum_r": -8.714,
+    "exp_r": -0.0838,
+    "pf": 0.823
+   },
+   "TREND_UP": {
+    "n": 144,
+    "wins": 74,
+    "sum_r": -0.832,
+    "exp_r": -0.0058,
+    "pf": 0.986
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "RANGE": {
+     "n": 44,
+     "wins": 18,
+     "sum_r": -6.501,
+     "exp_r": -0.1477,
+     "pf": 0.724
+    },
+    "TRANSITION": {
+     "n": 38,
+     "wins": 15,
+     "sum_r": -15.225,
+     "exp_r": -0.4007,
+     "pf": 0.284
+    },
+    "TREND_DOWN": {
+     "n": 23,
+     "wins": 7,
+     "sum_r": -8.705,
+     "exp_r": -0.3785,
+     "pf": 0.434
+    },
+    "TREND_UP": {
+     "n": 10,
+     "wins": 6,
+     "sum_r": 1.17,
+     "exp_r": 0.117,
+     "pf": 1.336
+    }
+   },
+   "EURJPY": {
+    "RANGE": {
+     "n": 65,
+     "wins": 33,
+     "sum_r": 9.615,
+     "exp_r": 0.1479,
+     "pf": 1.338
+    },
+    "TRANSITION": {
+     "n": 35,
+     "wins": 21,
+     "sum_r": 0.103,
+     "exp_r": 0.0029,
+     "pf": 1.01
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 4,
+     "sum_r": 1.266,
+     "exp_r": 0.1809,
+     "pf": 1.796
+    },
+    "TREND_UP": {
+     "n": 14,
+     "wins": 5,
+     "sum_r": -0.086,
+     "exp_r": -0.0062,
+     "pf": 0.98
+    }
+   },
+   "EURUSD": {
+    "RANGE": {
+     "n": 52,
+     "wins": 23,
+     "sum_r": -6.511,
+     "exp_r": -0.1252,
+     "pf": 0.761
+    },
+    "TRANSITION": {
+     "n": 55,
+     "wins": 23,
+     "sum_r": -12.12,
+     "exp_r": -0.2204,
+     "pf": 0.614
+    },
+    "TREND_DOWN": {
+     "n": 15,
+     "wins": 8,
+     "sum_r": -1.02,
+     "exp_r": -0.068,
+     "pf": 0.816
+    },
+    "TREND_UP": {
+     "n": 17,
+     "wins": 6,
+     "sum_r": -5.765,
+     "exp_r": -0.3391,
+     "pf": 0.484
+    }
+   },
+   "GBPJPY": {
+    "RANGE": {
+     "n": 55,
+     "wins": 29,
+     "sum_r": 4.896,
+     "exp_r": 0.089,
+     "pf": 1.216
+    },
+    "TRANSITION": {
+     "n": 35,
+     "wins": 16,
+     "sum_r": -10.468,
+     "exp_r": -0.2991,
+     "pf": 0.379
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 4,
+     "sum_r": 0.902,
+     "exp_r": 0.1289,
+     "pf": 1.668
+    },
+    "TREND_UP": {
+     "n": 13,
+     "wins": 7,
+     "sum_r": -1.035,
+     "exp_r": -0.0796,
+     "pf": 0.806
+    }
+   },
+   "GBPUSD": {
+    "RANGE": {
+     "n": 41,
+     "wins": 21,
+     "sum_r": -1.009,
+     "exp_r": -0.0246,
+     "pf": 0.946
+    },
+    "TRANSITION": {
+     "n": 41,
+     "wins": 23,
+     "sum_r": 6.42,
+     "exp_r": 0.1566,
+     "pf": 1.422
+    },
+    "TREND_DOWN": {
+     "n": 10,
+     "wins": 2,
+     "sum_r": -6.067,
+     "exp_r": -0.6067,
+     "pf": 0.254
+    },
+    "TREND_UP": {
+     "n": 19,
+     "wins": 10,
+     "sum_r": 0.844,
+     "exp_r": 0.0444,
+     "pf": 1.106
+    }
+   },
+   "USDCAD": {
+    "RANGE": {
+     "n": 55,
+     "wins": 26,
+     "sum_r": -9.768,
+     "exp_r": -0.1776,
+     "pf": 0.644
+    },
+    "TRANSITION": {
+     "n": 47,
+     "wins": 19,
+     "sum_r": -10.036,
+     "exp_r": -0.2135,
+     "pf": 0.592
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 3,
+     "sum_r": -2.562,
+     "exp_r": -0.366,
+     "pf": 0.277
+    },
+    "TREND_UP": {
+     "n": 15,
+     "wins": 6,
+     "sum_r": -4.41,
+     "exp_r": -0.294,
+     "pf": 0.386
+    }
+   },
+   "USDCHF": {
+    "RANGE": {
+     "n": 40,
+     "wins": 20,
+     "sum_r": 1.82,
+     "exp_r": 0.0455,
+     "pf": 1.094
+    },
+    "TRANSITION": {
+     "n": 41,
+     "wins": 16,
+     "sum_r": -7.203,
+     "exp_r": -0.1757,
+     "pf": 0.646
+    },
+    "TREND_DOWN": {
+     "n": 21,
+     "wins": 13,
+     "sum_r": 5.147,
+     "exp_r": 0.2451,
+     "pf": 1.71
+    },
+    "TREND_UP": {
+     "n": 9,
+     "wins": 3,
+     "sum_r": -4.174,
+     "exp_r": -0.4638,
+     "pf": 0.247
+    }
+   },
+   "USDJPY": {
+    "RANGE": {
+     "n": 62,
+     "wins": 35,
+     "sum_r": 1.301,
+     "exp_r": 0.021,
+     "pf": 1.051
+    },
+    "TRANSITION": {
+     "n": 43,
+     "wins": 23,
+     "sum_r": 0.509,
+     "exp_r": 0.0118,
+     "pf": 1.028
+    },
+    "TREND_DOWN": {
+     "n": 8,
+     "wins": 3,
+     "sum_r": -0.435,
+     "exp_r": -0.0543,
+     "pf": 0.903
+    },
+    "TREND_UP": {
+     "n": 24,
+     "wins": 15,
+     "sum_r": 3.782,
+     "exp_r": 0.1576,
+     "pf": 1.44
+    }
+   },
+   "XAUUSD": {
+    "RANGE": {
+     "n": 54,
+     "wins": 22,
+     "sum_r": 1.45,
+     "exp_r": 0.0269,
+     "pf": 1.047
+    },
+    "TRANSITION": {
+     "n": 49,
+     "wins": 24,
+     "sum_r": 5.793,
+     "exp_r": 0.1182,
+     "pf": 1.282
+    },
+    "TREND_DOWN": {
+     "n": 6,
+     "wins": 4,
+     "sum_r": 2.76,
+     "exp_r": 0.46,
+     "pf": 2.37
+    },
+    "TREND_UP": {
+     "n": 23,
+     "wins": 16,
+     "sum_r": 8.842,
+     "exp_r": 0.3844,
+     "pf": 2.258
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 115,
+    "wins": 46,
+    "sum_r": -29.261,
+    "exp_r": -0.2544,
+    "pf": 0.541
+   },
+   "EURJPY": {
+    "n": 121,
+    "wins": 63,
+    "sum_r": 10.898,
+    "exp_r": 0.0901,
+    "pf": 1.242
+   },
+   "EURUSD": {
+    "n": 139,
+    "wins": 60,
+    "sum_r": -25.417,
+    "exp_r": -0.1829,
+    "pf": 0.663
+   },
+   "GBPJPY": {
+    "n": 110,
+    "wins": 56,
+    "sum_r": -5.705,
+    "exp_r": -0.0519,
+    "pf": 0.876
+   },
+   "GBPUSD": {
+    "n": 111,
+    "wins": 56,
+    "sum_r": 0.188,
+    "exp_r": 0.0017,
+    "pf": 1.004
+   },
+   "USDCAD": {
+    "n": 124,
+    "wins": 54,
+    "sum_r": -26.777,
+    "exp_r": -0.2159,
+    "pf": 0.573
+   },
+   "USDCHF": {
+    "n": 111,
+    "wins": 52,
+    "sum_r": -4.411,
+    "exp_r": -0.0397,
+    "pf": 0.916
+   },
+   "USDJPY": {
+    "n": 137,
+    "wins": 76,
+    "sum_r": 5.157,
+    "exp_r": 0.0376,
+    "pf": 1.091
+   },
+   "XAUUSD": {
+    "n": 132,
+    "wins": 66,
+    "sum_r": 18.845,
+    "exp_r": 0.1428,
+    "pf": 1.312
+   }
+  },
+  "all": {
+   "n": 1100,
+   "wins": 529,
+   "sum_r": -56.482,
+   "exp_r": -0.0513,
+   "pf": 0.89
+  }
+ },
+ "london_breakout": {
+  "by_regime": {
+   "RANGE": {
+    "n": 863,
+    "wins": 421,
+    "sum_r": -23.661,
+    "exp_r": -0.0274,
+    "pf": 0.947
+   },
+   "TRANSITION": {
+    "n": 849,
+    "wins": 416,
+    "sum_r": -38.679,
+    "exp_r": -0.0456,
+    "pf": 0.912
+   },
+   "TREND_DOWN": {
+    "n": 313,
+    "wins": 141,
+    "sum_r": -25.055,
+    "exp_r": -0.08,
+    "pf": 0.851
+   },
+   "TREND_UP": {
+    "n": 269,
+    "wins": 138,
+    "sum_r": -0.636,
+    "exp_r": -0.0024,
+    "pf": 0.995
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "RANGE": {
+     "n": 68,
+     "wins": 31,
+     "sum_r": 5.401,
+     "exp_r": 0.0794,
+     "pf": 1.143
+    },
+    "TRANSITION": {
+     "n": 81,
+     "wins": 32,
+     "sum_r": -21.274,
+     "exp_r": -0.2626,
+     "pf": 0.582
+    },
+    "TREND_DOWN": {
+     "n": 38,
+     "wins": 17,
+     "sum_r": -4.314,
+     "exp_r": -0.1135,
+     "pf": 0.792
+    },
+    "TREND_UP": {
+     "n": 21,
+     "wins": 10,
+     "sum_r": 1.713,
+     "exp_r": 0.0816,
+     "pf": 1.153
+    }
+   },
+   "EURJPY": {
+    "RANGE": {
+     "n": 100,
+     "wins": 50,
+     "sum_r": -4.334,
+     "exp_r": -0.0433,
+     "pf": 0.914
+    },
+    "TRANSITION": {
+     "n": 107,
+     "wins": 60,
+     "sum_r": 12.915,
+     "exp_r": 0.1207,
+     "pf": 1.279
+    },
+    "TREND_DOWN": {
+     "n": 24,
+     "wins": 12,
+     "sum_r": -0.281,
+     "exp_r": -0.0117,
+     "pf": 0.972
+    },
+    "TREND_UP": {
+     "n": 33,
+     "wins": 18,
+     "sum_r": 1.95,
+     "exp_r": 0.0591,
+     "pf": 1.137
+    }
+   },
+   "EURUSD": {
+    "RANGE": {
+     "n": 98,
+     "wins": 54,
+     "sum_r": 5.067,
+     "exp_r": 0.0517,
+     "pf": 1.11
+    },
+    "TRANSITION": {
+     "n": 104,
+     "wins": 55,
+     "sum_r": 6.832,
+     "exp_r": 0.0657,
+     "pf": 1.141
+    },
+    "TREND_DOWN": {
+     "n": 38,
+     "wins": 20,
+     "sum_r": 4.014,
+     "exp_r": 0.1056,
+     "pf": 1.229
+    },
+    "TREND_UP": {
+     "n": 36,
+     "wins": 22,
+     "sum_r": 7.057,
+     "exp_r": 0.196,
+     "pf": 1.483
+    }
+   },
+   "GBPJPY": {
+    "RANGE": {
+     "n": 111,
+     "wins": 57,
+     "sum_r": -3.906,
+     "exp_r": -0.0352,
+     "pf": 0.929
+    },
+    "TRANSITION": {
+     "n": 107,
+     "wins": 55,
+     "sum_r": 0.365,
+     "exp_r": 0.0034,
+     "pf": 1.007
+    },
+    "TREND_DOWN": {
+     "n": 29,
+     "wins": 15,
+     "sum_r": 0.808,
+     "exp_r": 0.0278,
+     "pf": 1.058
+    },
+    "TREND_UP": {
+     "n": 29,
+     "wins": 15,
+     "sum_r": -0.737,
+     "exp_r": -0.0254,
+     "pf": 0.946
+    }
+   },
+   "GBPUSD": {
+    "RANGE": {
+     "n": 115,
+     "wins": 61,
+     "sum_r": 1.139,
+     "exp_r": 0.0099,
+     "pf": 1.021
+    },
+    "TRANSITION": {
+     "n": 119,
+     "wins": 61,
+     "sum_r": -19.677,
+     "exp_r": -0.1654,
+     "pf": 0.667
+    },
+    "TREND_DOWN": {
+     "n": 41,
+     "wins": 18,
+     "sum_r": -6.223,
+     "exp_r": -0.1518,
+     "pf": 0.727
+    },
+    "TREND_UP": {
+     "n": 37,
+     "wins": 20,
+     "sum_r": 5.965,
+     "exp_r": 0.1612,
+     "pf": 1.355
+    }
+   },
+   "USDCAD": {
+    "RANGE": {
+     "n": 96,
+     "wins": 41,
+     "sum_r": -18.342,
+     "exp_r": -0.1911,
+     "pf": 0.661
+    },
+    "TRANSITION": {
+     "n": 74,
+     "wins": 30,
+     "sum_r": -15.427,
+     "exp_r": -0.2085,
+     "pf": 0.651
+    },
+    "TREND_DOWN": {
+     "n": 40,
+     "wins": 13,
+     "sum_r": -9.89,
+     "exp_r": -0.2473,
+     "pf": 0.612
+    },
+    "TREND_UP": {
+     "n": 27,
+     "wins": 12,
+     "sum_r": -6.99,
+     "exp_r": -0.2589,
+     "pf": 0.552
+    }
+   },
+   "USDCHF": {
+    "RANGE": {
+     "n": 107,
+     "wins": 52,
+     "sum_r": -4.262,
+     "exp_r": -0.0398,
+     "pf": 0.925
+    },
+    "TRANSITION": {
+     "n": 92,
+     "wins": 38,
+     "sum_r": -14.733,
+     "exp_r": -0.1601,
+     "pf": 0.734
+    },
+    "TREND_DOWN": {
+     "n": 41,
+     "wins": 16,
+     "sum_r": -1.906,
+     "exp_r": -0.0465,
+     "pf": 0.926
+    },
+    "TREND_UP": {
+     "n": 26,
+     "wins": 9,
+     "sum_r": -9.638,
+     "exp_r": -0.3707,
+     "pf": 0.449
+    }
+   },
+   "USDJPY": {
+    "RANGE": {
+     "n": 74,
+     "wins": 33,
+     "sum_r": -6.948,
+     "exp_r": -0.0939,
+     "pf": 0.837
+    },
+    "TRANSITION": {
+     "n": 73,
+     "wins": 38,
+     "sum_r": -4.219,
+     "exp_r": -0.0578,
+     "pf": 0.884
+    },
+    "TREND_DOWN": {
+     "n": 33,
+     "wins": 18,
+     "sum_r": 0.644,
+     "exp_r": 0.0195,
+     "pf": 1.043
+    },
+    "TREND_UP": {
+     "n": 35,
+     "wins": 19,
+     "sum_r": -1.214,
+     "exp_r": -0.0347,
+     "pf": 0.927
+    }
+   },
+   "XAUUSD": {
+    "RANGE": {
+     "n": 94,
+     "wins": 42,
+     "sum_r": 2.526,
+     "exp_r": 0.0269,
+     "pf": 1.048
+    },
+    "TRANSITION": {
+     "n": 92,
+     "wins": 47,
+     "sum_r": 16.539,
+     "exp_r": 0.1798,
+     "pf": 1.366
+    },
+    "TREND_DOWN": {
+     "n": 29,
+     "wins": 12,
+     "sum_r": -7.907,
+     "exp_r": -0.2726,
+     "pf": 0.54
+    },
+    "TREND_UP": {
+     "n": 25,
+     "wins": 13,
+     "sum_r": 1.258,
+     "exp_r": 0.0503,
+     "pf": 1.104
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 208,
+    "wins": 90,
+    "sum_r": -18.474,
+    "exp_r": -0.0888,
+    "pf": 0.847
+   },
+   "EURJPY": {
+    "n": 264,
+    "wins": 140,
+    "sum_r": 10.25,
+    "exp_r": 0.0388,
+    "pf": 1.085
+   },
+   "EURUSD": {
+    "n": 276,
+    "wins": 151,
+    "sum_r": 22.97,
+    "exp_r": 0.0832,
+    "pf": 1.181
+   },
+   "GBPJPY": {
+    "n": 276,
+    "wins": 142,
+    "sum_r": -3.471,
+    "exp_r": -0.0126,
+    "pf": 0.974
+   },
+   "GBPUSD": {
+    "n": 312,
+    "wins": 160,
+    "sum_r": -18.796,
+    "exp_r": -0.0602,
+    "pf": 0.878
+   },
+   "USDCAD": {
+    "n": 237,
+    "wins": 96,
+    "sum_r": -50.65,
+    "exp_r": -0.2137,
+    "pf": 0.636
+   },
+   "USDCHF": {
+    "n": 266,
+    "wins": 115,
+    "sum_r": -30.539,
+    "exp_r": -0.1148,
+    "pf": 0.804
+   },
+   "USDJPY": {
+    "n": 215,
+    "wins": 108,
+    "sum_r": -11.738,
+    "exp_r": -0.0546,
+    "pf": 0.894
+   },
+   "XAUUSD": {
+    "n": 240,
+    "wins": 114,
+    "sum_r": 12.416,
+    "exp_r": 0.0517,
+    "pf": 1.098
+   }
+  },
+  "all": {
+   "n": 2294,
+   "wins": 1116,
+   "sum_r": -88.031,
+   "exp_r": -0.0384,
+   "pf": 0.926
+  }
+ },
+ "mean_reversion": {
+  "by_regime": {
+   "RANGE": {
+    "n": 91,
+    "wins": 48,
+    "sum_r": -5.241,
+    "exp_r": -0.0576,
+    "pf": 0.883
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "RANGE": {
+     "n": 9,
+     "wins": 5,
+     "sum_r": -0.634,
+     "exp_r": -0.0704,
+     "pf": 0.85
+    }
+   },
+   "EURJPY": {
+    "RANGE": {
+     "n": 20,
+     "wins": 8,
+     "sum_r": -6.11,
+     "exp_r": -0.3055,
+     "pf": 0.511
+    }
+   },
+   "EURUSD": {
+    "RANGE": {
+     "n": 9,
+     "wins": 6,
+     "sum_r": 1.504,
+     "exp_r": 0.1671,
+     "pf": 1.468
+    }
+   },
+   "GBPJPY": {
+    "RANGE": {
+     "n": 11,
+     "wins": 6,
+     "sum_r": -0.454,
+     "exp_r": -0.0413,
+     "pf": 0.912
+    }
+   },
+   "GBPUSD": {
+    "RANGE": {
+     "n": 7,
+     "wins": 5,
+     "sum_r": 3.605,
+     "exp_r": 0.515,
+     "pf": 2.724
+    }
+   },
+   "USDCAD": {
+    "RANGE": {
+     "n": 4,
+     "wins": 1,
+     "sum_r": -1.301,
+     "exp_r": -0.3252,
+     "pf": 0.591
+    }
+   },
+   "USDCHF": {
+    "RANGE": {
+     "n": 11,
+     "wins": 6,
+     "sum_r": -0.507,
+     "exp_r": -0.0461,
+     "pf": 0.902
+    }
+   },
+   "USDJPY": {
+    "RANGE": {
+     "n": 13,
+     "wins": 7,
+     "sum_r": -2.982,
+     "exp_r": -0.2294,
+     "pf": 0.522
+    }
+   },
+   "XAUUSD": {
+    "RANGE": {
+     "n": 7,
+     "wins": 4,
+     "sum_r": 1.639,
+     "exp_r": 0.2342,
+     "pf": 1.541
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 9,
+    "wins": 5,
+    "sum_r": -0.634,
+    "exp_r": -0.0704,
+    "pf": 0.85
+   },
+   "EURJPY": {
+    "n": 20,
+    "wins": 8,
+    "sum_r": -6.11,
+    "exp_r": -0.3055,
+    "pf": 0.511
+   },
+   "EURUSD": {
+    "n": 9,
+    "wins": 6,
+    "sum_r": 1.504,
+    "exp_r": 0.1671,
+    "pf": 1.468
+   },
+   "GBPJPY": {
+    "n": 11,
+    "wins": 6,
+    "sum_r": -0.454,
+    "exp_r": -0.0413,
+    "pf": 0.912
+   },
+   "GBPUSD": {
+    "n": 7,
+    "wins": 5,
+    "sum_r": 3.605,
+    "exp_r": 0.515,
+    "pf": 2.724
+   },
+   "USDCAD": {
+    "n": 4,
+    "wins": 1,
+    "sum_r": -1.301,
+    "exp_r": -0.3252,
+    "pf": 0.591
+   },
+   "USDCHF": {
+    "n": 11,
+    "wins": 6,
+    "sum_r": -0.507,
+    "exp_r": -0.0461,
+    "pf": 0.902
+   },
+   "USDJPY": {
+    "n": 13,
+    "wins": 7,
+    "sum_r": -2.982,
+    "exp_r": -0.2294,
+    "pf": 0.522
+   },
+   "XAUUSD": {
+    "n": 7,
+    "wins": 4,
+    "sum_r": 1.639,
+    "exp_r": 0.2342,
+    "pf": 1.541
+   }
+  },
+  "all": {
+   "n": 91,
+   "wins": 48,
+   "sum_r": -5.241,
+   "exp_r": -0.0576,
+   "pf": 0.883
+  }
+ },
+ "momentum": {
+  "by_regime": {
+   "TREND_DOWN": {
+    "n": 94,
+    "wins": 54,
+    "sum_r": 12.88,
+    "exp_r": 0.137,
+    "pf": 1.318
+   },
+   "TREND_UP": {
+    "n": 108,
+    "wins": 56,
+    "sum_r": -5.99,
+    "exp_r": -0.0555,
+    "pf": 0.887
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "TREND_DOWN": {
+     "n": 13,
+     "wins": 5,
+     "sum_r": -2.884,
+     "exp_r": -0.2219,
+     "pf": 0.652
+    },
+    "TREND_UP": {
+     "n": 5,
+     "wins": 3,
+     "sum_r": -0.218,
+     "exp_r": -0.0435,
+     "pf": 0.895
+    }
+   },
+   "EURJPY": {
+    "TREND_DOWN": {
+     "n": 9,
+     "wins": 6,
+     "sum_r": 3.001,
+     "exp_r": 0.3335,
+     "pf": 1.98
+    },
+    "TREND_UP": {
+     "n": 10,
+     "wins": 3,
+     "sum_r": -5.409,
+     "exp_r": -0.5409,
+     "pf": 0.254
+    }
+   },
+   "EURUSD": {
+    "TREND_DOWN": {
+     "n": 9,
+     "wins": 5,
+     "sum_r": 1.289,
+     "exp_r": 0.1432,
+     "pf": 1.31
+    },
+    "TREND_UP": {
+     "n": 13,
+     "wins": 8,
+     "sum_r": 1.697,
+     "exp_r": 0.1305,
+     "pf": 1.327
+    }
+   },
+   "GBPJPY": {
+    "TREND_DOWN": {
+     "n": 10,
+     "wins": 5,
+     "sum_r": -0.392,
+     "exp_r": -0.0392,
+     "pf": 0.923
+    },
+    "TREND_UP": {
+     "n": 12,
+     "wins": 7,
+     "sum_r": 3.245,
+     "exp_r": 0.2704,
+     "pf": 1.633
+    }
+   },
+   "GBPUSD": {
+    "TREND_DOWN": {
+     "n": 6,
+     "wins": 5,
+     "sum_r": 2.708,
+     "exp_r": 0.4513,
+     "pf": 3.606
+    },
+    "TREND_UP": {
+     "n": 21,
+     "wins": 12,
+     "sum_r": 2.533,
+     "exp_r": 0.1206,
+     "pf": 1.281
+    }
+   },
+   "USDCAD": {
+    "TREND_DOWN": {
+     "n": 11,
+     "wins": 3,
+     "sum_r": -4.407,
+     "exp_r": -0.4006,
+     "pf": 0.479
+    },
+    "TREND_UP": {
+     "n": 12,
+     "wins": 5,
+     "sum_r": -4.063,
+     "exp_r": -0.3386,
+     "pf": 0.444
+    }
+   },
+   "USDCHF": {
+    "TREND_DOWN": {
+     "n": 21,
+     "wins": 15,
+     "sum_r": 10.121,
+     "exp_r": 0.482,
+     "pf": 2.641
+    },
+    "TREND_UP": {
+     "n": 4,
+     "wins": 2,
+     "sum_r": -0.435,
+     "exp_r": -0.1089,
+     "pf": 0.79
+    }
+   },
+   "USDJPY": {
+    "TREND_DOWN": {
+     "n": 9,
+     "wins": 7,
+     "sum_r": 2.799,
+     "exp_r": 0.311,
+     "pf": 3.37
+    },
+    "TREND_UP": {
+     "n": 12,
+     "wins": 4,
+     "sum_r": -6.041,
+     "exp_r": -0.5034,
+     "pf": 0.274
+    }
+   },
+   "XAUUSD": {
+    "TREND_DOWN": {
+     "n": 6,
+     "wins": 3,
+     "sum_r": 0.644,
+     "exp_r": 0.1074,
+     "pf": 1.213
+    },
+    "TREND_UP": {
+     "n": 19,
+     "wins": 12,
+     "sum_r": 2.701,
+     "exp_r": 0.1421,
+     "pf": 1.399
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 18,
+    "wins": 8,
+    "sum_r": -3.102,
+    "exp_r": -0.1723,
+    "pf": 0.701
+   },
+   "EURJPY": {
+    "n": 19,
+    "wins": 9,
+    "sum_r": -2.408,
+    "exp_r": -0.1267,
+    "pf": 0.766
+   },
+   "EURUSD": {
+    "n": 22,
+    "wins": 13,
+    "sum_r": 2.986,
+    "exp_r": 0.1357,
+    "pf": 1.319
+   },
+   "GBPJPY": {
+    "n": 22,
+    "wins": 12,
+    "sum_r": 2.853,
+    "exp_r": 0.1297,
+    "pf": 1.279
+   },
+   "GBPUSD": {
+    "n": 27,
+    "wins": 17,
+    "sum_r": 5.241,
+    "exp_r": 0.1941,
+    "pf": 1.521
+   },
+   "USDCAD": {
+    "n": 23,
+    "wins": 8,
+    "sum_r": -8.47,
+    "exp_r": -0.3682,
+    "pf": 0.463
+   },
+   "USDCHF": {
+    "n": 25,
+    "wins": 17,
+    "sum_r": 9.686,
+    "exp_r": 0.3874,
+    "pf": 2.175
+   },
+   "USDJPY": {
+    "n": 21,
+    "wins": 11,
+    "sum_r": -3.241,
+    "exp_r": -0.1543,
+    "pf": 0.659
+   },
+   "XAUUSD": {
+    "n": 25,
+    "wins": 15,
+    "sum_r": 3.345,
+    "exp_r": 0.1338,
+    "pf": 1.342
+   }
+  },
+  "all": {
+   "n": 202,
+   "wins": 110,
+   "sum_r": 6.889,
+   "exp_r": 0.0341,
+   "pf": 1.074
+  }
+ },
+ "orderflow_absorption": {
+  "by_regime": {
+   "TRANSITION": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 1.166,
+    "exp_r": 1.1656,
+    "pf": null
+   },
+   "TREND_DOWN": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 0.069,
+    "exp_r": 0.0694,
+    "pf": null
+   },
+   "TREND_UP": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 1.95,
+    "exp_r": 1.95,
+    "pf": null
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "TRANSITION": {
+     "n": 1,
+     "wins": 1,
+     "sum_r": 1.166,
+     "exp_r": 1.1656,
+     "pf": null
+    }
+   },
+   "EURUSD": {
+    "TREND_UP": {
+     "n": 1,
+     "wins": 1,
+     "sum_r": 1.95,
+     "exp_r": 1.95,
+     "pf": null
+    }
+   },
+   "USDCHF": {
+    "TREND_DOWN": {
+     "n": 1,
+     "wins": 1,
+     "sum_r": 0.069,
+     "exp_r": 0.0694,
+     "pf": null
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 1.166,
+    "exp_r": 1.1656,
+    "pf": null
+   },
+   "EURUSD": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 1.95,
+    "exp_r": 1.95,
+    "pf": null
+   },
+   "USDCHF": {
+    "n": 1,
+    "wins": 1,
+    "sum_r": 0.069,
+    "exp_r": 0.0694,
+    "pf": null
+   }
+  },
+  "all": {
+   "n": 3,
+   "wins": 3,
+   "sum_r": 3.185,
+   "exp_r": 1.0616,
+   "pf": null
+  }
+ },
+ "smc_sweep": {
+  "by_regime": {
+   "RANGE": {
+    "n": 527,
+    "wins": 235,
+    "sum_r": -44.464,
+    "exp_r": -0.0844,
+    "pf": 0.83
+   },
+   "TRANSITION": {
+    "n": 548,
+    "wins": 261,
+    "sum_r": -19.199,
+    "exp_r": -0.035,
+    "pf": 0.92
+   },
+   "TREND_DOWN": {
+    "n": 57,
+    "wins": 31,
+    "sum_r": 5.044,
+    "exp_r": 0.0885,
+    "pf": 1.24
+   },
+   "TREND_UP": {
+    "n": 41,
+    "wins": 24,
+    "sum_r": -3.514,
+    "exp_r": -0.0857,
+    "pf": 0.8
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "RANGE": {
+     "n": 61,
+     "wins": 25,
+     "sum_r": -5.325,
+     "exp_r": -0.0873,
+     "pf": 0.848
+    },
+    "TRANSITION": {
+     "n": 65,
+     "wins": 27,
+     "sum_r": -14.965,
+     "exp_r": -0.2302,
+     "pf": 0.497
+    },
+    "TREND_DOWN": {
+     "n": 8,
+     "wins": 5,
+     "sum_r": 0.569,
+     "exp_r": 0.0711,
+     "pf": 1.185
+    },
+    "TREND_UP": {
+     "n": 3,
+     "wins": 1,
+     "sum_r": -2.056,
+     "exp_r": -0.6855,
+     "pf": 0.022
+    }
+   },
+   "EURJPY": {
+    "RANGE": {
+     "n": 51,
+     "wins": 28,
+     "sum_r": 4.703,
+     "exp_r": 0.0922,
+     "pf": 1.21
+    },
+    "TRANSITION": {
+     "n": 58,
+     "wins": 30,
+     "sum_r": 6.768,
+     "exp_r": 0.1167,
+     "pf": 1.275
+    },
+    "TREND_DOWN": {
+     "n": 3,
+     "wins": 1,
+     "sum_r": 0.812,
+     "exp_r": 0.2707,
+     "pf": 2.785
+    },
+    "TREND_UP": {
+     "n": 8,
+     "wins": 4,
+     "sum_r": -1.291,
+     "exp_r": -0.1613,
+     "pf": 0.686
+    }
+   },
+   "EURUSD": {
+    "RANGE": {
+     "n": 60,
+     "wins": 24,
+     "sum_r": -9.891,
+     "exp_r": -0.1649,
+     "pf": 0.703
+    },
+    "TRANSITION": {
+     "n": 75,
+     "wins": 34,
+     "sum_r": -7.13,
+     "exp_r": -0.0951,
+     "pf": 0.794
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 5,
+     "sum_r": 0.591,
+     "exp_r": 0.0845,
+     "pf": 1.289
+    },
+    "TREND_UP": {
+     "n": 2,
+     "wins": 0,
+     "sum_r": -2.091,
+     "exp_r": -1.0456,
+     "pf": 0.0
+    }
+   },
+   "GBPJPY": {
+    "RANGE": {
+     "n": 55,
+     "wins": 23,
+     "sum_r": -5.647,
+     "exp_r": -0.1027,
+     "pf": 0.805
+    },
+    "TRANSITION": {
+     "n": 52,
+     "wins": 22,
+     "sum_r": -5.871,
+     "exp_r": -0.1129,
+     "pf": 0.76
+    },
+    "TREND_DOWN": {
+     "n": 8,
+     "wins": 5,
+     "sum_r": 1.643,
+     "exp_r": 0.2053,
+     "pf": 1.647
+    },
+    "TREND_UP": {
+     "n": 2,
+     "wins": 2,
+     "sum_r": 0.406,
+     "exp_r": 0.2029,
+     "pf": null
+    }
+   },
+   "GBPUSD": {
+    "RANGE": {
+     "n": 66,
+     "wins": 27,
+     "sum_r": -11.971,
+     "exp_r": -0.1814,
+     "pf": 0.668
+    },
+    "TRANSITION": {
+     "n": 71,
+     "wins": 37,
+     "sum_r": 3.048,
+     "exp_r": 0.0429,
+     "pf": 1.104
+    },
+    "TREND_DOWN": {
+     "n": 4,
+     "wins": 1,
+     "sum_r": -0.737,
+     "exp_r": -0.1843,
+     "pf": 0.759
+    },
+    "TREND_UP": {
+     "n": 7,
+     "wins": 5,
+     "sum_r": -0.521,
+     "exp_r": -0.0744,
+     "pf": 0.752
+    }
+   },
+   "USDCAD": {
+    "RANGE": {
+     "n": 69,
+     "wins": 25,
+     "sum_r": -8.897,
+     "exp_r": -0.1289,
+     "pf": 0.736
+    },
+    "TRANSITION": {
+     "n": 69,
+     "wins": 37,
+     "sum_r": 8.362,
+     "exp_r": 0.1212,
+     "pf": 1.279
+    },
+    "TREND_DOWN": {
+     "n": 6,
+     "wins": 4,
+     "sum_r": 2.243,
+     "exp_r": 0.3738,
+     "pf": 2.096
+    },
+    "TREND_UP": {
+     "n": 2,
+     "wins": 2,
+     "sum_r": 0.123,
+     "exp_r": 0.0617,
+     "pf": null
+    }
+   },
+   "USDCHF": {
+    "RANGE": {
+     "n": 65,
+     "wins": 33,
+     "sum_r": -1.451,
+     "exp_r": -0.0223,
+     "pf": 0.949
+    },
+    "TRANSITION": {
+     "n": 57,
+     "wins": 29,
+     "sum_r": -2.222,
+     "exp_r": -0.039,
+     "pf": 0.9
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 3,
+     "sum_r": 1.025,
+     "exp_r": 0.1465,
+     "pf": 1.331
+    },
+    "TREND_UP": {
+     "n": 5,
+     "wins": 1,
+     "sum_r": -4.079,
+     "exp_r": -0.8158,
+     "pf": 0.009
+    }
+   },
+   "USDJPY": {
+    "RANGE": {
+     "n": 40,
+     "wins": 19,
+     "sum_r": -6.426,
+     "exp_r": -0.1606,
+     "pf": 0.683
+    },
+    "TRANSITION": {
+     "n": 56,
+     "wins": 27,
+     "sum_r": 2.225,
+     "exp_r": 0.0397,
+     "pf": 1.104
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 4,
+     "sum_r": -1.958,
+     "exp_r": -0.2797,
+     "pf": 0.355
+    },
+    "TREND_UP": {
+     "n": 5,
+     "wins": 4,
+     "sum_r": -0.159,
+     "exp_r": -0.0318,
+     "pf": 0.843
+    }
+   },
+   "XAUUSD": {
+    "RANGE": {
+     "n": 60,
+     "wins": 31,
+     "sum_r": 0.441,
+     "exp_r": 0.0073,
+     "pf": 1.019
+    },
+    "TRANSITION": {
+     "n": 45,
+     "wins": 18,
+     "sum_r": -9.415,
+     "exp_r": -0.2092,
+     "pf": 0.583
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 3,
+     "sum_r": 0.856,
+     "exp_r": 0.1222,
+     "pf": 1.502
+    },
+    "TREND_UP": {
+     "n": 7,
+     "wins": 5,
+     "sum_r": 6.154,
+     "exp_r": 0.8791,
+     "pf": 4.057
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 137,
+    "wins": 58,
+    "sum_r": -21.778,
+    "exp_r": -0.159,
+    "pf": 0.688
+   },
+   "EURJPY": {
+    "n": 120,
+    "wins": 63,
+    "sum_r": 10.993,
+    "exp_r": 0.0916,
+    "pf": 1.213
+   },
+   "EURUSD": {
+    "n": 144,
+    "wins": 63,
+    "sum_r": -18.521,
+    "exp_r": -0.1286,
+    "pf": 0.743
+   },
+   "GBPJPY": {
+    "n": 117,
+    "wins": 52,
+    "sum_r": -9.469,
+    "exp_r": -0.0809,
+    "pf": 0.831
+   },
+   "GBPUSD": {
+    "n": 148,
+    "wins": 70,
+    "sum_r": -10.181,
+    "exp_r": -0.0688,
+    "pf": 0.856
+   },
+   "USDCAD": {
+    "n": 146,
+    "wins": 68,
+    "sum_r": 1.832,
+    "exp_r": 0.0125,
+    "pf": 1.028
+   },
+   "USDCHF": {
+    "n": 134,
+    "wins": 66,
+    "sum_r": -6.727,
+    "exp_r": -0.0502,
+    "pf": 0.884
+   },
+   "USDJPY": {
+    "n": 108,
+    "wins": 54,
+    "sum_r": -6.317,
+    "exp_r": -0.0585,
+    "pf": 0.862
+   },
+   "XAUUSD": {
+    "n": 119,
+    "wins": 57,
+    "sum_r": -1.965,
+    "exp_r": -0.0165,
+    "pf": 0.961
+   }
+  },
+  "all": {
+   "n": 1173,
+   "wins": 551,
+   "sum_r": -62.133,
+   "exp_r": -0.053,
+   "pf": 0.885
+  }
+ },
+ "trend_pullback": {
+  "by_regime": {
+   "TREND_DOWN": {
+    "n": 77,
+    "wins": 38,
+    "sum_r": -4.974,
+    "exp_r": -0.0646,
+    "pf": 0.848
+   },
+   "TREND_UP": {
+    "n": 175,
+    "wins": 85,
+    "sum_r": -1.041,
+    "exp_r": -0.006,
+    "pf": 0.986
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "TREND_DOWN": {
+     "n": 11,
+     "wins": 6,
+     "sum_r": -1.091,
+     "exp_r": -0.0992,
+     "pf": 0.786
+    },
+    "TREND_UP": {
+     "n": 8,
+     "wins": 3,
+     "sum_r": -0.97,
+     "exp_r": -0.1212,
+     "pf": 0.709
+    }
+   },
+   "EURJPY": {
+    "TREND_DOWN": {
+     "n": 9,
+     "wins": 3,
+     "sum_r": -2.803,
+     "exp_r": -0.3114,
+     "pf": 0.46
+    },
+    "TREND_UP": {
+     "n": 22,
+     "wins": 9,
+     "sum_r": -4.822,
+     "exp_r": -0.2192,
+     "pf": 0.596
+    }
+   },
+   "EURUSD": {
+    "TREND_DOWN": {
+     "n": 15,
+     "wins": 9,
+     "sum_r": 1.483,
+     "exp_r": 0.0989,
+     "pf": 1.294
+    },
+    "TREND_UP": {
+     "n": 12,
+     "wins": 7,
+     "sum_r": 3.141,
+     "exp_r": 0.2617,
+     "pf": 1.768
+    }
+   },
+   "GBPJPY": {
+    "TREND_DOWN": {
+     "n": 4,
+     "wins": 0,
+     "sum_r": -2.822,
+     "exp_r": -0.7055,
+     "pf": 0.0
+    },
+    "TREND_UP": {
+     "n": 21,
+     "wins": 5,
+     "sum_r": -10.304,
+     "exp_r": -0.4907,
+     "pf": 0.234
+    }
+   },
+   "GBPUSD": {
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 3,
+     "sum_r": 0.669,
+     "exp_r": 0.0955,
+     "pf": 1.31
+    },
+    "TREND_UP": {
+     "n": 24,
+     "wins": 12,
+     "sum_r": 2.846,
+     "exp_r": 0.1186,
+     "pf": 1.286
+    }
+   },
+   "USDCAD": {
+    "TREND_DOWN": {
+     "n": 8,
+     "wins": 4,
+     "sum_r": -2.991,
+     "exp_r": -0.3739,
+     "pf": 0.102
+    },
+    "TREND_UP": {
+     "n": 16,
+     "wins": 9,
+     "sum_r": 1.896,
+     "exp_r": 0.1185,
+     "pf": 1.388
+    }
+   },
+   "USDCHF": {
+    "TREND_DOWN": {
+     "n": 18,
+     "wins": 11,
+     "sum_r": 3.547,
+     "exp_r": 0.1971,
+     "pf": 1.589
+    },
+    "TREND_UP": {
+     "n": 7,
+     "wins": 5,
+     "sum_r": 1.238,
+     "exp_r": 0.1768,
+     "pf": 1.899
+    }
+   },
+   "USDJPY": {
+    "TREND_DOWN": {
+     "n": 4,
+     "wins": 2,
+     "sum_r": 0.044,
+     "exp_r": 0.011,
+     "pf": 1.022
+    },
+    "TREND_UP": {
+     "n": 35,
+     "wins": 18,
+     "sum_r": 2.899,
+     "exp_r": 0.0828,
+     "pf": 1.211
+    }
+   },
+   "XAUUSD": {
+    "TREND_DOWN": {
+     "n": 1,
+     "wins": 0,
+     "sum_r": -1.011,
+     "exp_r": -1.0107,
+     "pf": 0.0
+    },
+    "TREND_UP": {
+     "n": 30,
+     "wins": 17,
+     "sum_r": 3.035,
+     "exp_r": 0.1012,
+     "pf": 1.264
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 19,
+    "wins": 9,
+    "sum_r": -2.061,
+    "exp_r": -0.1085,
+    "pf": 0.756
+   },
+   "EURJPY": {
+    "n": 31,
+    "wins": 12,
+    "sum_r": -7.625,
+    "exp_r": -0.246,
+    "pf": 0.555
+   },
+   "EURUSD": {
+    "n": 27,
+    "wins": 16,
+    "sum_r": 4.624,
+    "exp_r": 0.1713,
+    "pf": 1.506
+   },
+   "GBPJPY": {
+    "n": 25,
+    "wins": 5,
+    "sum_r": -13.126,
+    "exp_r": -0.525,
+    "pf": 0.194
+   },
+   "GBPUSD": {
+    "n": 31,
+    "wins": 15,
+    "sum_r": 3.515,
+    "exp_r": 0.1134,
+    "pf": 1.29
+   },
+   "USDCAD": {
+    "n": 24,
+    "wins": 13,
+    "sum_r": -1.095,
+    "exp_r": -0.0456,
+    "pf": 0.867
+   },
+   "USDCHF": {
+    "n": 25,
+    "wins": 16,
+    "sum_r": 4.785,
+    "exp_r": 0.1914,
+    "pf": 1.647
+   },
+   "USDJPY": {
+    "n": 39,
+    "wins": 20,
+    "sum_r": 2.943,
+    "exp_r": 0.0755,
+    "pf": 1.186
+   },
+   "XAUUSD": {
+    "n": 31,
+    "wins": 17,
+    "sum_r": 2.024,
+    "exp_r": 0.0653,
+    "pf": 1.162
+   }
+  },
+  "all": {
+   "n": 252,
+   "wins": 123,
+   "sum_r": -6.015,
+   "exp_r": -0.0239,
+   "pf": 0.944
+  }
+ },
+ "trend_trail": {
+  "by_regime": {
+   "RANGE": {
+    "n": 220,
+    "wins": 82,
+    "sum_r": -6.101,
+    "exp_r": -0.0277,
+    "pf": 0.941
+   },
+   "TRANSITION": {
+    "n": 235,
+    "wins": 90,
+    "sum_r": 39.791,
+    "exp_r": 0.1693,
+    "pf": 1.355
+   },
+   "TREND_DOWN": {
+    "n": 90,
+    "wins": 26,
+    "sum_r": -18.711,
+    "exp_r": -0.2079,
+    "pf": 0.641
+   },
+   "TREND_UP": {
+    "n": 195,
+    "wins": 77,
+    "sum_r": 7.589,
+    "exp_r": 0.0389,
+    "pf": 1.078
+   }
+  },
+  "by_symbol": {
+   "AUDUSD": {
+    "RANGE": {
+     "n": 20,
+     "wins": 9,
+     "sum_r": 5.66,
+     "exp_r": 0.283,
+     "pf": 1.647
+    },
+    "TRANSITION": {
+     "n": 23,
+     "wins": 4,
+     "sum_r": -10.719,
+     "exp_r": -0.466,
+     "pf": 0.293
+    },
+    "TREND_DOWN": {
+     "n": 15,
+     "wins": 7,
+     "sum_r": -2.4,
+     "exp_r": -0.16,
+     "pf": 0.653
+    },
+    "TREND_UP": {
+     "n": 11,
+     "wins": 3,
+     "sum_r": -1.121,
+     "exp_r": -0.1019,
+     "pf": 0.814
+    }
+   },
+   "EURJPY": {
+    "RANGE": {
+     "n": 43,
+     "wins": 21,
+     "sum_r": 6.09,
+     "exp_r": 0.1416,
+     "pf": 1.374
+    },
+    "TRANSITION": {
+     "n": 25,
+     "wins": 11,
+     "sum_r": 8.684,
+     "exp_r": 0.3474,
+     "pf": 1.791
+    },
+    "TREND_DOWN": {
+     "n": 6,
+     "wins": 1,
+     "sum_r": -3.294,
+     "exp_r": -0.5489,
+     "pf": 0.079
+    },
+    "TREND_UP": {
+     "n": 19,
+     "wins": 6,
+     "sum_r": -2.102,
+     "exp_r": -0.1106,
+     "pf": 0.798
+    }
+   },
+   "EURUSD": {
+    "RANGE": {
+     "n": 18,
+     "wins": 5,
+     "sum_r": -1.989,
+     "exp_r": -0.1105,
+     "pf": 0.821
+    },
+    "TRANSITION": {
+     "n": 21,
+     "wins": 9,
+     "sum_r": 0.889,
+     "exp_r": 0.0423,
+     "pf": 1.107
+    },
+    "TREND_DOWN": {
+     "n": 16,
+     "wins": 3,
+     "sum_r": -7.673,
+     "exp_r": -0.4796,
+     "pf": 0.257
+    },
+    "TREND_UP": {
+     "n": 16,
+     "wins": 5,
+     "sum_r": -1.383,
+     "exp_r": -0.0864,
+     "pf": 0.827
+    }
+   },
+   "GBPJPY": {
+    "RANGE": {
+     "n": 41,
+     "wins": 16,
+     "sum_r": 7.598,
+     "exp_r": 0.1853,
+     "pf": 1.484
+    },
+    "TRANSITION": {
+     "n": 23,
+     "wins": 8,
+     "sum_r": 41.961,
+     "exp_r": 1.8244,
+     "pf": 4.516
+    },
+    "TREND_DOWN": {
+     "n": 4,
+     "wins": 0,
+     "sum_r": -4.045,
+     "exp_r": -1.0112,
+     "pf": 0.0
+    },
+    "TREND_UP": {
+     "n": 25,
+     "wins": 10,
+     "sum_r": 3.877,
+     "exp_r": 0.1551,
+     "pf": 1.285
+    }
+   },
+   "GBPUSD": {
+    "RANGE": {
+     "n": 18,
+     "wins": 5,
+     "sum_r": -2.689,
+     "exp_r": -0.1494,
+     "pf": 0.749
+    },
+    "TRANSITION": {
+     "n": 24,
+     "wins": 11,
+     "sum_r": 1.471,
+     "exp_r": 0.0613,
+     "pf": 1.184
+    },
+    "TREND_DOWN": {
+     "n": 7,
+     "wins": 2,
+     "sum_r": -1.477,
+     "exp_r": -0.2109,
+     "pf": 0.591
+    },
+    "TREND_UP": {
+     "n": 23,
+     "wins": 8,
+     "sum_r": 0.84,
+     "exp_r": 0.0365,
+     "pf": 1.062
+    }
+   },
+   "USDCAD": {
+    "RANGE": {
+     "n": 23,
+     "wins": 9,
+     "sum_r": -6.516,
+     "exp_r": -0.2833,
+     "pf": 0.349
+    },
+    "TRANSITION": {
+     "n": 28,
+     "wins": 10,
+     "sum_r": -4.321,
+     "exp_r": -0.1543,
+     "pf": 0.696
+    },
+    "TREND_DOWN": {
+     "n": 8,
+     "wins": 0,
+     "sum_r": -7.334,
+     "exp_r": -0.9167,
+     "pf": 0.0
+    },
+    "TREND_UP": {
+     "n": 16,
+     "wins": 7,
+     "sum_r": 0.133,
+     "exp_r": 0.0083,
+     "pf": 1.021
+    }
+   },
+   "USDCHF": {
+    "RANGE": {
+     "n": 17,
+     "wins": 6,
+     "sum_r": -5.701,
+     "exp_r": -0.3354,
+     "pf": 0.38
+    },
+    "TRANSITION": {
+     "n": 30,
+     "wins": 12,
+     "sum_r": 0.665,
+     "exp_r": 0.0222,
+     "pf": 1.045
+    },
+    "TREND_DOWN": {
+     "n": 21,
+     "wins": 8,
+     "sum_r": 3.655,
+     "exp_r": 0.1741,
+     "pf": 1.377
+    },
+    "TREND_UP": {
+     "n": 6,
+     "wins": 2,
+     "sum_r": -2.683,
+     "exp_r": -0.4472,
+     "pf": 0.243
+    }
+   },
+   "USDJPY": {
+    "RANGE": {
+     "n": 22,
+     "wins": 7,
+     "sum_r": -3.419,
+     "exp_r": -0.1554,
+     "pf": 0.682
+    },
+    "TRANSITION": {
+     "n": 26,
+     "wins": 10,
+     "sum_r": -4.655,
+     "exp_r": -0.179,
+     "pf": 0.655
+    },
+    "TREND_DOWN": {
+     "n": 10,
+     "wins": 3,
+     "sum_r": -3.364,
+     "exp_r": -0.3364,
+     "pf": 0.402
+    },
+    "TREND_UP": {
+     "n": 39,
+     "wins": 17,
+     "sum_r": 7.596,
+     "exp_r": 0.1948,
+     "pf": 1.402
+    }
+   },
+   "XAUUSD": {
+    "RANGE": {
+     "n": 18,
+     "wins": 4,
+     "sum_r": -5.136,
+     "exp_r": -0.2853,
+     "pf": 0.516
+    },
+    "TRANSITION": {
+     "n": 35,
+     "wins": 15,
+     "sum_r": 5.816,
+     "exp_r": 0.1662,
+     "pf": 1.385
+    },
+    "TREND_DOWN": {
+     "n": 3,
+     "wins": 2,
+     "sum_r": 7.22,
+     "exp_r": 2.4065,
+     "pf": 8.162
+    },
+    "TREND_UP": {
+     "n": 40,
+     "wins": 19,
+     "sum_r": 2.433,
+     "exp_r": 0.0608,
+     "pf": 1.145
+    }
+   }
+  },
+  "by_symbol_all": {
+   "AUDUSD": {
+    "n": 69,
+    "wins": 23,
+    "sum_r": -8.579,
+    "exp_r": -0.1243,
+    "pf": 0.767
+   },
+   "EURJPY": {
+    "n": 93,
+    "wins": 39,
+    "sum_r": 9.379,
+    "exp_r": 0.1008,
+    "pf": 1.227
+   },
+   "EURUSD": {
+    "n": 71,
+    "wins": 22,
+    "sum_r": -10.156,
+    "exp_r": -0.143,
+    "pf": 0.731
+   },
+   "GBPJPY": {
+    "n": 93,
+    "wins": 34,
+    "sum_r": 49.392,
+    "exp_r": 0.5311,
+    "pf": 2.091
+   },
+   "GBPUSD": {
+    "n": 72,
+    "wins": 26,
+    "sum_r": -1.855,
+    "exp_r": -0.0258,
+    "pf": 0.948
+   },
+   "USDCAD": {
+    "n": 75,
+    "wins": 26,
+    "sum_r": -18.038,
+    "exp_r": -0.2405,
+    "pf": 0.525
+   },
+   "USDCHF": {
+    "n": 74,
+    "wins": 28,
+    "sum_r": -4.064,
+    "exp_r": -0.0549,
+    "pf": 0.891
+   },
+   "USDJPY": {
+    "n": 97,
+    "wins": 37,
+    "sum_r": -3.842,
+    "exp_r": -0.0396,
+    "pf": 0.921
+   },
+   "XAUUSD": {
+    "n": 96,
+    "wins": 40,
+    "sum_r": 10.333,
+    "exp_r": 0.1076,
+    "pf": 1.237
+   }
+  },
+  "all": {
+   "n": 740,
+   "wins": 275,
+   "sum_r": 22.569,
+   "exp_r": 0.0305,
+   "pf": 1.062
+  }
+ }
+}

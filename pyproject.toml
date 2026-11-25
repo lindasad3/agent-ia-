@@ -1,0 +1,9 @@
+[project]
+name = "forex-agent"
+version = "1.0.0"
+description = "Agent IA Forex multi-stratégies (Quantower + MetaTrader 5)"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore:.*InsecureKeyLength.*"]

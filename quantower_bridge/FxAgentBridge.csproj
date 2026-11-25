@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Compilation : dotnet build -c Release -p:QuantowerBin="C:\Quantower\TradingPlatform\v1.xxx.x\bin"
+    Puis copier bin\Release\FxAgentBridge.dll dans le dossier des scripts Quantower :
+    C:\Quantower\Settings\Scripts\Strategies\FxAgentBridge\
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <QuantowerBin Condition="'$(QuantowerBin)' == ''">C:\Quantower\TradingPlatform\v1.140.0\bin</QuantowerBin>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="TradingPlatform.BusinessLayer">
+      <HintPath>$(QuantowerBin)\TradingPlatform.BusinessLayer.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
