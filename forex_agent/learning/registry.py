@@ -9,12 +9,29 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 MODELS = ROOT / "models"
 REGISTRY = MODELS / "registry.json"
+# Résultats propres à la machine (tests sur données inédites, activation) : non versionnés, pour que
+# « git pull » sur le VPS ne soit jamais bloqué par un conflit sur registry.json.
+LOCAL = MODELS / "registry.local.json"
+
+
+def _load_local() -> dict[str, Any]:
+    return json.loads(LOCAL.read_text()) if LOCAL.exists() else {"active": None, "versions": {}}
 
 
 def load() -> dict[str, Any]:
-    if REGISTRY.exists():
-        return json.loads(REGISTRY.read_text())
-    return {"active": None, "versions": []}
+    reg = json.loads(REGISTRY.read_text()) if REGISTRY.exists() else {"active": None, "versions": []}
+    loc = _load_local()
+    for v in reg["versions"]:
+        o = loc["versions"].get(v["version"])
+        if o:
+            v.update({k: o[k] for k in ("status", "gate") if k in o})
+            v["forward_tests"] = v.get("forward_tests", []) + o.get("forward_tests", [])
+    if loc.get("active"):
+        reg["active"] = loc["active"]
+        for v in reg["versions"]:
+            if v["status"] == "active" and v["version"] != loc["active"]:
+                v["status"] = "retired"
+    return reg
 
 
 def save(reg: dict[str, Any]) -> None:
@@ -72,20 +89,18 @@ def latest_version() -> dict | None:
 
 
 def record_forward(version: str, result: dict) -> dict:
-    """Enregistre un test sur données inédites ; une version qui le réussit devient la version active."""
-    reg = load()
-    v = next((x for x in reg["versions"] if x["version"] == version), None)
-    if v is None:
+    """Enregistre un test sur données inédites (fichier local) ; une version qui le réussit devient active."""
+    if not any(x["version"] == version for x in load()["versions"]):
         raise KeyError(version)
-    v.setdefault("forward_tests", []).append({k: result[k] for k in ("run_at", "period", "symbols", "metrics", "passed",
-                                                                      "gate", "skipped") if k in result}
+    loc = _load_local()
+    o = loc["versions"].setdefault(version, {})
+    o.setdefault("forward_tests", []).append({k: result[k] for k in ("run_at", "period", "symbols", "metrics", "passed",
+                                                                      "gate", "skipped", "coverage") if k in result}
                                              | {"report": result.get("report")})
     if result["passed"]:
-        for x in reg["versions"]:
-            if x["status"] == "active" and x["version"] != version:
-                x["status"] = "retired"
-        v["status"] = "active"
-        v["gate"] = [f"validée par test sur données inédites ({result['period'][0][:10]} → {result['period'][1][:10]})"]
-        reg["active"] = version
-    save(reg)
-    return v
+        o["status"] = "active"
+        o["gate"] = [f"validée par test sur données inédites ({result['period'][0][:10]} → {result['period'][1][:10]})"]
+        loc["active"] = version
+    MODELS.mkdir(exist_ok=True)
+    LOCAL.write_text(json.dumps(loc, indent=2, ensure_ascii=False, default=str))
+    return next(x for x in load()["versions"] if x["version"] == version)

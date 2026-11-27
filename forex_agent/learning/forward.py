@@ -24,6 +24,21 @@ from .backtest import ExecParams, PricePath, RateBook, run_portfolio
 
 ROOT = Path(__file__).resolve().parents[2]
 WARMUP_DAYS = 90  # historique nécessaire avant le début du test (indicateurs, contexte D1)
+MIN_COVERAGE = 0.85  # part minimale des heures de marché présentes dans l'historique testé
+
+
+def coverage(m1: pd.DataFrame, start: datetime, end: datetime, symbol: str = "") -> float:
+    """Part des heures de marché (lun-ven ; or : 23 h/j) pour lesquelles l'historique contient des bougies."""
+    seg = m1[(m1.index >= pd.Timestamp(start)) & (m1.index < pd.Timestamp(end))]
+    if seg.empty:
+        return 0.0
+    hours = pd.date_range(pd.Timestamp(start).floor("h"), seg.index[-1].floor("h"), freq="h")
+    # Forex ouvert du dimanche 22:00 au vendredi 22:00 UTC (approximation, à 1 h près selon l'heure d'été)
+    open_mask = ~(((hours.day_of_week == 4) & (hours.hour >= 22)) | (hours.day_of_week == 5) |
+                  ((hours.day_of_week == 6) & (hours.hour < 22)))
+    expected = int(open_mask.sum()) * (23 / 24 if symbol.startswith("XA") else 1.0)
+    have = seg.index.floor("h").nunique()
+    return min(1.0, have / expected) if expected else 0.0
 
 # fonction (symbole, début, fin) -> bougies M1 (index UTC)
 Loader = Callable[[str, datetime, datetime], pd.DataFrame]
@@ -40,7 +55,7 @@ def run_forward(version: str | None, loader: Loader, start: datetime, end: datet
     entry_tf = v.get("entry_tf", "H1")
     end = end or datetime.now(timezone.utc)
     symbols = symbols or v["symbols"]
-    data, closes, skipped = {}, {}, {}
+    data, closes, skipped, coverages = {}, {}, {}, {}
     for s in symbols:
         try:
             m1 = loader(s, start - timedelta(days=WARMUP_DAYS), end)
@@ -50,7 +65,15 @@ def run_forward(version: str | None, loader: Loader, start: datetime, end: datet
         if len(m1) < 20_000 or m1.index[-1] <= pd.Timestamp(start):
             skipped[s] = f"historique insuffisant ({len(m1)} bougies M1)"
             continue
-        log(f"  {s}: {len(m1):,} bougies M1 ({m1.index[0]:%Y-%m-%d} → {m1.index[-1]:%Y-%m-%d})")
+        cov = coverage(m1, start, end, s)
+        coverages[s] = round(cov, 3)
+        if cov < MIN_COVERAGE:
+            # Un historique troué fausserait le test : la paire est exclue plutôt que jugée sur des données partielles
+            skipped[s] = f"historique incomplet ({cov:.0%} des heures de marché, minimum {MIN_COVERAGE:.0%})"
+            log(f"  {s}: EXCLU — {skipped[s]}")
+            continue
+        log(f"  {s}: {len(m1):,} bougies M1 ({m1.index[0]:%Y-%m-%d} → {m1.index[-1]:%Y-%m-%d}), "
+            f"couverture {cov:.0%}")
         data[s] = (FeatureView(features_from_m1(m1, entry_tf)), PricePath(m1))
         closes[s] = resample(m1, "H1")["close"]
     if not data:
@@ -64,7 +87,7 @@ def run_forward(version: str | None, loader: Loader, start: datetime, end: datet
     passed, reasons = registry.gate({"oos_metrics": m}, None)
     result = {"version": v["version"], "run_at": datetime.now(timezone.utc).isoformat(),
               "period": [pd.Timestamp(start).isoformat(), pd.Timestamp(end).isoformat()],
-              "symbols": list(data), "skipped": skipped, "metrics": {k: x for k, x in m.items() if k != "equity_curve"},
+              "symbols": list(data), "skipped": skipped, "coverage": coverages, "metrics": {k: x for k, x in m.items() if k != "equity_curve"},
               "equity_curve": m.get("equity_curve", []), "passed": passed, "gate": reasons}
     out = ROOT / "reports" / "forward" / f"{v['version']}_{datetime.now(timezone.utc):%Y%m%d-%H%M}"
     out.mkdir(parents=True, exist_ok=True)

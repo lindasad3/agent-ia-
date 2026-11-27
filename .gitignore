@@ -11,3 +11,4 @@ data/*.db-*
 logs/
 research_lab/cache/
 tools/
+models/registry.local.json
