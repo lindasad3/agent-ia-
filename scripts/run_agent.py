@@ -17,4 +17,5 @@ from forex_agent.main import build  # noqa: E402
 
 if __name__ == "__main__":
     app, rt, st = build()
-    uvicorn.run(app, host=st.api_host, port=st.api_port, log_level="info", proxy_headers=True)
+    # log_config=None : uvicorn utilise la journalisation de l'agent (fichier UTF-8, secrets masqués)
+    uvicorn.run(app, host=st.api_host, port=st.api_port, log_level="info", proxy_headers=True, log_config=None)

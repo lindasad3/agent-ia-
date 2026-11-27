@@ -1,4 +1,4 @@
-# Agent IA Forex — amorçage sur un VPS Windows Server neuf (Contabo, etc.).
+﻿# Agent IA Forex — amorçage sur un VPS Windows Server neuf (Contabo, etc.).
 # À coller dans PowerShell lancé « en tant qu'administrateur ». Installe Git + Python 3.12 + MetaTrader 5,
 # clone le projet dans C:\AgentIAForex puis lance l'installation.
 $ErrorActionPreference = "Stop"

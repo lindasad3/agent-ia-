@@ -1,4 +1,4 @@
-# Installation / mise à jour de l'Agent IA Forex sur Windows Server (PowerShell administrateur).
+﻿# Installation / mise à jour de l'Agent IA Forex sur Windows Server (PowerShell administrateur).
 #   Set-ExecutionPolicy -Scope Process Bypass -Force ; .\deploy\windows\install.ps1
 $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12

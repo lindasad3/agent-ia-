@@ -75,7 +75,18 @@ Application : `http://127.0.0.1:8000` dans le navigateur du VPS (accès depuis l
 | `Symbole introuvable` | Le broker nomme autrement le symbole : `FXA_MT5_SYMBOL_MAP={"XAUUSD":"GOLD"}` |
 | `Marché fermé` (10018) | Le Forex est fermé du vendredi 22h au dimanche 22h (UTC) : refaites le test en semaine |
 | Décalage horaire « non détecté » | Marché fermé au moment du test : relancez en semaine ou fixez `FXA_MT5_SERVER_UTC_OFFSET=2` (heure d'hiver) / `3` (été) pour la plupart des brokers |
-| Journaux | `C:\AgentIAForex\logs\agent-AAAAMMJJ.log` |
+| Journaux | `logs\agent.log` (activité, UTF-8, un fichier par jour) et `logs\console.log` (démarrages, plantages) |
+
+## Exploitation courante (PowerShell, dans `C:\AgentIAForex`)
+
+| Action | Commande |
+|---|---|
+| Suivre le journal en direct | `powershell -ExecutionPolicy Bypass -File deploy\windows\logs.ps1` |
+| Mettre à jour depuis GitHub et redémarrer | `powershell -ExecutionPolicy Bypass -File deploy\windows\update.ps1` |
+| Arrêter l'agent (tâche + processus Python) | `powershell -ExecutionPolicy Bypass -File deploy\windows\stop.ps1` |
+| Redémarrer | `Start-ScheduledTask -TaskName AgentIAForex` |
+
+Pour lire un journal à la main, précisez toujours l'encodage : `Get-Content logs\agent.log -Encoding UTF8 -Tail 30`.
 
 Relancer seulement une étape : `cd C:\AgentIAForex` puis `.venv\Scripts\python.exe scripts\setup.py mt5`
 ou `.venv\Scripts\python.exe scripts\mt5_check.py --test-order`.

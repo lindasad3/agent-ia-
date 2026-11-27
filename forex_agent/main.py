@@ -13,6 +13,7 @@ from .analysis.orderflow import OrderFlowStore
 from .api.app import create_app
 from .api.auth import Auth, hash_password
 from .brain.factory import load_engine
+from . import logging_setup
 from .config import Settings
 from .data.calendar import EconomicCalendar
 from .notify.telegram import TelegramBot
@@ -45,8 +46,7 @@ def build_broker(st: Settings):
 
 def build(st: Settings | None = None):
     st = st or Settings()
-    logging.basicConfig(level=logging.INFO, stream=sys.stdout,
-                        format="%(asctime)s %(levelname)s %(name)s: %(message)s")
+    logging_setup.setup("logs")
     store = Store(st.db_url)
     # Mot de passe de l'application : .env, sinon généré une fois et affiché au premier démarrage
     pw_hash = store.get("api_password_hash")

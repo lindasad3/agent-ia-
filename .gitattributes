@@ -1,0 +1,2 @@
+# Scripts PowerShell : conserver tels quels (UTF-8 avec BOM, fins de ligne CRLF)
+*.ps1 -text diff

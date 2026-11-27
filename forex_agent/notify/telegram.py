@@ -16,6 +16,8 @@ from typing import Any, Callable
 
 import httpx
 
+from ..logging_setup import redact
+
 log = logging.getLogger("telegram")
 
 SENSITIVE = {"/pause", "/resume", "/mode", "/auto", "/stop", "/close"}
@@ -57,13 +59,13 @@ class TelegramBot:
                 if data.get("ok"):
                     self.last_ok = time.time()
                     return data
-                self.last_error = str(data.get("description"))
+                self.last_error = redact(str(data.get("description")))
                 if r.status_code == 429:
                     time.sleep(float(data.get("parameters", {}).get("retry_after", 2)))
                     continue
                 return None
             except Exception as e:  # noqa: BLE001 - réseau
-                self.last_error = str(e)
+                self.last_error = redact(str(e))
                 time.sleep(1.5 * (attempt + 1))
         return None
 
