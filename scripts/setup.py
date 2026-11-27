@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import getpass
 import json
+import re
 import secrets
 import sys
 import time
@@ -62,8 +63,39 @@ def write_env(values: dict[str, str]) -> None:
 
 def ask(prompt: str, default: str | None = None, secret: bool = False) -> str:
     label = f"{prompt}" + (f" [{default}]" if default and not secret else "") + " : "
-    v = getpass.getpass(label) if secret else input(label)
-    return v.strip() or (default or "")
+    for _ in range(3):
+        v = getpass.getpass(label) if secret else input(label)
+        if secret and any(ord(c) < 32 for c in v):
+            # Ctrl+V dans une saisie masquée Windows envoie le caractère de contrôle, pas le texte
+            print("   ⚠ Ctrl+V ne fonctionne pas dans une saisie masquée : faites un CLIC DROIT pour coller, ou tapez.")
+            continue
+        return v.strip() or (default or "")
+    return default or ""
+
+
+TOKEN_RX = re.compile(r"^\d{5,}:[A-Za-z0-9_-]{30,}$")
+
+
+def clean_token(raw: str) -> str:
+    """Nettoie un token collé : espaces, guillemets, caractères invisibles, préfixe « bot » d'une URL."""
+    t = "".join(c for c in raw if c.isprintable()).strip().strip("'\"<>").strip()
+    if t.lower().startswith("bot") and ":" in t:
+        t = t[3:]
+    return t
+
+
+def ask_token(existing: str = "") -> str:
+    print("   (le token s'affiche à l'écran pour que Ctrl+V fonctionne ; cette session est privée)")
+    for _ in range(3):
+        raw = input("Collez le token du bot puis Entrée : ")
+        t = clean_token(raw)
+        if not t and existing and yes("   Garder le token déjà enregistré ?"):
+            return existing
+        if TOKEN_RX.match(t):
+            return t
+        print(f"   ✖ Format invalide ({len(t)} caractères reçus). Attendu : 123456789:AAH... (copiez tout le token "
+              f"envoyé par @BotFather)")
+    return ""
 
 
 def yes(prompt: str, default: bool = True) -> bool:
@@ -98,7 +130,7 @@ def setup_mt5() -> bool:
     if not Path(path).exists():
         print(f"⚠ Fichier introuvable : {path} (installez MT5 ou corrigez le chemin)")
     login = ask("Numéro de compte (login)", env.get("FXA_MT5_LOGIN") if env.get("FXA_MT5_LOGIN") not in ("", "12345678") else None)
-    password = ask("Mot de passe du compte (masqué)", secret=True) or env.get("FXA_MT5_PASSWORD", "")
+    password = ask("Mot de passe du compte (masqué, clic droit pour coller)", secret=True) or env.get("FXA_MT5_PASSWORD", "")
     server = ask("Serveur (exactement comme affiché dans MT5)", env.get("FXA_MT5_SERVER") or "MetaQuotes-Demo")
     if not login.isdigit():
         print("✖ Le login doit être un nombre.")
@@ -148,9 +180,9 @@ def setup_telegram() -> bool:
     print("\n=== Telegram ===")
     print("1. Dans Telegram, ouvrez @BotFather, envoyez /newbot, choisissez un nom : il vous donne un TOKEN.")
     env = read_env()
-    token = ask("Collez le token du bot (masqué)", secret=True) or env.get("FXA_TELEGRAM_TOKEN", "")
-    if ":" not in token:
-        print("✖ Token invalide (format attendu 123456789:ABC...)")
+    token = ask_token(env.get("FXA_TELEGRAM_TOKEN", ""))
+    if not token:
+        print("✖ Aucun token valide. Relancez : .venv\\Scripts\\python.exe scripts\\setup.py telegram")
         return False
     api = f"https://api.telegram.org/bot{token}"
     with httpx.Client(timeout=40) as c:

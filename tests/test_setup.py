@@ -48,10 +48,18 @@ def test_telegram_setup_detects_chat(tmp_path, monkeypatch):
     real = httpx.Client
     monkeypatch.setattr(setup.httpx if hasattr(setup, "httpx") else httpx, "Client",
                         lambda **kw: real(transport=httpx.MockTransport(handler)))
-    answers = iter(["", "o", "1234"])
+    tok = "1234567890:AAFakeTokenForTestsOnly_abcdefghijklmno"
+    # 1er essai : Ctrl+V reçu comme caractère de contrôle ; 2e : token collé avec espaces et préfixe "bot"
+    answers = iter(["\x16", f"  bot{tok}\u200b ", "", "o", "1234"])
     monkeypatch.setattr("builtins.input", lambda *a: next(answers))
-    monkeypatch.setattr(setup.getpass, "getpass", lambda *a: "123456:ABCDEF")
     assert setup.setup_telegram()
     env = setup.read_env()
-    assert env["FXA_TELEGRAM_TOKEN"] == "123456:ABCDEF" and json.loads(env["FXA_TELEGRAM_CHAT_IDS"]) == [555]
+    assert env["FXA_TELEGRAM_TOKEN"] == tok and json.loads(env["FXA_TELEGRAM_CHAT_IDS"]) == [555]
     assert env["FXA_TELEGRAM_PIN"] == "1234" and sent and sent[0]["chat_id"] == 555
+
+
+def test_secret_prompt_rejects_ctrl_v(monkeypatch, capsys):
+    vals = iter(["\x16", "MonMotDePasse"])
+    monkeypatch.setattr(setup.getpass, "getpass", lambda *a: next(vals))
+    assert setup.ask("Mot de passe", secret=True) == "MonMotDePasse"
+    assert "clic droit" in capsys.readouterr().out.lower()
