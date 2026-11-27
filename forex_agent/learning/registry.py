@@ -69,3 +69,23 @@ def active_version() -> dict | None:
 def latest_version() -> dict | None:
     reg = load()
     return reg["versions"][-1] if reg["versions"] else None
+
+
+def record_forward(version: str, result: dict) -> dict:
+    """Enregistre un test sur données inédites ; une version qui le réussit devient la version active."""
+    reg = load()
+    v = next((x for x in reg["versions"] if x["version"] == version), None)
+    if v is None:
+        raise KeyError(version)
+    v.setdefault("forward_tests", []).append({k: result[k] for k in ("run_at", "period", "symbols", "metrics", "passed",
+                                                                      "gate", "skipped") if k in result}
+                                             | {"report": result.get("report")})
+    if result["passed"]:
+        for x in reg["versions"]:
+            if x["status"] == "active" and x["version"] != version:
+                x["status"] = "retired"
+        v["status"] = "active"
+        v["gate"] = [f"validée par test sur données inédites ({result['period'][0][:10]} → {result['period'][1][:10]})"]
+        reg["active"] = version
+    save(reg)
+    return v

@@ -64,9 +64,19 @@ accéléré : tout est étiqueté **SIMULATION** et aucun ordre réel n'est pass
 3. Telegram : [`deploy/windows/GUIDE_TELEGRAM.md`](deploy/windows/GUIDE_TELEGRAM.md) — `scripts/setup.py telegram`
    détecte automatiquement votre chat_id.
 4. (rappel) Activer « Algo Trading » dans MT5 et utiliser un compte démo.
-5. HTTPS : Caddy + domaine (`deploy/windows/Caddyfile`) — nécessaire pour installer la PWA sur téléphone.
+5. HTTPS + application sur téléphone : `deploy\windows\enable_https.ps1` (adresse gratuite DuckDNS + certificat
+   automatique Caddy, démarrage automatique).
 6. Quantower : voir `quantower_bridge/README.md`.
 7. Vérifier : `python scripts/mt5_check.py --test-order` (ordre 0.01 lot ouvert puis fermé, compte démo uniquement).
+
+## Valider le modèle sur des données inédites
+
+`python scripts/forward_test.py` (sur le VPS) rejoue la dernière version, **figée**, sur l'historique réel du broker
+postérieur à toutes ses données d'entraînement (v3 : à partir du 2026-03-01). Si les critères sont remplis
+(PF ≥ 1,1, espérance > 0, ≥ 30 trades, DD ≤ 15 %), la version devient active ; sinon elle reste réservée au démo.
+Rapport : `reports/forward/<version>_<date>/REPORT.md`.
+
+Démonstration complète en 17 étapes : [`docs/DEMO_CHECKLIST.md`](docs/DEMO_CHECKLIST.md).
 
 ## Modes et contrôle
 

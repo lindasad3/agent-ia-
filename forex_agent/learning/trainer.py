@@ -146,6 +146,7 @@ def run(symbols: list[str] | None = None, entry_tf: str = "H1", n_trials: int = 
     candidate = {
         "version": version, "created_at": datetime.now(timezone.utc).isoformat(), "entry_tf": entry_tf,
         "symbols": symbols, "capital": capital, "is_period": [str(start), str(cut)], "oos_period": [str(cut), str(end_common)],
+        "data_end": str(max(f.index[-1] for f in feats.values())),  # tout forward test doit commencer après
         "optimization": optim, "validation": validation, "meta_model": meta_is.report, "meta_model_active": meta_is.active,
         "oos_metrics": {k: v for k, v in oos_metrics.items() if k != "equity_curve"},
         "oos_equity_curve": oos_metrics.get("equity_curve", []),

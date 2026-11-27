@@ -262,6 +262,32 @@ class MT5Broker(Broker):
         df = df.set_index("time").rename(columns={"tick_volume": "volume"})
         return df[["open", "high", "low", "close", "volume"]].astype(float)
 
+    def history_bars(self, symbol: str, timeframe: str, start: datetime, end: datetime,
+                     chunk_days: int = 20) -> pd.DataFrame:
+        """Historique profond (ex. M1 sur 15 mois) téléchargé par tranches (limite « Max bars » du terminal)."""
+        self._ensure_symbol(symbol)
+        tf = getattr(self.mt5, TF[timeframe])
+        parts = []
+        cur = start
+        while cur < end:
+            nxt = min(cur + timedelta(days=chunk_days), end)
+            rates = None
+            for _ in range(3):  # le terminal télécharge l'historique à la demande
+                rates = self.mt5.copy_rates_range(self._s(symbol), tf, cur + self.server_offset, nxt + self.server_offset)
+                if rates is not None and len(rates):
+                    break
+                time.sleep(1.0)
+            if rates is not None and len(rates):
+                parts.append(pd.DataFrame(rates))
+            cur = nxt
+        if not parts:
+            raise ConnectionError(f"Aucun historique {symbol} {timeframe} entre {start:%Y-%m-%d} et {end:%Y-%m-%d} : "
+                                  f"{self.mt5.last_error()}")
+        df = pd.concat(parts, ignore_index=True)
+        df["time"] = pd.to_datetime(df["time"], unit="s", utc=True) - self.server_offset
+        df = df.drop_duplicates("time").set_index("time").sort_index().rename(columns={"tick_volume": "volume"})
+        return df[["open", "high", "low", "close", "volume"]].astype(float)
+
     def symbol_spec(self, symbol: str) -> SymbolSpec:
         base = get_spec(symbol)
         try:

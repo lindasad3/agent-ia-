@@ -10,3 +10,4 @@ data/*.db-*
 *.log
 logs/
 research_lab/cache/
+tools/
