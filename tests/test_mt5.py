@@ -17,7 +17,13 @@ class FakeMT5:
     DEAL_REASON_SL, DEAL_REASON_TP = 4, 5
     TIMEFRAME_H1 = 16385
 
-    def __init__(self, trade_mode=0, retcodes=(10009,), names=None, filling_mode=2, tick_time=1_700_000_000):
+    def __init__(self, trade_mode=0, retcodes=(10009,), names=None, filling_mode=2, tick_time=1_700_000_000,
+                 session_login=123, real_password="x", terminal_connected=True):
+        self.session_login = session_login      # compte sur lequel le terminal est déjà connecté (None = aucun)
+        self.real_password = real_password
+        self.terminal_connected = terminal_connected
+        self.login_calls = []
+        self.init_calls = []
         self.trade_mode = trade_mode
         self.retcodes = list(retcodes)
         self.positions = {}
@@ -26,12 +32,31 @@ class FakeMT5:
         self.filling_mode = filling_mode
         self.tick_time = tick_time
 
-    def initialize(self, **kw): return True
+    def initialize(self, **kw):
+        self.init_calls.append(kw)
+        if "password" in kw and kw["password"] != self.real_password:
+            self._err = (-6, "Terminal: Authorization failed")
+            return False
+        return True
+
+    def login(self, login, password="", server=""):
+        self.login_calls.append(login)
+        if password != self.real_password:
+            self._err = (-6, "Terminal: Authorization failed")
+            return False
+        self.session_login = login
+        return True
+
     def shutdown(self): pass
-    def last_error(self): return (0, "ok")
-    def account_info(self): return NS(trade_mode=self.trade_mode, balance=1000.0, equity=1000.0, margin_free=900.0,
-                                      currency="USD", leverage=100, login=123, server="Demo", name="test")
-    def terminal_info(self): return NS(connected=True)
+    def last_error(self): return getattr(self, "_err", (1, "Success"))
+
+    def account_info(self):
+        if self.session_login is None:
+            return None
+        return NS(trade_mode=self.trade_mode, balance=1000.0, equity=1000.0, margin_free=900.0, currency="USD",
+                  leverage=100, login=self.session_login, server="Demo", name="test", trade_allowed=True, trade_expert=True)
+
+    def terminal_info(self): return NS(connected=self.terminal_connected, trade_allowed=True, name="MT5", build=5000, path="C:/MT5")
     def symbols_get(self): return [NS(name=n) for n in (self.names or ["EURUSD", "GBPUSD", "XAUUSD"])]
 
     def symbol_info(self, s):
@@ -151,3 +176,27 @@ def test_server_offset_configured_and_detected():
 def test_diagnostics():
     d = broker().diagnostics()
     assert d["account"]["demo"] is True and d["connected"] is True
+
+
+def test_attaches_to_existing_session_without_reauth():
+    """Coupure passagère : le terminal a sa session, l'agent se rattache sans renvoyer le mot de passe."""
+    b = MT5Broker(123, "MAUVAIS", "Demo", mt5_module=FakeMT5(session_login=123))
+    assert b.connect()
+    assert b.mt5.login_calls == [] and all("password" not in k for k in b.mt5.init_calls)
+    ok, msg = b.verify_credentials()  # mais l'assistant détecte le mauvais mot de passe
+    assert not ok and "setup.py mt5" in msg
+
+
+def test_logs_in_when_terminal_has_no_session():
+    b = MT5Broker(123, "x", "Demo", mt5_module=FakeMT5(session_login=None))
+    assert b.connect() and b.mt5.login_calls == [123]
+
+
+def test_wrong_password_clear_error():
+    b = MT5Broker(123, "MAUVAIS", "Demo", mt5_module=FakeMT5(session_login=None))
+    assert not b.connect() and "mot de passe ou serveur refusé" in b.last_error
+
+
+def test_terminal_not_connected_to_server():
+    b = MT5Broker(123, "x", "Demo", mt5_module=FakeMT5(terminal_connected=False))
+    assert not b.connect() and "pas connecté au serveur" in b.last_error and b.mt5.login_calls == []

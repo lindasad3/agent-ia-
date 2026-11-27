@@ -123,6 +123,7 @@ def setup_secrets(force: bool = False) -> None:
 # ---------------------------------------------------------------- MT5
 def setup_mt5() -> bool:
     print("\n=== MetaTrader 5 ===")
+    print("Arrêtez l'agent avant : powershell -ExecutionPolicy Bypass -File deploy\\windows\\stop.ps1")
     print("Prérequis : terminal MT5 installé ET ouvert une première fois, connecté à votre compte DÉMO,")
     print("et bouton « Algo Trading » activé (vert) dans la barre d'outils.\n")
     env = read_env()
@@ -147,6 +148,12 @@ def setup_mt5() -> bool:
             print(f"✖ {b.last_error}")
             write_env(values)
             print("Identifiants enregistrés malgré tout ; corrigez puis relancez : python scripts/setup.py mt5")
+            return False
+        okc, msg = b.verify_credentials()
+        print(f"  {'✔' if okc else '✖'} Mot de passe : {msg}")
+        if not okc:
+            write_env(values)
+            print("Corrigez le mot de passe (clic droit pour coller) puis relancez : python scripts/setup.py mt5")
             return False
         d = b.diagnostics()
         acc = b.account()

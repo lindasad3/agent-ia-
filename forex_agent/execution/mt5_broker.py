@@ -64,25 +64,47 @@ class MT5Broker(Broker):
             self._mt5 = mt5
         return self._mt5
 
+    def _auth_error(self, where: str) -> str:
+        err = self.mt5.last_error()
+        hint = ("mot de passe ou serveur refusé par le broker : relancez « python scripts\\setup.py mt5 » "
+                "(collez le mot de passe par CLIC DROIT)" if err and err[0] == -6 else
+                "vérifiez que le terminal MT5 est installé, ouvert et connecté (FXA_MT5_PATH)")
+        return f"{where} a échoué : {err} — {hint}"
+
     def connect(self) -> bool:
-        kw: dict[str, Any] = {}
-        if self.path:
-            kw["path"] = self.path
-        if self.login:
-            kw.update(login=int(self.login), password=self.password or "", server=self.server or "")
+        """1) Rattachement à la session déjà ouverte du terminal ; 2) authentification seulement si nécessaire.
+
+        Le terminal garde sa propre session (mot de passe mémorisé) : une coupure réseau passagère ne doit pas
+        obliger à se réauthentifier.
+        """
         try:
-            ok = self.mt5.initialize(**kw)
+            ok = self.mt5.initialize(path=self.path) if self.path else self.mt5.initialize()
+            if not ok and self.login:
+                ok = self.mt5.initialize(**({"path": self.path} if self.path else {}), login=int(self.login),
+                                         password=self.password or "", server=self.server or "")
         except Exception as e:  # noqa: BLE001 - module absent, terminal introuvable...
             self.last_error = f"Impossible de démarrer MT5 : {e}"
             return False
         if not ok:
-            self.last_error = (f"initialize() a échoué : {self.mt5.last_error()} — vérifiez le chemin du terminal "
-                               f"(FXA_MT5_PATH), l'identifiant, le mot de passe et le nom exact du serveur")
+            self.last_error = self._auth_error("initialize()")
             self._connected = False
             return False
         info = self.mt5.account_info()
+        if self.login and (info is None or int(info.login) != int(self.login)):
+            # Terminal sans session, ou connecté à un autre compte : authentification explicite
+            if not self.mt5.login(int(self.login), password=self.password or "", server=self.server or ""):
+                self.last_error = self._auth_error(f"login({self.login})")
+                self._connected = False
+                return False
+            info = self.mt5.account_info()
         if info is None:
-            self.last_error = f"account_info() indisponible : {self.mt5.last_error()} (identifiants refusés ?)"
+            self.last_error = f"Compte indisponible : {self.mt5.last_error()} (terminal non connecté au broker ?)"
+            self._connected = False
+            return False
+        ti = self.mt5.terminal_info()
+        if ti is not None and not getattr(ti, "connected", True):
+            # Le terminal se reconnecte seul au serveur : on attend, sans se réauthentifier
+            self.last_error = "Terminal MT5 ouvert mais pas connecté au serveur du broker (réseau / serveur indisponible)"
             self._connected = False
             return False
         if not self.is_demo_account(info) and not self.allow_live:
@@ -95,6 +117,17 @@ class MT5Broker(Broker):
             self.resolve_symbols(self.wanted or ["EURUSD"])
         self._detect_offset()
         return True
+
+    def verify_credentials(self) -> tuple[bool, str]:
+        """Vérifie réellement le mot de passe auprès du broker (authentification explicite).
+
+        À utiliser dans l'assistant de configuration, agent arrêté : en cas d'échec le terminal peut se déconnecter.
+        """
+        if not self.login:
+            return False, "aucun login configuré"
+        if self.mt5.login(int(self.login), password=self.password or "", server=self.server or ""):
+            return True, "identifiants acceptés par le broker"
+        return False, self._auth_error(f"login({self.login})")
 
     def is_demo_account(self, info) -> bool:
         return info.trade_mode == getattr(self.mt5, "ACCOUNT_TRADE_MODE_DEMO", 0)

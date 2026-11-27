@@ -70,6 +70,7 @@ class AgentRuntime:
         self._last_equity_snap = 0.0
         self._last_backup = time.time()
         self._block_notified: dict[tuple, datetime] = {}
+        self._conn_alert_at: float | None = None
         self._thread: threading.Thread | None = None
         self._stop = threading.Event()
         self.started_at = _now()
@@ -98,9 +99,10 @@ class AgentRuntime:
     def start(self, background: bool = True) -> None:
         self.running = True
         self._stop.clear()
-        self.connect()
         self.telegram.start()
-        self._event("system", f"Agent démarré (broker {self.broker.name}, mode {self.mode}, auto {'ON' if self.auto_trading else 'OFF'}, "
+        ok = self.connect()
+        self._event("system", f"Agent démarré (broker {self.broker.name} {'connecté ✅' if ok else 'NON connecté ❌'}, "
+                              f"mode {self.mode}, auto {'ON' if self.auto_trading else 'OFF'}, "
                               f"modèle {self.model_info.get('version') or 'aucun'})", notify=True)
         if background:
             self._thread = threading.Thread(target=self._loop, name="agent-loop", daemon=True)
@@ -112,19 +114,30 @@ class AgentRuntime:
         self._event("system", "Agent arrêté", notify=True)
 
     def connect(self) -> bool:
+        """Connexion avec alertes : une alerte par panne (au démarrage ou en cours), rappel horaire, retour annoncé."""
+        name = self.broker.name
         for attempt in range(3):
             try:
                 if self.broker.connect():
-                    if not self.broker_was_connected:
-                        self._event("connexion", f"Connecté à {self.broker.name}", notify=attempt > 0 or self.cycle_errors > 0)
+                    if self._conn_alert_at is not None:
+                        self._event("connexion", f"Connexion {name} rétablie", notify=True)
+                    elif not self.broker_was_connected:
+                        self._event("connexion", f"Connecté à {name}")
+                    self._conn_alert_at = None
                     self.broker_was_connected = True
                     return True
             except Exception as e:  # noqa: BLE001
-                self._event("connexion", f"Échec de connexion {self.broker.name} : {e}", "error")
+                self.broker.last_error = str(e)
             time.sleep(min(2 ** attempt, 10) if not self.simulation else 0)
         err = getattr(self.broker, "last_error", "")
-        if self.broker_was_connected:
-            self._event("connexion", f"Déconnexion {self.broker.name} — reconnexion en échec. {err}", "error", notify=True)
+        now = time.time()
+        if self._conn_alert_at is None or now - self._conn_alert_at > 3600:
+            what = "Déconnexion" if self.broker_was_connected else "Connexion impossible"
+            if self._conn_alert_at is not None:
+                what = "Toujours déconnecté de"
+            self._event("connexion", f"{what} {name} : {err}. Nouvelles tentatives automatiques en cours.", "error",
+                        notify=True)
+            self._conn_alert_at = now
         self.broker_was_connected = False
         return False
 
