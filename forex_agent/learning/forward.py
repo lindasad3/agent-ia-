@@ -14,7 +14,7 @@ from typing import Callable
 
 import pandas as pd
 
-from ..analysis.features import features_from_m1, resample
+from ..analysis.features import HTF_FOR, build_features
 from ..brain.factory import load_engine
 from ..performance.metrics import compute
 from ..risk.engine import RiskConfig, RiskEngine
@@ -23,7 +23,8 @@ from . import registry
 from .backtest import ExecParams, PricePath, RateBook, run_portfolio
 
 ROOT = Path(__file__).resolve().parents[2]
-WARMUP_DAYS = 90  # historique nécessaire avant le début du test (indicateurs, contexte D1)
+WARMUP_DAYS = 420  # contexte D1 : EMA200 journalière + rang de volatilité sur 500 barres
+PATH_TF = "M5"     # rejeu du prix : 100 000 bougies M5 ≈ 16 mois (limite « Max bars » du terminal MT5)
 MIN_COVERAGE = 0.85  # part minimale des heures de marché présentes dans l'historique testé
 
 
@@ -40,13 +41,13 @@ def coverage(m1: pd.DataFrame, start: datetime, end: datetime, symbol: str = "")
     have = seg.index.floor("h").nunique()
     return min(1.0, have / expected) if expected else 0.0
 
-# fonction (symbole, début, fin) -> bougies M1 (index UTC)
-Loader = Callable[[str, datetime, datetime], pd.DataFrame]
+# fonction (symbole, timeframe, début, fin) -> bougies OHLCV (index UTC = heure d'ouverture)
+Loader = Callable[[str, str, datetime, datetime], pd.DataFrame]
 
 
 def run_forward(version: str | None, loader: Loader, start: datetime, end: datetime | None = None,
                 capital: float = 10_000.0, symbols: list[str] | None = None, register: bool = True,
-                log: Callable[[str], None] = print) -> dict:
+                log: Callable[[str], None] = print, path_tf: str = PATH_TF) -> dict:
     reg = registry.load()
     v = next((x for x in reg["versions"] if x["version"] == version), None) if version else registry.latest_version()
     if v is None:
@@ -56,26 +57,33 @@ def run_forward(version: str | None, loader: Loader, start: datetime, end: datet
     end = end or datetime.now(timezone.utc)
     symbols = symbols or v["symbols"]
     data, closes, skipped, coverages = {}, {}, {}, {}
+    warm = start - timedelta(days=WARMUP_DAYS)
     for s in symbols:
         try:
-            m1 = loader(s, start - timedelta(days=WARMUP_DAYS), end)
+            # Analyse : bougies du broker H1/H4/D1 (comme l'agent en direct) ; rejeu du prix : bougies fines
+            entry = loader(s, entry_tf, warm, end)
+            htfs = {tf: loader(s, tf, warm, end) for tf in HTF_FOR[entry_tf]}
+            path = loader(s, path_tf, start - timedelta(days=3), end)
         except Exception as e:  # noqa: BLE001
             skipped[s] = str(e)
+            log(f"  {s}: EXCLU — {e}")
             continue
-        if len(m1) < 20_000 or m1.index[-1] <= pd.Timestamp(start):
-            skipped[s] = f"historique insuffisant ({len(m1)} bougies M1)"
+        if path.empty or path.index[-1] <= pd.Timestamp(start):
+            skipped[s] = f"aucune bougie {path_tf} après le début du test"
             continue
-        cov = coverage(m1, start, end, s)
+        cov = min(coverage(path, start, end, s), coverage(entry, start, end, s))
         coverages[s] = round(cov, 3)
-        if cov < MIN_COVERAGE:
-            # Un historique troué fausserait le test : la paire est exclue plutôt que jugée sur des données partielles
-            skipped[s] = f"historique incomplet ({cov:.0%} des heures de marché, minimum {MIN_COVERAGE:.0%})"
+        warm_ok = len(entry[entry.index < pd.Timestamp(start)]) >= 300 and len(htfs[HTF_FOR[entry_tf][-1]]) >= 250
+        if cov < MIN_COVERAGE or not warm_ok:
+            # Un historique troué ou trop court fausserait le test : paire exclue plutôt que jugée sur des données partielles
+            skipped[s] = (f"historique incomplet ({cov:.0%} des heures de marché, minimum {MIN_COVERAGE:.0%})"
+                          if cov < MIN_COVERAGE else "contexte d'avant-test insuffisant")
             log(f"  {s}: EXCLU — {skipped[s]}")
             continue
-        log(f"  {s}: {len(m1):,} bougies M1 ({m1.index[0]:%Y-%m-%d} → {m1.index[-1]:%Y-%m-%d}), "
-            f"couverture {cov:.0%}")
-        data[s] = (FeatureView(features_from_m1(m1, entry_tf)), PricePath(m1))
-        closes[s] = resample(m1, "H1")["close"]
+        log(f"  {s}: {path_tf} {len(path):,} bougies ({path.index[0]:%Y-%m-%d} → {path.index[-1]:%Y-%m-%d}), "
+            f"{entry_tf} depuis {entry.index[0]:%Y-%m-%d}, couverture {cov:.0%}")
+        data[s] = (FeatureView(build_features(entry, htfs, entry_tf)), PricePath(path))
+        closes[s] = entry["close"]
     if not data:
         raise RuntimeError(f"Aucune donnée exploitable : {skipped}")
     ratebook = RateBook({k: closes[k] for k in ("USDJPY", "USDCAD", "USDCHF", "EURUSD", "GBPUSD") if k in closes})
@@ -122,6 +130,8 @@ def write_report(r: dict, path: Path) -> None:
         L.append(f"| {k} | {x['n']} | {f(x['net'])} | {f(x['win_rate'], True)} | {f(x['profit_factor'])} |")
     if r["skipped"]:
         L += ["", "Instruments exclus : " + "; ".join(f"{k} ({v})" for k, v in r["skipped"].items())]
-    L += ["", "Méthode : version figée (aucun réglage), exécution à l'ouverture suivant le signal, chemin du prix rejoué "
-          "sur les bougies M1 réelles, SL prioritaire si SL et TP dans la même minute, spread typique + 7 $/lot de commission."]
+    L += ["", "Méthode : version figée (aucun réglage) ; analyse sur les bougies H1/H4/D1 du broker (comme en direct) ; "
+          "exécution à l'ouverture suivant le signal ; chemin du prix rejoué sur les bougies M5 réelles, SL prioritaire si SL "
+          "et TP dans la même bougie ; spread typique + 7 $/lot de commission. Couverture des données par paire : "
+          + ", ".join(f"{k} {100 * v:.0f} %" for k, v in (r.get("coverage") or {}).items())]
     path.write_text("\n".join(L), encoding="utf-8")

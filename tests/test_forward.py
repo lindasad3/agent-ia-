@@ -4,23 +4,25 @@ from datetime import timedelta
 
 import pandas as pd
 
+from forex_agent.analysis.features import resample
 from forex_agent.learning import registry
 from forex_agent.learning.forward import run_forward
 from tests.conftest import make_m1
 
 
 def test_forward_pipeline_without_registering(monkeypatch, tmp_path):
-    m1 = make_m1(days=200, seed=11)
-    start = m1.index[0] + timedelta(days=120)
+    m1 = make_m1(days=560, seed=11)
+    start = m1.index[0] + timedelta(days=500)
     calls = []
 
-    def loader(sym, a, b):
-        calls.append(sym)
-        return m1[(m1.index >= pd.Timestamp(a)) & (m1.index < pd.Timestamp(b))]
+    def loader(sym, tf, a, b):
+        calls.append((sym, tf))
+        return resample(m1[(m1.index >= pd.Timestamp(a)) & (m1.index < pd.Timestamp(b))], tf)
     monkeypatch.setattr("forex_agent.learning.forward.ROOT", tmp_path)
     r = run_forward("v3", loader, start.to_pydatetime(), m1.index[-1].to_pydatetime(), symbols=["EURUSD"],
                     register=False, log=lambda *_: None)
-    assert calls == ["EURUSD"] and r["symbols"] == ["EURUSD"]
+    assert ("EURUSD", "M5") in calls and ("EURUSD", "D1") in calls and r["symbols"] == ["EURUSD"]
+    assert r["coverage"]["EURUSD"] > 0.95
     assert "n_trades" in r["metrics"] and isinstance(r["passed"], bool) and r["gate"]
     assert (tmp_path / r["report"] / "REPORT.md").exists()
 
@@ -47,3 +49,18 @@ def test_coverage_detects_gaps():
     assert coverage(m1, start, end) > 0.95
     holes = m1[(m1.index < start + timedelta(days=15)) | (m1.index > start + timedelta(days=35))]
     assert coverage(holes, start, end) < 0.7
+
+
+def test_short_history_is_excluded_not_judged(monkeypatch, tmp_path):
+    """Cas réel MT5 : seules les 100 000 dernières bougies existent -> paire exclue, pas de verdict trompeur."""
+    m1 = make_m1(days=200, seed=4)
+    start = m1.index[0] + timedelta(days=60)
+    late = m1[m1.index > m1.index[0] + timedelta(days=150)]  # l'historique ne commence qu'après le début du test
+
+    def loader(sym, tf, a, b):
+        return resample(late[(late.index >= pd.Timestamp(a)) & (late.index < pd.Timestamp(b))], tf)
+    monkeypatch.setattr("forex_agent.learning.forward.ROOT", tmp_path)
+    import pytest
+    with pytest.raises(RuntimeError, match="incomplet|insuffisant"):
+        run_forward("v3", loader, start.to_pydatetime(), m1.index[-1].to_pydatetime(), symbols=["EURUSD"],
+                    register=False, log=lambda *_: None)

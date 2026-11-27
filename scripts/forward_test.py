@@ -59,14 +59,19 @@ def main() -> int:
         if not b.connect():
             print("Connexion MT5 impossible :", b.last_error)
             return 1
-        print("Téléchargement de l'historique M1 depuis MT5 (quelques minutes)...")
-        loader = lambda s, a_, b_: b.history_bars(s, "M1", a_, b_)  # noqa: E731
-    else:
-        from forex_agent.data.hf_dataset import load_m1
+        print("Téléchargement de l'historique depuis MT5 (H1/H4/D1 + M5, quelques minutes)...")
 
-        def loader(s, a_, b_):
-            m = load_m1(s)
-            return m[(m.index >= pd.Timestamp(a_)) & (m.index < pd.Timestamp(b_))]
+        def loader(s, tf, a_, b_):
+            return b.history_bars(s, tf, a_, b_, chunk_days=20 if tf in ("M1", "M5") else 365)
+    else:
+        from forex_agent.analysis.features import resample
+        from forex_agent.data.hf_dataset import load_m1
+        cache = {}
+
+        def loader(s, tf, a_, b_):
+            m = cache.setdefault(s, load_m1(s))
+            m = m[(m.index >= pd.Timestamp(a_)) & (m.index < pd.Timestamp(b_))]
+            return resample(m, tf)
     r = run_forward(v["version"], loader, start, end, register=not a.no_register)
     m = r["metrics"]
     print(f"\n{'✅ VALIDÉE' if r['passed'] else '❌ NON VALIDÉE'} — {'; '.join(r['gate'])}")
